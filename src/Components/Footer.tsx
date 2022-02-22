@@ -16,13 +16,19 @@ const Footer = () => {
 	return (
 		<Box
 			bg="rgba(0, 0, 0, 0.06)"
-			p={2}
+			p={{base: 1.5, md: 2}}
 			sx={{ w: "100%", position: "absolute", bottom: 0 }}>
 			<Center>
-				<VStack spacing={2}>
+				<VStack spacing={{base: 0.5 ,md: 1}}>
 					<HStack spacing={1}>
-						<Text>Made with love, by</Text>
-						<Text color="hsl(207, 100%, 66%)">ITSIG</Text>
+						<Text fontSize={{ base: "sm", md: "md" }}>
+							Made with love, by
+						</Text>
+						<Text
+							fontSize={{ base: "sm", md: "md" }}
+							color="hsl(207, 100%, 66%)">
+							ITSIG
+						</Text>
 					</HStack>
 					<HStack>
 						<Tooltip
@@ -31,9 +37,10 @@ const Footer = () => {
 							placement="left">
 							<IconButton
 								isRound
+								bg="transparent"
 								aria-label="ITSIG Instagram"
 								icon={<FaInstagram />}
-								fontSize="30px"
+								fontSize="3xl"
 								onClick={() => {
 									window.open(
 										"https://www.instagram.com/itsigtp/",
@@ -47,9 +54,10 @@ const Footer = () => {
 							placement="right">
 							<IconButton
 								isRound
+								bg="transparent"
 								aria-label="ITSIG GitHub"
 								icon={<SiGithub />}
-								fontSize="30px"
+								fontSize="3xl"
 								onClick={() => {
 									window.open(
 										"https://www.github.com/tp-itsig/",
