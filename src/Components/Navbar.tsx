@@ -43,7 +43,7 @@ const Navbar = () => {
 	return (
 		<Box bg="transparent" w="100%" py={{ base: 4 }} px={{ base: 2.5 }}>
 			<HStack justifyContent="space-between">
-				<Menu preventOverflow matchWidth flip>
+				<Menu preventOverflow matchWidth flip autoSelect={false} >
 					<MenuButton
 						as={IconButton}
 						isRound
@@ -60,7 +60,7 @@ const Navbar = () => {
 						))}
 					</MenuList>
 				</Menu>
-				<Image src="./assets/itsig.svg" w="4.5em" />
+				<Image src="./assets/itsig.svg" w={{base: "4.5em", md: "5.5em"}} />
 				<Box w="40px" h="40px" />
 			</HStack>
 		</Box>
