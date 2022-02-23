@@ -15,13 +15,12 @@ const SubjectCard = (props: SubjectCardProps) => {
 			borderColor={props.color}
 			borderWidth={3.5}
 			borderRadius={15}
-			overflow="hidden"
 			
-			>
+			overflow="hidden">
 			<Center bg={props.bgColor} w="auto" minH="60%" maxH="60%">
-				<Image py={2} src={props.image} boxSize="65%" />
+				<Image py={2} src={props.image} boxSize="125px" />
 			</Center>
-			<Box my={2} px={2} minH="50%" >
+			<Box my={2} px={2}>
 				<Text fontSize="lg" fontWeight="bold">
 					{props.title}
 				</Text>
