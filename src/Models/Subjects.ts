@@ -14,6 +14,7 @@ export let subjects: Subject[] = [
             thumbnail: "https://www.youtube.com/watch?v=Z9kg24yad-0&list=PLkdNeERjj7-6n0ItDJZQMD6561UzxDQ_B&index=1", 
             type: ResourceType.VIDEO 
             },
+
             {
                 title: "Android Studio Starter",
                 content: "An explanation of what an Integrated Development Environment (IDE) is and what Android Studio is about.",
@@ -181,7 +182,4 @@ export let subjects: Subject[] = [
         advanced: [""],
         software: [""]
     },
-
-
-
 ];
