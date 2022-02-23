@@ -7,8 +7,8 @@ import App from "./App"
 
 const theme = extendTheme({
 	colors: {
-		iit_blue: "#1494FF",
-		itsig_blue: "#0A5491",
+		iit_blue: "hsl(207, 100%, 54%)",
+		itsig_blue: "hsl(207, 87%, 30%)",
 	},
 	fonts: {
 		heading: '"Poppins", sans-serif',
