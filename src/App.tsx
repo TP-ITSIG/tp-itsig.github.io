@@ -9,7 +9,7 @@ import Resource from "./Pages/Resource"
 const App = () => {
 	return (
 		<Box minH={"100vh"}>
-			<Box maxW="1400px" margin="auto" px={4}>
+			<Box maxW="1400px" margin="auto" px={{base: 2 ,lg: 4}}>
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<Home />} />

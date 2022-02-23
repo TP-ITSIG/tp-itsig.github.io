@@ -49,7 +49,7 @@ const Navbar = () => {
 			bg="transparent"
 			w="100%"
 			py={{ base: 4, lg: 5 }}
-			px={{ base: 2.5, lg: 4 }}>
+			px={{ base: 1, lg: 4 }}>
 			<HStack
 				justifyContent={{ base: "space-between", lg: "flex-start" }}>
 				<Box display={{ base: "block", lg: "none" }}>
