@@ -1,7 +1,7 @@
 import { ResourceType } from './ResourceType'
 export interface Resource {
-    title: String,
-    content: String,
-    thumbnail: String,
+    title: string,
+    content: string,
+    thumbnail: string,
     type: ResourceType
 }

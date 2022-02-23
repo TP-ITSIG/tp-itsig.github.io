@@ -1,13 +1,13 @@
 import { Resource } from './Resource'
 
 export interface Subject {
-    name: String,
-    tagline: String,
-    abbreviation: String,
-    description: String,
-    color: String,
-    image: String,
+    name: string,
+    tagline: string,
+    abbreviation: string,
+    description: string,
+    color: string,
+    image: string,
     resources: Resource[],
-    advanced: String[],
-    software: String[]
+    advanced: string[],
+    software: string[]
 }
