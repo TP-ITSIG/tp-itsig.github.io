@@ -6,7 +6,7 @@ export interface Subject {
     description: String,
     color: String,
     image: String,
-    resources: Array<Resource>
-    advanced: Array<String>,
-    software: Array<String>
+    resources: Resource[],
+    advanced: String[],
+    software: String[]
 }
