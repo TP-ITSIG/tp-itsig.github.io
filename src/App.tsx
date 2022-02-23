@@ -9,12 +9,14 @@ import Resource from "./Pages/Resource"
 const App = () => {
 	return (
 		<Box minH={"100vh"}>
-			<Navbar />
-			<Routes>
-				<Route path="/" element={<Home />} />
-				<Route path="/resource" element={<Resource />} />
-				<Route path="/about" element={<About />} />
-			</Routes>
+			<Box maxW="1400px" margin="auto" px={4}>
+				<Navbar />
+				<Routes>
+					<Route path="/" element={<Home />} />
+					<Route path="/resource" element={<Resource />} />
+					<Route path="/about" element={<About />} />
+				</Routes>
+			</Box>
 			<Footer />
 		</Box>
 	)

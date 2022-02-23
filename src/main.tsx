@@ -10,6 +10,15 @@ const theme = extendTheme({
 		heading: '"Poppins", sans-serif',
 		body: '"Poppins", sans-serif',
 	},
+	components: {
+		Button: {
+			baseStyle: {
+				_focus: {
+					boxShadow: "none",
+				},
+			},
+		},
+	},
 })
 
 ReactDOM.render(
