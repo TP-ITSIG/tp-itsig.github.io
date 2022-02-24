@@ -3,5 +3,7 @@ export interface Resource {
     title: string,
     content: string,
     thumbnail: string,
-    type: ResourceType
+    type: ResourceType,
+    imageUrl?: string,
+    resourceLinks?: string[]
 }
