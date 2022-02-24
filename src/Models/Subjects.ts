@@ -7,7 +7,7 @@ export const subjects: Subject[] = [
         abbreviation: "COMT",
         description: "This module teaches the fundamentals of programming using the Java programming language. Using your new skills, you will transform your UXID prototype into a real Android app with Android Studio.",
         color: "hsl(154, 74%, 69%)",
-		    bgColor: "hsla(154, 74%, 69%, 0.3)",
+		bgColor: "hsla(154, 74%, 69%, 0.3)",
         image: "./assets/COMT.svg",
         resources: [{
             title:  "Learning How to Code", 
@@ -40,7 +40,7 @@ export const subjects: Subject[] = [
         abbreviation: "DAVA",
         description: "This module teaches you the basics of data analytics following the CRISP-DM Methodology. You will learn to understand, prepare and evaluate your data using tools like KNIME and Power BI.",
         color: "hsl(43, 100%, 65%)",
-		    bgColor: "hsla(43, 100%, 65%, 0.3)",
+		bgColor: "hsla(43, 100%, 65%, 0.3)",
         image: "./assets/DAVA.svg",
         resources: [{
             title:  "Introduction to CRISP-DM Methodology", 
@@ -71,7 +71,7 @@ export const subjects: Subject[] = [
         abbreviation: "NETY",
         description: "This module teaches you the basics of computer networking which will help you throughout your time in IIT. You will learn to describe networking systems with the OSI Model and understand how the internet works. You will also simulate networks with Packet Tracer.",
         color: "hsl(189, 100%, 40%)",
-		    bgColor: "hsla(189, 100%, 40%, 0.3)",
+		bgColor: "hsla(189, 100%, 40%, 0.3)",
         image: "./assets/NETY.svg",
         resources: [{
             title:  "Evolution of the Internet", 
