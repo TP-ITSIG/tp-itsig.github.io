@@ -25,7 +25,7 @@ const Home = () => {
 				justifyContent="center"
 				alignItems="center"
 				bgColor="hsl(0, 0%, 0%, 0.05)"
-				h={{ base: "40%" }}
+				borderBottomRadius="20px"
 				p={5}
 				_before={{
 					content: `''`,
