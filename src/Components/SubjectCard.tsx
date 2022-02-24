@@ -1,4 +1,5 @@
 import { Box, Center, Image, Text } from "@chakra-ui/react"
+import { useNavigate } from "react-router-dom"
 import React from "react"
 
 interface SubjectCardProps {
@@ -10,6 +11,7 @@ interface SubjectCardProps {
 }
 
 const SubjectCard = (props: SubjectCardProps) => {
+	const navigate = useNavigate()
 	return (
 		<Box
 			borderColor={props.color}
@@ -18,9 +20,13 @@ const SubjectCard = (props: SubjectCardProps) => {
 			boxShadow={`0px 2px 3px ${props.bgColor}`}
 			_hover={{
 				boxShadow: `0px 8px 12px ${props.bgColor}`,
+				cursor: "pointer",
 			}}
 			transition="box-shadow 0.3s ease-out"
-			overflow="hidden">
+			overflow="hidden"
+			onClick={() => {
+				navigate(`resource/${props.title}`)
+			}}>
 			<Center bg={props.bgColor} w="auto" minH="60%" maxH="60%">
 				<Image py={2} src={props.image} boxSize="125px" />
 			</Center>

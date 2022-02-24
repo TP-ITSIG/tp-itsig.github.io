@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react"
 import { repeat } from "lodash"
 import React from "react"
+
 import SubjectCard from "../Components/SubjectCard"
 import { subjects } from "../Models/Subjects"
 
