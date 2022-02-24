@@ -80,7 +80,10 @@ const Navbar = () => {
 					w={{ base: "4.5em", md: "5.5em" }}
 					h="auto"
 				/>
-				<HStack display={{base: "none", lg: "block"}} spacing={3} style={{marginLeft: "2em"}}>
+				<HStack
+					display={{ base: "none", lg: "block" }}
+					spacing={5}
+					style={{ marginLeft: "3em" }}>
 					{pages.map(page => (
 						<Button
 							key={page.pageUrl}
@@ -89,10 +92,10 @@ const Navbar = () => {
 									? "semibold"
 									: "normal"
 							}
-							
+							fontSize="xl"
 							colorScheme="black"
 							variant="link"
-							sx={{ transition: "font-weight 0.15s ease-out" }}
+							sx={{ transition: "all 0.15s ease-out" }}
 							onClick={() => {
 								navigate(page.pageUrl)
 							}}>

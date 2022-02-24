@@ -7,6 +7,7 @@ export const subjects: Subject[] = [
         abbreviation: "COMT",
         description: "This module teaches the fundamentals of programming using the Java programming language. Using your new skills, you will transform your UXID prototype into a real Android app with Android Studio.",
         color: "hsl(154, 74%, 69%)",
+		    bgColor: "hsla(154, 74%, 69%, 0.3)",
         image: "./assets/COMT.svg",
         resources: [{
             title:  "Learning How to Code", 
@@ -38,7 +39,8 @@ export const subjects: Subject[] = [
         tagline: "Visualise and analyse big data",
         abbreviation: "DAVA",
         description: "This module teaches you the basics of data analytics following the CRISP-DM Methodology. You will learn to understand, prepare and evaluate your data using tools like KNIME and Power BI.",
-        color: "hsl(154, 74%, 69%)",
+        color: "hsl(43, 100%, 65%)",
+		    bgColor: "hsla(43, 100%, 65%, 0.3)",
         image: "./assets/DAVA.svg",
         resources: [{
             title:  "Introduction to CRISP-DM Methodology", 
@@ -68,7 +70,8 @@ export const subjects: Subject[] = [
         tagline: "Learn about the internet and simulate computer networks",
         abbreviation: "NETY",
         description: "This module teaches you the basics of computer networking which will help you throughout your time in IIT. You will learn to describe networking systems with the OSI Model and understand how the internet works. You will also simulate networks with Packet Tracer.",
-        color: "hsl(154, 74%, 69%)",
+        color: "hsl(189, 100%, 40%)",
+		    bgColor: "hsla(189, 100%, 40%, 0.3)",
         image: "./assets/NETY.svg",
         resources: [{
             title:  "Evolution of the Internet", 
@@ -98,7 +101,8 @@ export const subjects: Subject[] = [
         tagline: "Design and prototype your app",
         abbreviation: "UXID",
         description: "This module teaches you about the UX design process. You will then carry out a design project to come up with wireframes that will be later translated to a fully functional app in COMT.",
-        color: "hsl(154, 74%, 69%)",
+        color: "hsl(289, 100%, 82%)",
+        bgColor: "hsl(289, 100%, 82%, 0.3)",
         image: "./assets/UXID.svg",
         resources: [{
             title:  "UX Crash Course", 
@@ -128,7 +132,8 @@ export const subjects: Subject[] = [
         tagline: "Learn about Discrete Mathematics",
         abbreviation: "LOMA",
         description: "This module covers fundamental Mathematical concepts needed for computing. In particular, Discrete Mathematics concepts such as graphs, logic and functions are taught.",
-        color: "hsl(154, 74%, 69%)",
+        color: "hsl(24, 100%, 64%)",
+        bgColor: "hsl(24, 100%, 64%, 0.3)",
         image: "./assets/LOMA.svg",
         resources: [{
             title:  "Discrete Mathematics for Computer Science", 
@@ -158,7 +163,8 @@ export const subjects: Subject[] = [
         tagline: "Usefil miscellaneous resources",
         abbreviation: "Others",
         description: "This section contains a list of nice-to-haves for your journey with us!",
-        color: "hsl(154, 74%, 69%)",
+        color: "hsl(0, 100%, 77%)",
+        bgColor: "hsl(0, 100%, 77%, 0.3)",
         image: "./assets/Others.svg",
         resources: [{
             title:  "GitHub Student Developer Pack", 

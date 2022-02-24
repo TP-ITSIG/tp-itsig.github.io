@@ -27,8 +27,8 @@ const About = () => {
 				<Image
 					src="../../assets/itsig-icon.svg"
 					opacity={0.08}
-					w={{ base: "70%", md: "60%" }}
-					h={{ base: "70%", md: "60%" }}
+					w={{ base: "50%", md: "60%" }}
+					h={{ base: "50%", md: "60%" }}
 					pos="absolute"
 					zIndex={0}
 					pt={4}
@@ -37,21 +37,23 @@ const About = () => {
 			<Box display={{ base: "none", lg: "block" }} w="100%" pt={-5}>
 				<HStack>
 					<VStack
-						spacing={-5}
 						display="flex"
 						alignItems="left"
-						justifyContent="left">
-						<Text fontSize={{ base: "4em" }} fontWeight="bold">
+						justifyContent="left"
+						pl={20}>
+						<Text
+							fontSize={{ lg: "2.5em", xl: "3.5em" }}
+							fontWeight="bold">
 							Hello! We're from the
 						</Text>
 						<Text
-							fontSize={{ base: "4em" }}
+							fontSize={{ lg: "2.5em", xl: "3.5em" }}
 							fontWeight="bold"
 							color="itsig_blue">
 							Information Technology Student Interest Group
 						</Text>
 					</VStack>
-					<Image src="../../assets/itsig-icon.svg" w="60%" h="60%" />
+					<Image src="../../assets/itsig-icon.svg" w="30%" h="30%" />
 				</HStack>
 			</Box>
 			<VStack
@@ -59,7 +61,7 @@ const About = () => {
 				display={{ base: "flex" }}
 				align="left"
 				justify="left"
-				pt={{ base: "24" }}
+				pt={{ base: "20", md: "20", lg: "12" }}
 				px={{ base: "4", lg: "64" }}
 				pb={24}>
 				<Text

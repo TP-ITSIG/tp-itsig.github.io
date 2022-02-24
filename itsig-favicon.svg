@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellipse_2" data-name="Ellipse 2" cx="512" cy="512" r="512" transform="translate(0)" fill="#304465"/>
+    </clipPath>
+    <filter id="base_bottom" x="186.963" y="769.892" width="724.15" height="32.072" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-ITSIG_Blue_Logo_Circle_no_text_">
+      <rect width="1024" height="1024"/>
+    </clipPath>
+  </defs>
+  <g id="ITSIG_Blue_Logo_Circle_no_text_" data-name="ITSIG Blue Logo Circle (no text) " clip-path="url(#clip-ITSIG_Blue_Logo_Circle_no_text_)">
+    <rect width="1024" height="1024" fill="rgba(236,236,236,0)"/>
+    <g id="Mask_Group_1" data-name="Mask Group 1" clip-path="url(#clip-path)">
+      <rect id="Rectangle_11" data-name="Rectangle 11" width="1024" height="1024" fill="#304465"/>
+    </g>
+    <g id="Eveything" transform="translate(50.436 240.365)">
+      <g id="Group_7" data-name="Group 7" transform="translate(76.564 -0.365)">
+        <g id="laptop" transform="translate(63.963 119.727)">
+          <g id="Group_14" data-name="Group 14" transform="translate(0 408.606)">
+            <path id="base_top" data-name="base top" d="M1.279,0H704.871a1.279,1.279,0,0,1,1.279,1.279V3.838H0V1.279A1.279,1.279,0,0,1,1.279,0Z" fill="#ececec"/>
+            <g transform="matrix(1, 0, 0, 1, -190.96, -768.33)" filter="url(#base_bottom)">
+              <path id="base_bottom-2" data-name="base bottom" d="M0,0H706.15a0,0,0,0,1,0,0V9.072a5,5,0,0,1-5,5H5a5,5,0,0,1-5-5V0A0,0,0,0,1,0,0Z" transform="translate(190.96 770.89)" fill="#ececec"/>
+            </g>
+          </g>
+          <path id="screen" d="M21.909,0H658.368a21.909,21.909,0,0,1,21.909,21.909V376.836a21.909,21.909,0,0,1-21.909,21.909H21.909A21.909,21.909,0,0,1,0,376.836V21.909A21.909,21.909,0,0,1,21.909,0Z" transform="translate(12.338 0)" fill="#001b36"/>
+          <path id="screen_-_Outline" data-name="screen - Outline" d="M21.909,9.353A12.57,12.57,0,0,0,9.353,21.909V376.836a12.57,12.57,0,0,0,12.556,12.556H658.367a12.571,12.571,0,0,0,12.556-12.556V21.909A12.57,12.57,0,0,0,658.367,9.353H21.909m0-9.353H658.367a21.909,21.909,0,0,1,21.909,21.909V376.836a21.909,21.909,0,0,1-21.909,21.909H21.909A21.909,21.909,0,0,1,0,376.836V21.909A21.909,21.909,0,0,1,21.909,0Z" transform="translate(12.338 0)"/>
+          <path id="Path_3" data-name="Path 3" d="M-102.3-.637V13.574q13.8,6.591,35.013,6.591t31.924-6.694q10.71-6.694,10.71-18.948T-34.748-23.7q-10.092-5.973-32.13-10.2T-99.934-45.124q-11.019-7-11.019-22.038,0-32.336,47.989-32.336,25.539,0,42.222,9.268,3.089,1.854,3.089,4.325v16.889a4.193,4.193,0,0,1-1.648,3.4,6.013,6.013,0,0,1-3.913,1.339,6.013,6.013,0,0,1-3.913-1.339,4.193,4.193,0,0,1-1.648-3.4V-83.227q-14.211-6.591-33.675-6.591t-28.423,5.561q-8.959,5.561-8.959,17.095,0,10.916,11.534,16.271,7.826,3.913,21.111,6.694t18.845,4.222a108.252,108.252,0,0,1,12.976,4.428,38.99,38.99,0,0,1,11.534,6.694,33.237,33.237,0,0,1,7.209,9.783,30.251,30.251,0,0,1,3.089,13.9q0,16.065-13.49,25.539t-38.618,9.474a132.466,132.466,0,0,1-24.921-2.575q-13.387-2.575-20.184-6.9a4.793,4.793,0,0,1-2.677-4.119V-.637a4.193,4.193,0,0,1,1.648-3.4,6.013,6.013,0,0,1,3.913-1.339,6.013,6.013,0,0,1,3.913,1.339A4.193,4.193,0,0,1-102.3-.637ZM20.862,18.105V-87.758H8.71a4.6,4.6,0,0,1-3.4-1.339,4.6,4.6,0,0,1-1.339-3.4A4.959,4.959,0,0,1,5.312-96a4.436,4.436,0,0,1,3.4-1.442H44.135A4.436,4.436,0,0,1,47.534-96a4.959,4.959,0,0,1,1.339,3.5,4.6,4.6,0,0,1-1.339,3.4,4.6,4.6,0,0,1-3.4,1.339H31.984V18.105H44.135a4.58,4.58,0,0,1,4.737,4.737,4.959,4.959,0,0,1-1.339,3.5,4.436,4.436,0,0,1-3.4,1.442H8.71a4.436,4.436,0,0,1-3.4-1.442,4.959,4.959,0,0,1-1.339-3.5A4.58,4.58,0,0,1,8.71,18.105Zm142.525,7V16.87a56.21,56.21,0,0,1-36.661,12.976q-26.775,0-43.458-18.639T66.585-35.753q0-28.32,17.2-46.032T125.9-99.5q24.921,0,42.84,10.092,3.3,1.648,3.3,4.325v17.713a4.193,4.193,0,0,1-1.648,3.4,6.013,6.013,0,0,1-3.913,1.339,6.013,6.013,0,0,1-3.913-1.339,4.193,4.193,0,0,1-1.648-3.4V-82.4a76.562,76.562,0,0,0-33.572-7.415q-22.244,0-35.94,15.138t-13.7,39.441q0,24.3,13.8,39.853t35.013,15.55q21.214,0,36.867-13.387V-24.116H132.492a4.6,4.6,0,0,1-3.4-1.339,4.6,4.6,0,0,1-1.339-3.4,4.959,4.959,0,0,1,1.339-3.5,4.436,4.436,0,0,1,3.4-1.442h36.661q5.355,0,5.355,4.737V25.108a4.193,4.193,0,0,1-1.648,3.4,6.389,6.389,0,0,1-7.826,0A4.193,4.193,0,0,1,163.386,25.108Z" transform="translate(315.004 229.868)" fill="#fff"/>
+          <g id="the_thing_to_life_the_screen" data-name="the thing to life the screen" transform="translate(262.248 406.831)">
+            <path id="Rectangle_6" data-name="Rectangle 6" d="M0,0H173.979a0,0,0,0,1,0,0V0a5.325,5.325,0,0,1-5.325,5.325H5.325A5.325,5.325,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(0 0)" fill="#304465"/>
+          </g>
+          <rect id="Rectangle_10" data-name="Rectangle 10" width="33.261" height="8.955" rx="4.477" transform="translate(330.049 15.874)"/>
+        </g>
+        <g id="Code_Lines" data-name="Code Lines" transform="translate(104.899 170.666)">
+          <g id="Code_Lines_9" data-name="Code Lines 9" transform="translate(90.827 41.691)">
+            <g id="Colour_3" data-name="Colour 3" transform="translate(0 0)">
+              <line id="Line_14" data-name="Line 14" x2="42.216" fill="none" stroke="#33b9b0" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_4" data-name="Colour 4" transform="translate(21.747 15.351)">
+              <line id="Line_13" data-name="Line 13" x2="97.224" fill="none" stroke="#f18686" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_2" data-name="Colour 2" transform="translate(58.846 0)">
+              <line id="Line_15" data-name="Line 15" x2="11.513" fill="none" stroke="#af5ae6" stroke-linecap="round" stroke-width="5"/>
+            </g>
+          </g>
+          <g id="Code_Lines_8" data-name="Code Lines 8" transform="translate(148.318 0)">
+            <g id="Colour_4-2" data-name="Colour 4" transform="translate(88.732 19.718)">
+              <line id="Line_13-2" data-name="Line 13" x2="111.736" fill="none" stroke="#f18686" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_3-2" data-name="Colour 3" transform="translate(105.164)">
+              <line id="Line_14-2" data-name="Line 14" x2="42.723" fill="none" stroke="#33b9b0" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_2-2" data-name="Colour 2" transform="translate(211.422 19.718)">
+              <line id="Line_15-2" data-name="Line 15" x2="12.05" fill="none" stroke="#af5ae6" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_1" data-name="Colour 1">
+              <line id="Line_13-3" data-name="Line 13" x2="88.732" fill="none" stroke="#116be1" stroke-linecap="round" stroke-width="5"/>
+            </g>
+          </g>
+          <g id="Code_Lines_7" data-name="Code Lines 7" transform="translate(443.902 31.457)">
+            <g id="Colour_4-3" data-name="Colour 4" transform="translate(16.63 19.189)">
+              <line id="Line_13-4" data-name="Line 13" x2="111.295" transform="translate(0 0)" fill="none" stroke="#f18686" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_2-3" data-name="Colour 2" transform="translate(144.556 19.189)">
+              <line id="Line_15-3" data-name="Line 15" x2="11.513" fill="none" stroke="#af5ae6" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_1-2" data-name="Colour 1" transform="translate(0 0)">
+              <line id="Line_13-5" data-name="Line 13" x2="89.548" fill="none" stroke="#116be1" stroke-linecap="round" stroke-width="5"/>
+            </g>
+          </g>
+          <g id="Code_Lines_6" data-name="Code Lines 6" transform="translate(500.19 113.329)">
+            <g id="Colour_3-3" data-name="Colour 3" transform="translate(0 0)">
+              <line id="Line_14-3" data-name="Line 14" x2="42.216" fill="none" stroke="#33b9b0" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_4-4" data-name="Colour 4" transform="translate(16.63 17.91)">
+              <line id="Line_13-6" data-name="Line 13" x2="95.944" transform="translate(0 0)" fill="none" stroke="#f18686" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_2-4" data-name="Colour 2" transform="translate(65.242 34.54)">
+              <line id="Line_15-4" data-name="Line 15" x2="11.513" fill="none" stroke="#af5ae6" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_1-3" data-name="Colour 1" transform="translate(17.91 34.54)">
+              <line id="Line_13-7" data-name="Line 13" x2="30.702" fill="none" stroke="#116be1" stroke-linecap="round" stroke-width="5"/>
+            </g>
+          </g>
+          <g id="Code_Lines_5" data-name="Code Lines 5" transform="translate(424.713 241.255)">
+            <g id="Colour_4-5" data-name="Colour 4" transform="translate(29.423 16.63)">
+              <line id="Line_13-8" data-name="Line 13" x2="88.269" transform="translate(0 0)" fill="none" stroke="#f18686" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_3-4" data-name="Colour 3" transform="translate(74.197 0)">
+              <line id="Line_14-4" data-name="Line 14" x2="88.269" fill="none" stroke="#33b9b0" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_1-4" data-name="Colour 1" transform="translate(0 0)">
+              <line id="Line_13-9" data-name="Line 13" x2="57.567" fill="none" stroke="#116be1" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_2-5" data-name="Colour 2" transform="translate(134.322 16.63)">
+              <line id="Line_15-5" data-name="Line 15" x2="11.513" fill="none" stroke="#af5ae6" stroke-linecap="round" stroke-width="5"/>
+            </g>
+          </g>
+          <g id="Code_Lines_4" data-name="Code Lines 4" transform="translate(386.336 298.822)">
+            <g id="Colour_3-5" data-name="Colour 3" transform="translate(0 0)">
+              <line id="Line_14-5" data-name="Line 14" x2="42.216" fill="none" stroke="#33b9b0" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_2-6" data-name="Colour 2" transform="translate(61.404 0)">
+              <line id="Line_15-6" data-name="Line 15" x2="11.513" fill="none" stroke="#af5ae6" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_3-6" data-name="Colour 3" transform="translate(12.793 16.63)">
+              <line id="Line_14-6" data-name="Line 14" x2="42.216" fill="none" stroke="#33b9b0" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_1-5" data-name="Colour 1" transform="translate(67.801 16.63)">
+              <line id="Line_13-10" data-name="Line 13" x2="89.548" fill="none" stroke="#116be1" stroke-linecap="round" stroke-width="5"/>
+            </g>
+          </g>
+          <g id="Code_Lines_3" data-name="Code Lines 3" transform="translate(189.33 264.282)">
+            <g id="Colour_3-7" data-name="Colour 3" transform="translate(0 0)">
+              <line id="Line_14-7" data-name="Line 14" x2="42.216" fill="none" stroke="#33b9b0" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_1-6" data-name="Colour 1" transform="translate(15.351 15.351)">
+              <line id="Line_13-11" data-name="Line 13" x2="88.269" fill="none" stroke="#116be1" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_2-7" data-name="Colour 2" transform="translate(117.692 15.351)">
+              <line id="Line_15-7" data-name="Line 15" x2="11.513" fill="none" stroke="#af5ae6" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_3-8" data-name="Colour 3" transform="translate(0 31.981)">
+              <line id="Line_14-8" data-name="Line 14" x2="42.216" fill="none" stroke="#33b9b0" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_4-6" data-name="Colour 4" transform="translate(14.072 51.17)">
+              <line id="Line_13-12" data-name="Line 13" x2="46.053" transform="translate(0 0)" fill="none" stroke="#f18686" stroke-linecap="round" stroke-width="5"/>
+            </g>
+          </g>
+          <g id="Code_Lines_2" data-name="Code Lines 2" transform="translate(0 243.813)">
+            <g id="Colour_1-7" data-name="Colour 1" transform="translate(0 0)">
+              <line id="Line_13-13" data-name="Line 13" x2="89.548" fill="none" stroke="#116be1" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_3-9" data-name="Colour 3" transform="translate(12.793 15.351)">
+              <line id="Line_14-9" data-name="Line 14" x2="42.216" fill="none" stroke="#33b9b0" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_2-8" data-name="Colour 2" transform="translate(106.178 0)">
+              <line id="Line_15-8" data-name="Line 15" x2="11.513" fill="none" stroke="#af5ae6" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_3-10" data-name="Colour 3" transform="translate(44.774 30.702)">
+              <line id="Line_14-10" data-name="Line 14" x2="42.216" fill="none" stroke="#33b9b0" stroke-linecap="round" stroke-width="5"/>
+            </g>
+          </g>
+          <g id="Code_Lines_1" data-name="Code Lines 1" transform="translate(34.54 135.077)">
+            <g id="Colour_1-8" data-name="Colour 1" transform="translate(0 0)">
+              <line id="Line_13-14" data-name="Line 13" x2="89.548" fill="none" stroke="#116be1" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_2-9" data-name="Colour 2" transform="translate(17.91 12.793)">
+              <line id="Line_15-9" data-name="Line 15" x2="28.144" fill="none" stroke="#af5ae6" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_4-7" data-name="Colour 4" transform="translate(33.261 25.585)">
+              <line id="Line_13-15" data-name="Line 13" x2="90.827" transform="translate(0 0)" fill="none" stroke="#f18686" stroke-linecap="round" stroke-width="5"/>
+            </g>
+            <g id="Colour_3-11" data-name="Colour 3" transform="translate(61.404 12.793)">
+              <line id="Line_14-11" data-name="Line 14" x2="47.333" fill="none" stroke="#33b9b0" stroke-linecap="round" stroke-width="5"/>
+            </g>
+          </g>
+        </g>
+        <g id="Fone" transform="translate(0 400.408) rotate(-90)">
+          <rect id="Screen-2" data-name="Screen" width="400.408" height="208.519" rx="39" transform="translate(0)" fill="#003a9f"/>
+          <path id="Screen_-_Outline-2" data-name="Screen - Outline" d="M24.941,9.353A15.606,15.606,0,0,0,9.353,24.941V183.578a15.606,15.606,0,0,0,15.588,15.588H375.467a15.606,15.606,0,0,0,15.588-15.588V24.941A15.606,15.606,0,0,0,375.467,9.353H24.941m0-9.353H375.467a24.941,24.941,0,0,1,24.941,24.941V183.578a24.941,24.941,0,0,1-24.941,24.941H24.941A24.941,24.941,0,0,1,0,183.578V24.941A24.941,24.941,0,0,1,24.941,0Z" transform="translate(0 0)"/>
+          <path id="Path_2" data-name="Path 2" d="M10.595,72.484V6.073H2.972A2.873,2.873,0,0,1,0,3.1,3.111,3.111,0,0,1,.84.9,2.783,2.783,0,0,1,2.972,0H25.195a2.783,2.783,0,0,1,2.132.9,3.111,3.111,0,0,1,.84,2.2,2.873,2.873,0,0,1-2.972,2.972H17.572V72.484h7.623a2.873,2.873,0,0,1,2.972,2.972,3.111,3.111,0,0,1-.84,2.2,2.783,2.783,0,0,1-2.132.9H2.972a2.783,2.783,0,0,1-2.132-.9,3.111,3.111,0,0,1-.84-2.2,2.873,2.873,0,0,1,2.972-2.972ZM67.7,76.877V6.073H42.121V13.7a2.63,2.63,0,0,1-1.034,2.132,4.008,4.008,0,0,1-4.91,0A2.63,2.63,0,0,1,35.144,13.7V3.1A2.815,2.815,0,0,1,36.177.9,3.44,3.44,0,0,1,38.5,0h65.249a3.605,3.605,0,0,1,2.455.9,2.815,2.815,0,0,1,1.034,2.2V13.7a2.63,2.63,0,0,1-1.034,2.132,4.008,4.008,0,0,1-4.91,0,2.63,2.63,0,0,1-1.034-2.132V6.073H74.681v70.8a2.63,2.63,0,0,1-1.034,2.132,4.008,4.008,0,0,1-4.91,0A2.63,2.63,0,0,1,67.7,76.877Z" transform="translate(242.302 51.033) rotate(90)" fill="#fff"/>
+          <g id="Group_5" data-name="Group 5" transform="translate(387.615 99.782) rotate(90)">
+            <circle id="Ellipse_1" data-name="Ellipse 1" cx="4.477" cy="4.477" r="4.477" transform="translate(0 8.955) rotate(-90)"/>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
