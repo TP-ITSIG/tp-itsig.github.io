@@ -6,6 +6,6 @@ export default defineConfig({
 	plugins: [react()],
 	server: {
 		open: "/",
-		host: true
+		//host: true
 	},
 })
