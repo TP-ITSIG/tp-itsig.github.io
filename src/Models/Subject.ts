@@ -6,7 +6,6 @@ export interface Subject {
     abbreviation: string,
     description: string,
     color: string,
-	bgColor: string,
     image: string,
     resources: Resource[],
     advanced: string[],
