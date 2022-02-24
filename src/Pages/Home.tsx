@@ -106,7 +106,7 @@ const Home = () => {
 					</Text>
 				</Stack>
 				
-				<SimpleGrid columns={{ base: 2, md: 3 }} gap={5}>
+				<SimpleGrid columns={{ base: 2, md: 3 }} gap={5} rowGap={7}>
 					{subjects.map(subject => (
 						<SubjectCard
 							key={subject.abbreviation.toLowerCase()}
