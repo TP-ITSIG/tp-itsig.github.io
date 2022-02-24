@@ -13,6 +13,7 @@ import {
 } from "@chakra-ui/react"
 import { repeat } from "lodash"
 import React from "react"
+
 import SubjectCard from "../Components/SubjectCard"
 import { subjects } from "../Models/Subjects"
 
@@ -96,16 +97,33 @@ const Home = () => {
 				</Stack>
 			</Box>
 
-			<Stack direction={{base: "column", lg: "row"}} p={4} mt={{base: 2, lg:10}}>
+			<Stack
+				direction={{ base: "column", lg: "row" }}
+				p={4}
+				mt={{ base: 2, lg: 10 }}>
 				<Stack direction="column" spacing={0} mb={2.5}>
-					<Text fontWeight="bold" fontSize={{base:"2xl", md: "3xl", lg:"4xl", xl:"5xl"}}>
+					<Text
+						fontWeight="bold"
+						fontSize={{
+							base: "2xl",
+							md: "3xl",
+							lg: "4xl",
+							xl: "5xl",
+						}}>
 						Year 1
 					</Text>
-					<Text fontWeight="semibold" fontSize={{base:"xl", md: "2xl", lg: "3xl", xl:"4xl"}}>
+					<Text
+						fontWeight="semibold"
+						fontSize={{
+							base: "xl",
+							md: "2xl",
+							lg: "3xl",
+							xl: "4xl",
+						}}>
 						Semester 1 Resources
 					</Text>
 				</Stack>
-				
+
 				<SimpleGrid columns={{ base: 2, md: 3 }} gap={5} rowGap={7}>
 					{subjects.map(subject => (
 						<SubjectCard

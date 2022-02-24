@@ -11,6 +11,8 @@ const Resource = () => {
 		return sub.abbreviation.toUpperCase() == subjectAbbrev.toUpperCase()
 	})[0]
 
+	window.scrollTo(0, 0)
+
 	return (
 		<Flex direction={"column"} width={"100%"}>
 			<Box bgColor={subject.color} paddingTop={10} paddingBottom={10}>
