@@ -59,7 +59,7 @@ const Home = () => {
 									xl: "5xl",
 								}}
 								fontWeight="bold"
-								textAlign={{base: "center" ,lg:"left"}}>
+								textAlign={{ base: "center", lg: "left" }}>
 								Welcome to the
 							</Text>
 							<Text
@@ -96,18 +96,29 @@ const Home = () => {
 				</Stack>
 			</Box>
 
-			{/* <SimpleGrid columns={{ base: 2, md: 3 }} p={4} gap={5}>
-				{subjects.map(subject => (
-					<SubjectCard
-						key={subject.abbreviation.toLowerCase()}
-						title={subject.abbreviation}
-						description={subject.tagline}
-						image={subject.image}
-						color={subject.color}
-						bgColor={subject.bgColor}
-					/>
-				))}
-			</SimpleGrid> */}
+			<Stack direction={{base: "column", lg: "row"}} p={4} mt={{base: 2, lg:10}}>
+				<Stack direction="column" spacing={0} mb={2.5}>
+					<Text fontWeight="bold" fontSize={{base:"2xl", md: "3xl", lg:"4xl", xl:"5xl"}}>
+						Year 1
+					</Text>
+					<Text fontWeight="semibold" fontSize={{base:"xl", md: "2xl", lg: "3xl", xl:"4xl"}}>
+						Semester 1 Resources
+					</Text>
+				</Stack>
+				
+				<SimpleGrid columns={{ base: 2, md: 3 }} gap={5}>
+					{subjects.map(subject => (
+						<SubjectCard
+							key={subject.abbreviation.toLowerCase()}
+							title={subject.abbreviation}
+							description={subject.tagline}
+							image={subject.image}
+							color={subject.color}
+							bgColor={subject.bgColor}
+						/>
+					))}
+				</SimpleGrid>
+			</Stack>
 		</>
 	)
 }
