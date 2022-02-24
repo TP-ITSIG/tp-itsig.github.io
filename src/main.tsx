@@ -6,6 +6,10 @@ import "./index.css"
 import App from "./App"
 
 const theme = extendTheme({
+	colors: {
+		iit_blue: "hsl(207, 100%, 54%)",
+		itsig_blue: "hsl(207, 87%, 30%)",
+	},
 	fonts: {
 		heading: '"Poppins", sans-serif',
 		body: '"Poppins", sans-serif',
