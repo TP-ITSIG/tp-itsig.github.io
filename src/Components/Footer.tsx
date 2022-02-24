@@ -17,7 +17,7 @@ const Footer = () => {
 		<Box
 			bg="rgba(0, 0, 0, 0.06)"
 			p={{base: 1.5, md: 2}}
-			sx={{ w: "100%", position: "absolute", bottom: 0 }}>
+			sx={{ w: "100%"}}>
 			<Center>
 				<VStack spacing={{base: 0.5 ,md: 1}}>
 					<HStack spacing={1}>
