@@ -7,24 +7,41 @@ import {
 	Image,
 	Text,
 	Link,
+	Stack,
+	Grid,
+	GridItem,
+	VStack,
 } from "@chakra-ui/react"
 import { Resource } from "../Models/Resource"
 import { ResourceType } from "../Models/ResourceType"
-const ResourceCard: React.FC<{ resource: Resource; reverse: boolean }> = ({
-	resource,
-	reverse,
-}) => {
-	var urls = resource.resourceLinks
+
+interface ResourceCardProps {
+	resource: Resource
+	reverse: boolean
+}
+
+const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
+	const urls = resource.resourceLinks
+
 	return (
-		<Flex
-			marginBottom={10}
-			direction={{ base: "column", md: reverse ? "row-reverse" : "row" }}>
-			<Box flex={3}>
+		<Grid
+			w="100%"
+			templateColumns={{ base: "1", md: "repeat(2, 1fr)" }}
+			templateRows="repeat(auto, 1fr)"
+			autoFlow="dense"
+			columnGap={10}>
+			<GridItem
+				rowSpan={5}
+				mb={{ base: 3, md: 0 }}
+				order={{ base: 2, md: 1, lg: reverse ? 2 : 1 }}>
 				{resource.type == ResourceType.VIDEO ? (
-					<AspectRatio>
+					<AspectRatio
+						ratio={16 / 9}
+						borderRadius="xl"
+						overflow="hidden">
 						<iframe
-							width={"100%"}
-							height={"100%"}
+							width="100%"
+							height="100%"
 							src={resource.thumbnail}
 							allowFullScreen></iframe>
 					</AspectRatio>
@@ -37,23 +54,23 @@ const ResourceCard: React.FC<{ resource: Resource; reverse: boolean }> = ({
 						/>
 					</a>
 				)}
-			</Box>
-			<Spacer />
-			<Box flex={5}>
-				<SimpleGrid columns={1}>
-					<Text
-						fontWeight={800}
-						fontSize={{ base: "24", md: "36", lg: "48" }}>
-						{resource.title}
-					</Text>
-					<Text fontSize={{ base: "14", md: "16", lg: "24" }}>
+			</GridItem>
+			<GridItem colSpan={1} order={1}>
+				<Text
+					fontWeight={800}
+					fontSize={{ base: "2xl", md: "3xl", lg: "4xl" }}
+					mb={3}>
+					{resource.title}
+				</Text>
+			</GridItem>
+			<GridItem order={2}>
+				<Stack>
+					<Text fontSize={{ base: "md", md: "lg", lg: "xl" }}>
 						{resource.content}
 					</Text>
-					{urls == null ? (
-						<></>
-					) : (
-						urls.map((url, index) => {
-							return (
+					<Stack spacing={1}>
+						{urls &&
+							urls.map((url, index) => (
 								<a
 									style={{ color: "blue" }}
 									target="_blank"
@@ -61,12 +78,11 @@ const ResourceCard: React.FC<{ resource: Resource; reverse: boolean }> = ({
 									key={index}>
 									{url}
 								</a>
-							)
-						})
-					)}
-				</SimpleGrid>
-			</Box>
-		</Flex>
+							))}
+					</Stack>
+				</Stack>
+			</GridItem>
+		</Grid>
 	)
 }
 export default ResourceCard
