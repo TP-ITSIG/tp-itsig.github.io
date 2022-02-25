@@ -25,7 +25,7 @@ const SubjectCard = (props: SubjectCardProps) => {
 			transition="box-shadow 0.3s ease-out"
 			overflow="hidden"
 			onClick={() => {
-				navigate(`resource/${props.title}`)
+				navigate(`/resource/${props.title}`)
 			}}>
 			<Center bg={props.bgColor} w="auto" minH="60%" maxH="60%">
 				<Image py={2} src={props.image} boxSize="125px" />
