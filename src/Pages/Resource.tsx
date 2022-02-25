@@ -1,8 +1,9 @@
-import React from "react"
+import React, { useLayoutEffect } from "react"
 import ResourceCard from "../Components/ResourceCard"
 import { subjects } from "../Models/Subjects"
 import { useLocation } from "react-router-dom"
-import { Box, Center, Flex, Text } from "@chakra-ui/react"
+import { Box, Center, Flex, Stack, Text } from "@chakra-ui/react"
+
 const Resource = () => {
 	const location = useLocation()
 	const pathNameArray = location.pathname.split("/")
@@ -11,61 +12,66 @@ const Resource = () => {
 		return sub.abbreviation.toUpperCase() == subjectAbbrev.toUpperCase()
 	})[0]
 
-	window.scrollTo(0, 0)
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
 
 	return (
-		<Flex direction={"column"} width={"100%"}>
-			<Box bgColor={subject.color} paddingTop={10} paddingBottom={10}>
+		<Stack direction={"column"} width={"100%"}>
+			<Box
+				bgColor={subject.color}
+				py={8}
+				borderBottomRadius="20px"
+				mb={5}>
 				<Center
-					fontWeight={800}
+					fontWeight="bold"
 					fontSize={{ base: 24, md: 36, lg: 42 }}>
 					{subject.name}
 				</Center>
 			</Box>
-			<Center>
-				<Box
-					width={{ base: "100%", md: "75%" }}
-					alignSelf={"center"}
-					paddingBottom={5}>
-					<Text
-						paddingBlock={2}
-						align={{ base: "start", md: "center" }}
-						fontWeight={800}
-						fontSize={{ base: 20, md: 24, lg: 36 }}>
-						What is{" "}
-						<span style={{ color: subject.color }}>
-							{subject.name}{" "}
-						</span>
-						about?
-					</Text>
-					<Text
-						justifyContent={"center"}
-						paddingBlock={2}
-						align={{ base: "start", md: "center" }}
-						fontSize={{ base: 14, md: 20 }}>
-						{subject.description}
-					</Text>
-				</Box>
-			</Center>
+			<Box px={3}>
+				<Center>
+					<Stack
+						width={{ base: "100%", md: "75%" }}
+						textAlign="center"
+						maxW="75ch"
+						paddingBottom={5}
+						justify="center">
+						<Text
+							fontWeight="bold"
+							fontSize={{ base: "2xl", lg: "3xl" }}>
+							What is{" "}
+							<span style={{ color: subject.color }}>
+								{subject.name}{" "}
+							</span>
+							about?
+						</Text>
+						<Text fontSize={{ base: "sm", md: "md", lg: "lg" }}>
+							{subject.description}
+						</Text>
+					</Stack>
+				</Center>
 
-			<Text
-				paddingBottom={3}
-				fontWeight={800}
-				fontSize={{ base: 26, md: 32, lg: 36 }}>
-				Some resources before you start...
-			</Text>
-			<Box width={{ lg: "90%" }}>
-				{subject.resources.map((res, index) => {
-					return (
+				<Text
+					paddingBottom={3}
+					fontWeight="bold"
+					textAlign={{ base: "center", md: "left" }}
+					fontSize={{ base: "3xl", md: "3xl", lg: "4xl" }}
+					px={{ base: 2, lg: 3 }}
+					mb={5}>
+					Some resources before you start...
+				</Text>
+				<Stack direction="column" gap={{base: "1.5em" ,md:"3em"}} px={{ base: 2, lg: 3 }}>
+					{subject.resources.map((res, index) => (
 						<ResourceCard
 							resource={res}
-							reverse={!(index % 2 == 0)}
+							reverse={index % 2 !== 0}
 							key={index}
 						/>
-					)
-				})}
+					))}
+				</Stack>
 			</Box>
-		</Flex>
+		</Stack>
 	)
 }
 
