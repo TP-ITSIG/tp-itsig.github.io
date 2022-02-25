@@ -10,6 +10,7 @@ import {
 	Stack,
 	Grid,
 	GridItem,
+	VStack,
 } from "@chakra-ui/react"
 import { Resource } from "../Models/Resource"
 import { ResourceType } from "../Models/ResourceType"
@@ -67,20 +68,18 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 					<Text fontSize={{ base: "md", md: "lg", lg: "xl" }}>
 						{resource.content}
 					</Text>
-					<Box>
+					<Stack spacing={1}>
 						{urls &&
-							urls.map((url, index) => {
-								return (
-									<a
-										style={{ color: "blue" }}
-										target="_blank"
-										href={url}
-										key={index}>
-										{url}
-									</a>
-								)
-							})}
-					</Box>
+							urls.map((url, index) => (
+								<a
+									style={{ color: "blue" }}
+									target="_blank"
+									href={url}
+									key={index}>
+									{url}
+								</a>
+							))}
+					</Stack>
 				</Stack>
 			</GridItem>
 		</Grid>
