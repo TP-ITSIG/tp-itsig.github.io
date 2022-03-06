@@ -14,9 +14,10 @@ import {
 	position,
 	Spacer,
 } from "@chakra-ui/react"
-import { useState } from "react"
+import { useEffect, useLayoutEffect, useState } from "react"
 import { IoMenu, IoClose } from "react-icons/io5"
 import { useNavigate, useLocation } from "react-router-dom"
+import { subjects } from "../Models/Subjects"
 
 interface NavbarItems {
 	pageTitle: string
@@ -41,12 +42,30 @@ const pages: NavbarItems[] = [
 const Navbar = () => {
 	const navigate = useNavigate()
 	const location = useLocation()
+	const [currentPath, setCurrentPath] = useState(
+		location.pathname.split("/").at(-1),
+	)
 
-	let currentPath = location.pathname.split("/")[1]
+	const [bgColor, setBgColor] = useState<any>("hsl(0, 0%, 0%, 0.05)")
+
+	useEffect(() => {
+		setCurrentPath(location.pathname.split("/").at(-1))
+	}, [location])
+
+	useLayoutEffect(() => {
+		for (let i = 0; i < subjects.length; i++) {
+			if (currentPath === subjects[i].abbreviation) {
+				setBgColor(subjects[i].color)
+				break
+			} else {
+				setBgColor("hsl(0, 0%, 0%, 0.05)")
+			}
+		}
+	}, [currentPath])
 
 	return (
 		<Box
-			bg="transparent"
+			bg={bgColor}
 			w="100%"
 			py={{ base: 4, lg: 5 }}
 			px={{ base: 1, lg: 4 }}>

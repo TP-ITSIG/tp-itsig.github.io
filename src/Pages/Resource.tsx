@@ -26,7 +26,7 @@ const Resource = () => {
 				<Center
 					fontWeight="bold"
 					fontSize={{ base: 24, md: 36, lg: 42 }}>
-					{subject.name}
+					<Text pb={3.5}>{subject.name}</Text>
 				</Center>
 			</Box>
 			<Box px={3}>
@@ -61,7 +61,10 @@ const Resource = () => {
 					mb={5}>
 					Some resources before you start...
 				</Text>
-				<Stack direction="column" gap={{base: "1.5em" ,md:"3em"}} px={{ base: 2, lg: 3 }}>
+				<Stack
+					direction="column"
+					gap={{ base: "1.5em", md: "3em" }}
+					px={{ base: 2, lg: 3 }}>
 					{subject.resources.map((res, index) => (
 						<ResourceCard
 							resource={res}
