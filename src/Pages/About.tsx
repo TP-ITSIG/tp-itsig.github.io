@@ -30,6 +30,7 @@ const About = () => {
 				<Stack
 					direction={{ base: "column", lg: "row" }}
 					justify={{ lg: "space-around" }}
+					mb={3.5}
 					align="center"
 					spacing={-20}>
 					<Stack
