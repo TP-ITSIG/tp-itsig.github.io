@@ -1,4 +1,6 @@
 import { Resource } from './Resource'
+import { Software } from "./Software"
+
 
 export interface Subject {
     name: string,
@@ -10,5 +12,5 @@ export interface Subject {
     image: string,
     resources: Resource[],
     advanced: string[],
-    software: string[]
+    software: Software[],
 }
