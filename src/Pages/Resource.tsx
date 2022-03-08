@@ -2,7 +2,20 @@ import React, { useLayoutEffect } from "react"
 import ResourceCard from "../Components/ResourceCard"
 import { subjects } from "../Models/Subjects"
 import { useLocation } from "react-router-dom"
-import { Box, Center, Flex, Stack, Text } from "@chakra-ui/react"
+import {
+	Box,
+	Button,
+	Center,
+	Flex,
+	HStack,
+	Icon,
+	IconButton,
+	Image,
+	Stack,
+	Text,
+	VStack,
+} from "@chakra-ui/react"
+import SoftwareButton from "../Components/SoftwareButton"
 
 const Resource = () => {
 	const location = useLocation()
@@ -12,9 +25,10 @@ const Resource = () => {
 		return sub.abbreviation.toUpperCase() == subjectAbbrev.toUpperCase()
 	})[0]
 
-	useLayoutEffect(() => {
-		window.scrollTo(0, 0)
-	}, [])
+	// useLayoutEffect(() => {
+	// 	window.scrollTo(0, 0)
+	// }, [])
+
 
 	return (
 		<Stack direction={"column"} width={"100%"}>
@@ -74,6 +88,21 @@ const Resource = () => {
 					))}
 				</Stack>
 			</Box>
+
+			<VStack justifyContent="center" my={2}>
+				<Text fontSize={{base: "md" ,lg: "xl"}} fontWeight="medium" textDecoration="underline" >Software</Text>
+				<HStack spacing={5}>
+				{subject.software.length !== 0 ? subject.software.map((software, i) => (
+					<SoftwareButton
+						key={i}
+						name={software.name}
+						url={software.url}
+						iconPath={software.icon}
+					/>
+				)) : <Text>Nothing special needed for this :D</Text>}
+				</HStack>
+				
+			</VStack>
 		</Stack>
 	)
 }
