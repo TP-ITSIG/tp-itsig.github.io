@@ -78,7 +78,9 @@ const Navbar = () => {
 							isRound
 							icon={<IoMenu />}
 							aria-label="menu-icon"
-							variant="ghost"
+							variant="solid"
+							colorScheme="transparent"
+							color="black"
 							fontSize="2xl"
 						/>
 						<MenuList>

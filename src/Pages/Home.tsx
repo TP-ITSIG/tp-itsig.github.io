@@ -1,15 +1,9 @@
 import {
 	Box,
-	Grid,
-	GridItem,
 	SimpleGrid,
-	VStack,
-	HStack,
 	Text,
 	Image,
 	Stack,
-	Center,
-	Spacer,
 } from "@chakra-ui/react"
 import { repeat } from "lodash"
 import React from "react"
