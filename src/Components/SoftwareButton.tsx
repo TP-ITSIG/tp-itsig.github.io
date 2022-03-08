@@ -24,7 +24,7 @@ const SoftwareButton = (props: SoftwareButtonProps) => {
 					window.open(props.url)
 				}}>
 				
-				<Image p={3} src={props.iconPath} boxSize={20} />
+				<Image p={3} src={props.iconPath} boxSize={{base: 16 ,lg:20}} />
 			</IconButton>
 		</Tooltip>
 	)

@@ -6,6 +6,7 @@ import {
 	Box,
 	Button,
 	Center,
+	Divider,
 	Flex,
 	HStack,
 	Icon,
@@ -29,7 +30,6 @@ const Resource = () => {
 	// 	window.scrollTo(0, 0)
 	// }, [])
 
-
 	return (
 		<Stack direction={"column"} width={"100%"}>
 			<Box
@@ -40,7 +40,9 @@ const Resource = () => {
 				<Center
 					fontWeight="bold"
 					fontSize={{ base: 24, md: 36, lg: 42 }}>
-					<Text pb={3.5}>{subject.name}</Text>
+					<Text align="center" pb={3.5}>
+						{subject.name}
+					</Text>
 				</Center>
 			</Box>
 			<Box px={3}>
@@ -89,19 +91,32 @@ const Resource = () => {
 				</Stack>
 			</Box>
 
-			<VStack justifyContent="center" my={2}>
-				<Text fontSize={{base: "md" ,lg: "xl"}} fontWeight="medium" textDecoration="underline" >Software</Text>
+			<VStack justifyContent="center" mt={{ base: 20 }}>
+				<Text
+					fontSize={{ base: "md", lg: "xl" }}
+					borderBottom={{
+						base: "1.25px solid black",
+						md: "2.25px solid black",
+					}}
+					px={"3.5%"}
+					fontWeight="medium"
+					mb={1.5}>
+					Software
+				</Text>
 				<HStack spacing={5}>
-				{subject.software.length !== 0 ? subject.software.map((software, i) => (
-					<SoftwareButton
-						key={i}
-						name={software.name}
-						url={software.url}
-						iconPath={software.icon}
-					/>
-				)) : <Text>Nothing special needed for this :D</Text>}
+					{subject.software.length !== 0 ? (
+						subject.software.map((software, i) => (
+							<SoftwareButton
+								key={i}
+								name={software.name}
+								url={software.url}
+								iconPath={software.icon}
+							/>
+						))
+					) : (
+						<Text>Nothing special needed for this :D</Text>
+					)}
 				</HStack>
-				
 			</VStack>
 		</Stack>
 	)
