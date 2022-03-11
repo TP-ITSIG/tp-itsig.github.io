@@ -13,9 +13,10 @@ import {
 	MenuList,
 	position,
 	Spacer,
+	useColorMode,
 } from "@chakra-ui/react"
 import { useEffect, useLayoutEffect, useState } from "react"
-import { IoMenu, IoClose } from "react-icons/io5"
+import { IoMenu, IoSunny, IoMoon } from "react-icons/io5"
 import { useNavigate, useLocation } from "react-router-dom"
 import { subjects } from "../Models/Subjects"
 
@@ -42,6 +43,7 @@ const pages: NavbarItems[] = [
 const Navbar = () => {
 	const navigate = useNavigate()
 	const location = useLocation()
+	const { colorMode, toggleColorMode } = useColorMode()
 	const [currentPath, setCurrentPath] = useState(
 		location.pathname.split("/").at(-1),
 	)
@@ -68,22 +70,26 @@ const Navbar = () => {
 			bg={bgColor}
 			w="100%"
 			py={{ base: 4, lg: 5 }}
-			px={{ base: 1, lg: 4 }}>
+			px={{ base: 2, lg: 4 }}>
 			<HStack
-				justifyContent={{ base: "space-between", lg: "flex-start" }}>
+				justifyContent={{ base: "space-between", lg: "flex-start" }}
+				alignContent="center">
 				<Box display={{ base: "block", lg: "none" }}>
-					<Menu preventOverflow matchWidth flip autoSelect={false}>
+					<Menu
+						preventOverflow
+						matchWidth
+						flip
+						gutter={2}
+						autoSelect={false}>
 						<MenuButton
 							as={IconButton}
-							isRound
 							icon={<IoMenu />}
 							aria-label="menu-icon"
-							variant="solid"
-							colorScheme="transparent"
-							color="black"
+							colorScheme="undefined"
+							color="hsla(0, 0%, 0%, 0.9)"
 							fontSize="2xl"
 						/>
-						<MenuList>
+						<MenuList bgColor="hsla(0, 0%, 100%, 0.95)">
 							{pages.map(page => (
 								<MenuItem
 									key={page.pageUrl}
@@ -124,10 +130,14 @@ const Navbar = () => {
 						</Button>
 					))}
 				</HStack>
-				<Box
-					display={{ base: "block", lg: "none" }}
-					w="40px"
-					h="40px"
+				<Spacer display={{ base: "none", lg: "block" }} />
+				<IconButton
+					aria-label="color-mode-toggle"
+					icon={colorMode === "light" ? <IoMoon /> : <IoSunny />}
+					colorScheme="whiteAlpha"
+					color="hsla(0, 0%, 0%, 0.75)"
+					fontSize="xl"
+					onClick={toggleColorMode}
 				/>
 			</HStack>
 		</Box>
