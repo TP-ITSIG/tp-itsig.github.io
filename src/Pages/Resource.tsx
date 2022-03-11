@@ -17,6 +17,7 @@ import {
 	VStack,
 } from "@chakra-ui/react"
 import SoftwareButton from "../Components/SoftwareButton"
+import CarouselCard from "../Components/CarouselCard"
 
 const Resource = () => {
 	const location = useLocation()
@@ -89,6 +90,10 @@ const Resource = () => {
 						/>
 					))}
 				</Stack>
+			</Box>
+
+			<Box>
+				<CarouselCard />
 			</Box>
 
 			<VStack justifyContent="center" mt={{ base: 20 }}>
