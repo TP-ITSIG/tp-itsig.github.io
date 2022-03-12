@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="256" height="256" viewBox="0 0 256 256">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_513" data-name="Rectangle 513" width="256" height="256" transform="translate(808 638)" fill="#fff"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ebbb14"/>
+      <stop offset="1" stop-color="#b25400"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f9e583"/>
+      <stop offset="1" stop-color="#de9800"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f9e68b"/>
+      <stop offset="1" stop-color="#f3cd32"/>
+    </linearGradient>
+  </defs>
+  <g id="PowerBi" transform="translate(-808 -638)" clip-path="url(#clip-path)">
+    <g id="PBI-Logo" transform="translate(808 638)">
+      <g id="Group" transform="translate(31.492)">
+        <rect id="Rectangle" width="88.99" height="256" rx="10.565" transform="translate(104.025)" fill="url(#linear-gradient)"/>
+        <g id="Combined-Shape">
+          <path id="Path_1059" data-name="Path 1059" d="M140.6,245.435V256H62.171a10.565,10.565,0,0,1-10.565-10.565V74.362A10.565,10.565,0,0,1,62.171,63.8h67.86A10.565,10.565,0,0,1,140.6,74.362Z"/>
+          <path id="Path_1060" data-name="Path 1060" d="M140.6,245.435V256H62.171a10.565,10.565,0,0,1-10.565-10.565V74.362A10.565,10.565,0,0,1,62.171,63.8h67.86A10.565,10.565,0,0,1,140.6,74.362Z" fill="url(#linear-gradient-2)"/>
+        </g>
+        <path id="Combined-Shape-2" data-name="Combined-Shape" d="M88.99,245.435V256H10.565A10.565,10.565,0,0,1,0,245.435V138.565A10.565,10.565,0,0,1,10.565,128h67.86A10.565,10.565,0,0,1,88.99,138.565Z" fill-rule="evenodd" fill="url(#linear-gradient-3)"/>
+      </g>
+    </g>
+  </g>
+</svg>
