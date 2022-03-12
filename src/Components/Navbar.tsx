@@ -97,7 +97,7 @@ const Navbar = () => {
 					</Menu>
 				</Box>
 				<Image
-					src="../assets/itsig.svg"
+					src="/itsig.svg"
 					w={{ base: "4.5em", md: "5.5em" }}
 					h="auto"
 				/>

@@ -8,4 +8,9 @@ export default defineConfig({
 		open: "/",
 		//host: true
 	},
+	root: "./",
+	build: {
+		outDir: "dist",
+	},
+	publicDir: "assets",
 })
