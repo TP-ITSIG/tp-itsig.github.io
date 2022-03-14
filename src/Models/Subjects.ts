@@ -173,11 +173,13 @@ export const subjects: Subject[] = [
 			},
 		],
 		advanced: [""],
-		software: [{
-			name: "Adobe XD",
-			icon: "/SoftwareIcons/AdobeXD.svg",
-			url: "https://www.adobe.com/products/xd.html",
-		}],
+		software: [
+			{
+				name: "Adobe XD",
+				icon: "/SoftwareIcons/AdobeXD.svg",
+				url: "https://www.adobe.com/products/xd.html",
+			},
+		],
 	},
 	{
 		name: "Logic and Mathematics",
@@ -229,7 +231,8 @@ export const subjects: Subject[] = [
 				title: "GitHub Student Developer Pack",
 				content:
 					"As a student, you are eligible to register for this programme. Enjoy many deals such as free domain names, free web hosting, free Microsoft Azure credits, free IntelliJ subscription and many more! What are you waiting for? Sign up for a GitHub account and apply for the student developer pack.",
-				thumbnail: "",
+				thumbnail:
+					"https://cdn.discordapp.com/attachments/952818890906419230/952825328462610432/main-background_1.png",
 				resourceLinks: [
 					"https://education.github.com/pack",
 					"https://education.github.com/discount_requests/student_application",
@@ -241,7 +244,8 @@ export const subjects: Subject[] = [
 				title: "OneDrive",
 				content:
 					"As a student, you are entitled to 5 TB of cloud storage in OneDrive. You’ll never know when your laptop or PC might crash so always put your assignments in the cloud! Just login with your student email and install the OneDrive app.",
-				thumbnail: "",
+				thumbnail:
+					"https://cdn.discordapp.com/attachments/952818890906419230/952819838831722527/034863f0-3f42-11ec-ae75-30d439f4a7f4.png",
 				resourceLinks: [
 					"https://www.microsoft.com/en-sg/microsoft-365/onedrive/online-cloud-storage",
 				],

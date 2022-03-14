@@ -46,13 +46,17 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 							allowFullScreen></iframe>
 					</AspectRatio>
 				) : (
-					<a target="_blank" href={resource.imageUrl}>
+					<AspectRatio
+						ratio={16 / 9}
+						borderRadius="xl"
+						overflow="hidden">
 						<Image
-							width={"100%"}
-							height={"100%"}
+							width="100%"
+							height="100%"
 							src={resource.thumbnail}
+							objectFit="cover"
 						/>
-					</a>
+					</AspectRatio>
 				)}
 			</GridItem>
 			<GridItem colSpan={1} order={1}>
@@ -69,6 +73,11 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 						{resource.content}
 					</Text>
 					<Stack spacing={1}>
+						<Text
+							fontWeight={"medium"}
+							fontSize={{ base: "sm", md: "md", lg: "lg" }}>
+							Relevant Links
+						</Text>
 						{urls &&
 							urls.map((url, index) => (
 								<a
