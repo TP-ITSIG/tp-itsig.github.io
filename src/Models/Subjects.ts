@@ -9,7 +9,7 @@ export const subjects: Subject[] = [
 			"This module teaches the fundamentals of programming using the Java programming language. Using your new skills, you will transform your UXID prototype into a real Android app with Android Studio.",
 		color: "hsl(154, 74%, 69%)",
 		bgColor: "hsla(154, 74%, 69%, 0.3)",
-		image: "./assets/COMT.svg",
+		image: "/COMT.svg",
 		resources: [
 			{
 				title: "Learning How to Code",
@@ -44,12 +44,12 @@ export const subjects: Subject[] = [
 		software: [
 			{
 				name: "Android Studio",
-				icon: "../assets/SoftwareIcons/AndroidStudio.svg",
+				icon: "/SoftwareIcons/AndroidStudio.svg",
 				url: "https://developer.android.com/studio/index.html",
 			},
 			{
 				name: "Github",
-				icon: "../assets/SoftwareIcons/Github.svg",
+				icon: "/SoftwareIcons/Github.svg",
 				url: "https://github.com/",
 			},
 		],
@@ -62,7 +62,7 @@ export const subjects: Subject[] = [
 			"This module teaches you the basics of data analytics following the CRISP-DM Methodology. You will learn to understand, prepare and evaluate your data using tools like KNIME and Power BI.",
 		color: "hsl(43, 100%, 65%)",
 		bgColor: "hsla(43, 100%, 65%, 0.3)",
-		image: "./assets/DAVA.svg",
+		image: "/DAVA.svg",
 		resources: [
 			{
 				title: "Introduction to CRISP-DM Methodology",
@@ -89,12 +89,12 @@ export const subjects: Subject[] = [
 		software: [
 			{
 				name: "KNIME",
-				icon: "../assets/SoftwareIcons/KNIME.svg",
+				icon: "/SoftwareIcons/KNIME.svg",
 				url: "https://www.knime.com/",
 			},
 			{
 				name: "Power BI",
-				icon: "../assets/SoftwareIcons/PowerBI.svg",
+				icon: "/SoftwareIcons/PowerBI.svg",
 				url: "https://powerbi.microsoft.com/en-us/",
 			},
 		],
@@ -107,7 +107,7 @@ export const subjects: Subject[] = [
 			"This module teaches you the basics of computer networking which will help you throughout your time in IIT. You will learn to describe networking systems with the OSI Model and understand how the internet works. You will also simulate networks with Packet Tracer.",
 		color: "hsl(189, 100%, 40%)",
 		bgColor: "hsla(189, 100%, 40%, 0.3)",
-		image: "./assets/NETY.svg",
+		image: "/NETY.svg",
 		resources: [
 			{
 				title: "Evolution of the Internet",
@@ -135,7 +135,7 @@ export const subjects: Subject[] = [
 		software: [
 			{
 				name: "Packet Tracer",
-				icon: "../assets/SoftwareIcons/PacketTracer.svg",
+				icon: "/SoftwareIcons/PacketTracer.svg",
 				url: "https://www.netacad.com/courses/packet-tracer",
 			},
 		],
@@ -148,7 +148,7 @@ export const subjects: Subject[] = [
 			"This module teaches you about the UX design process. You will then carry out a design project to come up with wireframes that will be later translated to a fully functional app in COMT.",
 		color: "hsl(289, 100%, 82%)",
 		bgColor: "hsl(289, 100%, 82%, 0.3)",
-		image: "./assets/UXID.svg",
+		image: "/UXID.svg",
 		resources: [
 			{
 				title: "UX Crash Course",
@@ -175,7 +175,7 @@ export const subjects: Subject[] = [
 		advanced: [""],
 		software: [{
 			name: "Adobe XD",
-			icon: "../assets/SoftwareIcons/AdobeXD.svg",
+			icon: "/SoftwareIcons/AdobeXD.svg",
 			url: "https://www.adobe.com/products/xd.html",
 		}],
 	},
@@ -187,7 +187,7 @@ export const subjects: Subject[] = [
 			"This module covers fundamental Mathematical concepts needed for computing. In particular, Discrete Mathematics concepts such as graphs, logic and functions are taught.",
 		color: "hsl(24, 100%, 64%)",
 		bgColor: "hsl(24, 100%, 64%, 0.3)",
-		image: "./assets/LOMA.svg",
+		image: "/LOMA.svg",
 		resources: [
 			{
 				title: "Discrete Mathematics for Computer Science",
@@ -217,13 +217,13 @@ export const subjects: Subject[] = [
 	},
 	{
 		name: "Others",
-		tagline: "Usefil miscellaneous resources",
+		tagline: "Useful miscellaneous resources",
 		abbreviation: "Others",
 		description:
 			"This section contains a list of nice-to-haves for your journey with us!",
 		color: "hsl(0, 100%, 77%)",
 		bgColor: "hsl(0, 100%, 77%, 0.3)",
-		image: "./assets/Others.svg",
+		image: "/Others.svg",
 		resources: [
 			{
 				title: "GitHub Student Developer Pack",

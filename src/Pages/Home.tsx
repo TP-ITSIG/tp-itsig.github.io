@@ -23,7 +23,7 @@ const Home = () => {
 				p={5}
 				_before={{
 					content: `''`,
-					bgImage: { base: "assets/home-icon.svg", lg: "none" },
+					bgImage: { base: "/home-icon.svg", lg: "none" },
 					opacity: "0.2",
 					bgSize: "contain",
 					bgRepeat: "no-repeat",
@@ -86,7 +86,7 @@ const Home = () => {
 					</Stack>
 					<Image
 						display={{ base: "none", lg: "block" }}
-						src="assets/home-icon.svg"
+						src="/home-icon.svg"
 						w="35%"
 					/>
 				</Stack>

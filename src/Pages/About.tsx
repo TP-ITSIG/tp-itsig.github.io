@@ -13,7 +13,7 @@ const About = () => {
 				p={5}
 				_before={{
 					content: `''`,
-					bgImage: { base: "assets/itsig-icon.svg", lg: "none" },
+					bgImage: { base: "/itsig-icon.svg", lg: "none" },
 					opacity: "0.2",
 					bgSize: "contain",
 					bgRepeat: "no-repeat",
@@ -66,7 +66,7 @@ const About = () => {
 					</Stack>
 					<Image
 						display={{ base: "none", lg: "block" }}
-						src="assets/itsig-icon.svg"
+						src="/itsig-icon.svg"
 						w="25%"
 					/>
 				</Stack>
