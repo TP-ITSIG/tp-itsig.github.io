@@ -26,9 +26,9 @@ const Resource = () => {
 		return sub.abbreviation.toUpperCase() == subjectAbbrev.toUpperCase()
 	})[0]
 
-	// useLayoutEffect(() => {
-	// 	window.scrollTo(0, 0)
-	// }, [])
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
 
 	return (
 		<Stack direction={"column"} width={"100%"}>
