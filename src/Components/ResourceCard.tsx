@@ -12,10 +12,13 @@ import {
 	GridItem,
 	VStack,
 	Skeleton,
+	Icon,
+	IconButton,
 } from "@chakra-ui/react"
 import { useState } from "react"
 import { Resource } from "../Models/Resource"
 import { ResourceType } from "../Models/ResourceType"
+import { FiExternalLink } from "react-icons/fi"
 
 interface ResourceCardProps {
 	resource: Resource
@@ -36,11 +39,12 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 				rowSpan={5}
 				mb={{ base: 3, md: 0 }}
 				order={{ base: 2, md: 1, lg: reverse ? 2 : 1 }}>
-				{resource.type == ResourceType.VIDEO ? (
+				{resource.type === ResourceType.VIDEO ? (
 					<AspectRatio
 						ratio={16 / 9}
 						borderRadius="xl"
-						overflow="hidden">
+						overflow="hidden"
+						boxShadow={"0px 2px 12px hsl(0, 0%, 0%, 25%)"}>
 						<Skeleton isLoaded={!isIframeLoading}>
 							<iframe
 								width="100%"
@@ -52,13 +56,31 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 						</Skeleton>
 					</AspectRatio>
 				) : (
-					<Image
-						width="100%"
-						height="100%"
-						borderRadius="xl"
-						src={resource.thumbnail}
-						objectFit="cover"
-					/>
+					<Box position="relative">
+						<Image
+							width="100%"
+							height="100%"
+							borderRadius="xl"
+							objectFit="cover"
+							boxShadow={"0px 2px 12px hsl(0, 0%, 0%, 25%)"}
+							src={resource.thumbnail}
+						/>
+						<IconButton
+							aria-label="image-url-btn"
+							icon={<FiExternalLink />}
+							position="absolute"
+							bottom={2.5}
+							left={2.5}
+							size="md"
+							colorScheme="black"
+							color="white"
+							bgColor="hsla(0, 0%, 0%, 0.65)"
+							_hover={{ bgColor: "hsla(0, 0%, 0%, 0.75)" }}
+							_active={{ filter: "brightness(0.65)" }}
+							transition="all 0.35s ease"
+							onClick={() => window.open(resource.imageUrl)}
+						/>
+					</Box>
 				)}
 			</GridItem>
 			<GridItem colSpan={1} order={1}>
@@ -71,10 +93,10 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 			</GridItem>
 			<GridItem order={2}>
 				<Stack>
-					<Text fontSize={{ base: "md", md: "lg", lg: "xl" }}>
+					<Text fontSize={{ base: "md", md: "lg", lg: "xl" }} mb={2.5} >
 						{resource.content}
 					</Text>
-					<br />
+					
 					{resource.resourceLinks && (
 						<Text
 							fontWeight="medium"
