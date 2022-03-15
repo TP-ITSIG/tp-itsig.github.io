@@ -106,12 +106,12 @@ export const subjects: Subject[] = [
 		software: [
 			{
 				name: "KNIME",
-				icon: "/SoftwareIcons/KNIME.svg",
+				icon: "/SoftwareIcons/Knime.svg",
 				url: "https://www.knime.com/",
 			},
 			{
 				name: "Power BI",
-				icon: "/SoftwareIcons/PowerBI.svg",
+				icon: "/SoftwareIcons/PowerBi.svg",
 				url: "https://powerbi.microsoft.com/en-us/",
 			},
 		],
