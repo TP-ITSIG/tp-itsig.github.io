@@ -1,5 +1,14 @@
-import React from "react"
-import { Box, VStack, Stack, Text, Image, Link, Center } from "@chakra-ui/react"
+import React, { useState } from "react"
+import {
+	Box,
+	VStack,
+	Stack,
+	Text,
+	Image,
+	Link,
+	Center,
+	Skeleton,
+} from "@chakra-ui/react"
 
 const About = () => {
 	return (
@@ -64,6 +73,7 @@ const About = () => {
 							</Text>
 						</Box>
 					</Stack>
+
 					<Image
 						display={{ base: "none", lg: "block" }}
 						src="/itsig-icon.svg"
@@ -77,7 +87,7 @@ const About = () => {
 					justify={["center", "center"]}
 					mt={{ base: "5", lg: "10" }}
 					px={10}
-					maxW={{base: "75ch" ,lg: "90ch"}}>
+					maxW={{ base: "75ch", lg: "90ch" }}>
 					<Box>
 						<Text
 							fontSize={{ base: "2xl", lg: "4xl" }}

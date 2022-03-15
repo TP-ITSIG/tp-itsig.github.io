@@ -11,7 +11,9 @@ import {
 	Grid,
 	GridItem,
 	VStack,
+	Skeleton,
 } from "@chakra-ui/react"
+import { useState } from "react"
 import { Resource } from "../Models/Resource"
 import { ResourceType } from "../Models/ResourceType"
 
@@ -21,6 +23,8 @@ interface ResourceCardProps {
 }
 
 const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
+	const [isIframeLoading, setIsIframeLoading] = useState(true)
+
 	return (
 		<Grid
 			w="100%"
@@ -37,14 +41,17 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 						ratio={16 / 9}
 						borderRadius="xl"
 						overflow="hidden">
-						<iframe
-							width="100%"
-							height="100%"
-							src={resource.thumbnail}
-							allowFullScreen></iframe>
+						<Skeleton isLoaded={!isIframeLoading}>
+							<iframe
+								width="100%"
+								height="100%"
+								src={resource.thumbnail}
+								allowFullScreen
+								onLoad={() => setIsIframeLoading(false)}
+							/>
+						</Skeleton>
 					</AspectRatio>
 				) : (
-					
 					<Image
 						width="100%"
 						height="100%"
