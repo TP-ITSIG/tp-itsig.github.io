@@ -21,8 +21,6 @@ interface ResourceCardProps {
 }
 
 const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
-	const urls = resource.resourceLinks
-
 	return (
 		<Grid
 			w="100%"
@@ -46,17 +44,14 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 							allowFullScreen></iframe>
 					</AspectRatio>
 				) : (
-					<AspectRatio
-						ratio={16 / 9}
+					
+					<Image
+						width="100%"
+						height="100%"
 						borderRadius="xl"
-						overflow="hidden">
-						<Image
-							width="100%"
-							height="100%"
-							src={resource.thumbnail}
-							objectFit="cover"
-						/>
-					</AspectRatio>
+						src={resource.thumbnail}
+						objectFit="cover"
+					/>
 				)}
 			</GridItem>
 			<GridItem colSpan={1} order={1}>
@@ -72,23 +67,25 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 					<Text fontSize={{ base: "md", md: "lg", lg: "xl" }}>
 						{resource.content}
 					</Text>
-					<Stack spacing={1}>
+					<br />
+					{resource.resourceLinks && (
 						<Text
-							fontWeight={"medium"}
+							fontWeight="medium"
 							fontSize={{ base: "sm", md: "md", lg: "lg" }}>
-							Relevant Links
+							Relevant Links:
 						</Text>
-						{urls &&
-							urls.map((url, index) => (
-								<a
-									style={{ color: "blue" }}
-									target="_blank"
-									href={url}
-									key={index}>
-									{url}
-								</a>
-							))}
-					</Stack>
+					)}
+					{resource.resourceLinks &&
+						resource.resourceLinks.map((link, index) => (
+							<Link
+								fontSize={{ base: "sm", md: "md", lg: "lg" }}
+								key={index}
+								href={link.url}
+								color="blue"
+								isExternal>
+								{link.title}
+							</Link>
+						))}
 				</Stack>
 			</GridItem>
 		</Grid>

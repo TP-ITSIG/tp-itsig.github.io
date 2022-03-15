@@ -36,7 +36,10 @@ export const subjects: Subject[] = [
 					"https://www.youtube.com/embed?v=RRubcjpTkks&list=PLkdNeERjj7-6n0ItDJZQMD6561UzxDQ_B&index=3",
 				type: ResourceType.VIDEO,
 				resourceLinks: [
-					"https://www.jdoodle.com/online-java-compiler/",
+					{
+						title: "Online Java Compiler",
+						url: "https://www.jdoodle.com/online-java-compiler/",
+					},
 				],
 			},
 		],
@@ -166,8 +169,9 @@ export const subjects: Subject[] = [
 			},
 			{
 				title: "material.io",
-				content: "A resource website about material design principles.",
-				thumbnail: "",
+				content: "A resource website containing guidelines for Google's material design principles. Following these guidelines will enable you to make a more professional looking UI and provide a better UX for you application.",
+				thumbnail:
+					"https://cdn.discordapp.com/attachments/952818890906419230/953179627784917022/eec66db1fc167b50a8e21692fcd38286.png",
 				imageUrl: "https://material.io/design",
 				type: ResourceType.IMAGE,
 			},
@@ -234,8 +238,14 @@ export const subjects: Subject[] = [
 				thumbnail:
 					"https://cdn.discordapp.com/attachments/952818890906419230/952825328462610432/main-background_1.png",
 				resourceLinks: [
-					"https://education.github.com/pack",
-					"https://education.github.com/discount_requests/student_application",
+					{
+						title: "Benefits of the GitHub Student Developer Pack",
+						url: "https://education.github.com/pack",
+					},
+					{
+						title: "Sign up here!",
+						url: "https://education.github.com/discount_requests/student_application",
+					},
 				],
 				imageUrl: "https://education.github.com/pack",
 				type: ResourceType.IMAGE,
@@ -247,7 +257,10 @@ export const subjects: Subject[] = [
 				thumbnail:
 					"https://cdn.discordapp.com/attachments/952818890906419230/952819838831722527/034863f0-3f42-11ec-ae75-30d439f4a7f4.png",
 				resourceLinks: [
-					"https://www.microsoft.com/en-sg/microsoft-365/onedrive/online-cloud-storage",
+					{
+						title: "Sign into OneDrive here!",
+						url: "https://www.microsoft.com/en-sg/microsoft-365/onedrive/online-cloud-storage",
+					},
 				],
 				imageUrl:
 					"https://www.microsoft.com/en-sg/microsoft-365/onedrive/online-cloud-storage",
