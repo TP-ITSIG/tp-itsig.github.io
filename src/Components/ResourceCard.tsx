@@ -64,6 +64,7 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 							objectFit="cover"
 							boxShadow={"0px 2px 12px hsl(0, 0%, 0%, 25%)"}
 							src={resource.thumbnail}
+							onClick={() => window.open(resource.imageUrl)}
 						/>
 						<IconButton
 							aria-label="image-url-btn"
@@ -93,10 +94,12 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 			</GridItem>
 			<GridItem order={2}>
 				<Stack>
-					<Text fontSize={{ base: "md", md: "lg", lg: "xl" }} mb={2.5} >
+					<Text
+						fontSize={{ base: "md", md: "lg", lg: "xl" }}
+						mb={2.5}>
 						{resource.content}
 					</Text>
-					
+
 					{resource.resourceLinks && (
 						<Text
 							fontWeight="medium"
