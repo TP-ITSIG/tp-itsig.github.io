@@ -29,10 +29,10 @@ const pages: NavbarItems[] = [
 		pageTitle: "Home",
 		pageUrl: "",
 	},
-	{
-		pageTitle: "Resources",
-		pageUrl: "resource",
-	},
+	// {
+	// 	pageTitle: "Resources",
+	// 	pageUrl: "resource",
+	// },
 	{
 		pageTitle: "About",
 		pageUrl: "about",
