@@ -310,6 +310,15 @@ export const subjects: Subject[] = [
 					"https://www.microsoft.com/en-sg/microsoft-365/onedrive/online-cloud-storage",
 				type: ResourceType.IMAGE,
 			},
+			{
+				title: "Word Counter",
+				content:
+					'A simple word counter that counts the number of words in a text. However, unlike other word counters, it includes a "ignore in-text citation" checkbox which filters out words in brackets (like these) from the word count. Might come in handy when you are writing essays for TPFun subjects ;D',
+				thumbnail:
+					"https://cdn.discordapp.com/attachments/952818890906419230/953289905486852136/unknown.png",
+				imageUrl: "https://wordcounter.tnitish.com/",
+				type: ResourceType.IMAGE,
+			},
 		],
 		advanced: [""],
 		software: [],

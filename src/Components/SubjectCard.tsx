@@ -12,6 +12,7 @@ interface SubjectCardProps {
 
 const SubjectCard = (props: SubjectCardProps) => {
 	const navigate = useNavigate()
+
 	return (
 		<Box
 			borderColor={props.color}
