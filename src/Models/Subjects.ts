@@ -42,6 +42,20 @@ export const subjects: Subject[] = [
 					},
 				],
 			},
+			{
+				title: "Codecademy",
+				content:
+					"An interactive online course with exercises to help you learn Java. Attempting the free topics within each module will do",
+				thumbnail:
+					"https://cdn.discordapp.com/attachments/952818890906419230/953200075088228362/codecademy.png",
+				type: ResourceType.IMAGE,
+				imageUrl: "https://www.codecademy.com/learn/learn-java",
+			},
+			// {
+			// 	title: "Udemy",
+			// 	content:
+			// 	""
+			// }
 		],
 		advanced: [""],
 		software: [
@@ -133,6 +147,35 @@ export const subjects: Subject[] = [
 					"https://www.youtube.com/embed?v=3QhU9jd03a0&list=PLkdNeERjj7-4jU7H0sGN02q9uyZO_JoDb&index=1",
 				type: ResourceType.VIDEO,
 			},
+			{
+				title: "Cisco NetAcad: Introduction to Cybersecurity",
+				content:
+					"A intro to cybersecurity course by Cisco which will enable you to discover the world of cybersecurity and its impact as you learn about the most common threats, attacks and vulnerabilities.",
+				thumbnail:
+					"https://cdn.discordapp.com/attachments/952818890906419230/953207201080692736/file.jpg",
+				type: ResourceType.IMAGE,
+				imageUrl:
+					"https://www.netacad.com/courses/cybersecurity/introduction-cybersecurity",
+			},
+			{
+				title: "Cisco NetAcad: Networking Essentials",
+				content:
+					"A networking course by Cisco which will enable you to learn the basic networking concepts and skills.",
+				thumbnail:
+					"https://cdn.discordapp.com/attachments/952818890906419230/953209971963723787/Cisco.png",
+				type: ResourceType.IMAGE,
+				imageUrl:
+					"https://www.netacad.com/courses/networking/networking-essentials",
+			},
+			{
+				title: "Singtel Cyber Security Experience",
+				content:
+					"A nationwide initiative sponsored by Singtel designed to raise Cyber literacy among students and teachers. It introduces and inspires students to explore Cyber careers and build the skills needed.",
+				thumbnail:
+					"https://cdn.discordapp.com/attachments/952818890906419230/953213617677926400/singtel-experience-logo_1.png",
+				type: ResourceType.IMAGE,
+				imageUrl: "https://singtelcyberexperience.com/",
+			},
 		],
 		advanced: [""],
 		software: [
@@ -169,7 +212,8 @@ export const subjects: Subject[] = [
 			},
 			{
 				title: "material.io",
-				content: "A resource website containing guidelines for Google's material design principles. Following these guidelines will enable you to make a more professional looking UI and provide a better UX for you application.",
+				content:
+					"A resource website containing guidelines for Google's material design principles. Following these guidelines will enable you to make a more professional looking UI and provide a better UX for you application.",
 				thumbnail:
 					"https://cdn.discordapp.com/attachments/952818890906419230/953179627784917022/eec66db1fc167b50a8e21692fcd38286.png",
 				imageUrl: "https://material.io/design",
