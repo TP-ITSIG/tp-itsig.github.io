@@ -1,6 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import { BrowserRouter } from "react-router-dom"
+import { HashRouter } from "react-router-dom"
 import { ChakraProvider, extendTheme } from "@chakra-ui/react"
 import "./index.css"
 import App from "./App"
@@ -27,11 +27,11 @@ const theme = extendTheme({
 
 ReactDOM.render(
 	<React.StrictMode>
-		<BrowserRouter>
+		<HashRouter basename="/">
 			<ChakraProvider theme={theme}>
 				<App />
 			</ChakraProvider>
-		</BrowserRouter>
+		</HashRouter>
 	</React.StrictMode>,
 	document.getElementById("root"),
 )
