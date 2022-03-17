@@ -1,6 +1,5 @@
 import { Box, Center, Image, Text } from "@chakra-ui/react"
 import { useNavigate } from "react-router-dom"
-import React from "react"
 
 interface SubjectCardProps {
 	title: string
@@ -37,7 +36,7 @@ const SubjectCard = (props: SubjectCardProps) => {
 					fontWeight="bold">
 					{props.title}
 				</Text>
-				<Text fontSize={{ base: "xs", md: "sm" }} mb={1}>
+				<Text fontSize={{ base: "xs", md: "sm" }} mb={4}>
 					{props.description}
 				</Text>
 			</Box>

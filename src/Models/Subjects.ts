@@ -51,11 +51,15 @@ export const subjects: Subject[] = [
 				type: ResourceType.IMAGE,
 				imageUrl: "https://www.codecademy.com/learn/learn-java",
 			},
-			// {
-			// 	title: "Udemy",
-			// 	content:
-			// 	""
-			// }
+			{
+				title: "Udemy: Java Tutorial for Complete Beginners",
+				content:
+					"A more in-depth course for you to learn how to code in Java. Don't worry if you have never done programming before as this course doesn't require any prior programming knowledge",
+				thumbnail:
+					"https://cdn.discordapp.com/attachments/952818890906419230/953850404544872468/image_5.png",
+				type: ResourceType.IMAGE,
+				imageUrl: "https://www.udemy.com/course/java-tutorial/",
+			},
 		],
 		advanced: [""],
 		software: [
