@@ -49,7 +49,11 @@ const Navbar = () => {
 	const [bgColor, setBgColor] = useState<any>("hsl(0, 0%, 0%, 0.05)")
 
 	useEffect(() => {
-		setCurrentPath(location.pathname.split("/")[location.pathname.split("/").length - 1])
+		setCurrentPath(
+			location.pathname.split("/")[
+				location.pathname.split("/").length - 1
+			],
+		)
 	}, [location])
 
 	useLayoutEffect(() => {

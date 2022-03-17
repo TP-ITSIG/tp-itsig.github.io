@@ -10,27 +10,29 @@ import {
 	HStack,
 	Text,
 	Icon,
+	Image,
+	Stack,
 } from "@chakra-ui/react"
 
 const Footer = () => {
 	return (
 		<Box
 			bg="rgba(0, 0, 0, 0.06)"
-			p={{base: 1.5, md: 2}}
-			sx={{ w: "100%"}}>
+			p={{ base: 1.5, md: 2 }}
+			sx={{ w: "100%" }}>
 			<Center>
-				<VStack spacing={{base: 0.5 ,md: 1}}>
+				<VStack justifyItems="center">
 					<HStack spacing={1}>
 						<Text fontSize={{ base: "sm", md: "md" }}>
-							Made with love, by
+							Made with love
 						</Text>
-						<Text
+						{/* <Text
 							fontSize={{ base: "sm", md: "md" }}
 							color="hsl(207, 100%, 66%)">
 							ITSIG
-						</Text>
+						</Text> */}
 					</HStack>
-					<HStack>
+					<HStack spacing={5}>
 						<Tooltip
 							label="ITSIG Instagram"
 							aria-label="ITSIG Instagram"
@@ -48,6 +50,11 @@ const Footer = () => {
 								}}
 							/>
 						</Tooltip>
+						<Image
+							src="/itsig-icon.svg"
+							w={{ base: "4.5em", md: "4.5em" }}
+							h="auto"
+						/>
 						<Tooltip
 							label="ITSIG GitHub"
 							aria-label="ITSIG GitHub"
