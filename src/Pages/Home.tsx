@@ -1,12 +1,4 @@
-import {
-	Box,
-	SimpleGrid,
-	Text,
-	Image,
-	Stack,
-} from "@chakra-ui/react"
-import { repeat } from "lodash"
-import React from "react"
+import { Box, SimpleGrid, Text, Image, Stack } from "@chakra-ui/react"
 
 import SubjectCard from "../Components/SubjectCard"
 import { subjects } from "../Models/Subjects"

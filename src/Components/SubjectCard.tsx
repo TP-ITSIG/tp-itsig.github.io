@@ -1,6 +1,5 @@
 import { Box, Center, Image, Text } from "@chakra-ui/react"
 import { useNavigate } from "react-router-dom"
-import React from "react"
 
 interface SubjectCardProps {
 	title: string
