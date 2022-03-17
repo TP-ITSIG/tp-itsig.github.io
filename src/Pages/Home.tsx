@@ -1,9 +1,14 @@
 import { Box, SimpleGrid, Text, Image, Stack } from "@chakra-ui/react"
+import { useLayoutEffect } from "react"
 
 import SubjectCard from "../Components/SubjectCard"
 import { subjects } from "../Models/Subjects"
 
 const Home = () => {
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
 	return (
 		<>
 			<Box

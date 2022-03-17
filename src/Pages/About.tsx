@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useLayoutEffect, useState } from "react"
 import {
 	Box,
 	VStack,
@@ -11,6 +11,10 @@ import {
 } from "@chakra-ui/react"
 
 const About = () => {
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
 	return (
 		<>
 			<Box

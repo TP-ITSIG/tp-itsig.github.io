@@ -13,8 +13,11 @@ import {
 	Image,
 	Stack,
 } from "@chakra-ui/react"
+import { useNavigate } from "react-router-dom"
 
 const Footer = () => {
+	const navigate = useNavigate()
+
 	return (
 		<Box
 			bg="rgba(0, 0, 0, 0.06)"
@@ -54,6 +57,12 @@ const Footer = () => {
 							src="/itsig-icon.svg"
 							w={{ base: "4.5em", md: "4.5em" }}
 							h="auto"
+							_hover={{
+								cursor: "pointer",
+							}}
+							onClick={() => {
+								navigate("/about")
+							}}
 						/>
 						<Tooltip
 							label="ITSIG GitHub"
