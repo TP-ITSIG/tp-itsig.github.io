@@ -37,7 +37,7 @@ const SubjectCard = (props: SubjectCardProps) => {
 					fontWeight="bold">
 					{props.title}
 				</Text>
-				<Text fontSize={{ base: "xs", md: "sm" }} mb={1}>
+				<Text fontSize={{ base: "xs", md: "sm" }} mb={4}>
 					{props.description}
 				</Text>
 			</Box>

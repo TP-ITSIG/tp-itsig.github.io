@@ -14,6 +14,7 @@ import {
 	Skeleton,
 	Icon,
 	IconButton,
+	Tooltip,
 } from "@chakra-ui/react"
 import { useState } from "react"
 import { Resource } from "../Models/Resource"
@@ -66,21 +67,23 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 							src={resource.thumbnail}
 							onClick={() => window.open(resource.imageUrl)}
 						/>
-						<IconButton
-							aria-label="image-url-btn"
-							icon={<FiExternalLink />}
-							position="absolute"
-							bottom={2.5}
-							left={2.5}
-							size="md"
-							colorScheme="black"
-							color="white"
-							bgColor="hsla(0, 0%, 0%, 0.65)"
-							_hover={{ bgColor: "hsla(0, 0%, 0%, 0.75)" }}
-							_active={{ filter: "brightness(0.65)" }}
-							transition="all 0.35s ease"
-							onClick={() => window.open(resource.imageUrl)}
-						/>
+						<Tooltip label="Open in new tab" placement="right">
+							<IconButton
+								aria-label="image-url-btn"
+								icon={<FiExternalLink />}
+								position="absolute"
+								bottom={2.5}
+								left={2.5}
+								size="md"
+								colorScheme="black"
+								color="white"
+								bgColor="hsla(0, 0%, 0%, 0.65)"
+								_hover={{ bgColor: "hsla(0, 0%, 0%, 0.75)" }}
+								_active={{ filter: "brightness(0.65)" }}
+								transition="all 0.35s ease"
+								onClick={() => window.open(resource.imageUrl)}
+							/>
+						</Tooltip>
 					</Box>
 				)}
 			</GridItem>
