@@ -8,7 +8,7 @@ import Resource from "./Pages/Resource"
 
 const App = () => {
 	return (
-		<Box minH={"100vh"}>
+		<Box minH={"100vh"} transition="all normal">
 			<Box maxW="1500px" margin="auto" mb={10}>
 				<Navbar />
 				<Routes>

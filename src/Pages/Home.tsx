@@ -1,10 +1,20 @@
-import { Box, SimpleGrid, Text, Image, Stack, Tag } from "@chakra-ui/react"
+import {
+	Box,
+	SimpleGrid,
+	Text,
+	Image,
+	Stack,
+	Tag,
+	useColorMode,
+} from "@chakra-ui/react"
 import { useLayoutEffect } from "react"
 
 import SubjectCard from "../Components/SubjectCard"
 import { subjects } from "../Models/Subjects"
 
 const Home = () => {
+	const { colorMode } = useColorMode()
+
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0)
 	}, [])
@@ -15,7 +25,11 @@ const Home = () => {
 				display="flex"
 				justifyContent="center"
 				alignItems="center"
-				bgColor="hsl(0, 0%, 0%, 0.05)"
+				bgColor={
+					colorMode === "light"
+						? "hsl(0, 0%, 0%, 0.05)"
+						: "hsl(0, 0%, 100%, 0.05)"
+				}
 				borderBottomRadius="20px"
 				p={5}
 				_before={{
@@ -145,7 +159,8 @@ const Home = () => {
 							key={subject.abbreviation.toLowerCase()}
 							title={subject.abbreviation}
 							description={subject.tagline}
-							image={subject.image}
+							imageLight={subject.imageLight}
+							imageDark={subject.imageDark}
 							color={subject.color}
 							bgColor={subject.bgColor}
 						/>

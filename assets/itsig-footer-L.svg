@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="481" height="347" viewBox="0 0 481 347">
+  <defs>
+    <filter id="base_bottom" x="35" y="319" width="446" height="28" filterUnits="userSpaceOnUse">
+      <feOffset dx="5" dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="itsig-footer-L" transform="translate(0.218 -0.314)">
+    <g id="laptop" transform="translate(38.57 72.918)">
+      <g id="Group_14" data-name="Group 14" transform="translate(0 247.781)">
+        <g transform="matrix(1, 0, 0, 1, -38.79, -320.38)" filter="url(#base_bottom)">
+          <path id="base_bottom-2" data-name="base bottom" d="M1,0H427a1,1,0,0,1,1,1V5a5,5,0,0,1-5,5H5A5,5,0,0,1,0,5V1A1,1,0,0,1,1,0Z" transform="translate(39 320)"/>
+        </g>
+      </g>
+      <path id="screen" d="M13.286,0H399.237a13.286,13.286,0,0,1,13.286,13.286V228.515A13.286,13.286,0,0,1,399.237,241.8H13.286A13.286,13.286,0,0,1,0,228.515V13.286A13.286,13.286,0,0,1,13.286,0Z" transform="translate(7.482 0)" fill="#f0f0f0"/>
+      <path id="screen_-_Outline" data-name="screen - Outline" d="M13.286,5.818a7.476,7.476,0,0,0-7.468,7.468V228.515a7.476,7.476,0,0,0,7.468,7.468H399.237a7.476,7.476,0,0,0,7.468-7.468V13.286a7.476,7.476,0,0,0-7.468-7.468H13.286m0-5.818H399.237a13.286,13.286,0,0,1,13.286,13.286V228.515A13.286,13.286,0,0,1,399.237,241.8H13.286A13.286,13.286,0,0,1,0,228.515V13.286A13.286,13.286,0,0,1,13.286,0Z" transform="translate(7.482 0)"/>
+      <text id="SIG" transform="translate(210.213 156.397)" font-size="125" font-family="Flamenco-Regular, Flamenco" letter-spacing="0.01em"><tspan x="-94.063" y="0">SIG</tspan></text>
+      <rect id="Rectangle_10" data-name="Rectangle 10" width="20" height="6" rx="3" transform="translate(196.213 10.397)"/>
+      <g id="the_thing_to_life_the_screen" data-name="the thing to life the screen" transform="translate(171.352 247.397)" style="isolation: isolate">
+        <path id="Rectangle_6" data-name="Rectangle 6" d="M0,0H69.994a2.216,2.216,0,0,1-1.882,2.44H1.882A2.216,2.216,0,0,1,0,0Z" transform="translate(0 0)" fill="#f0f0f0"/>
+      </g>
+    </g>
+    <g id="Fone" transform="translate(-0.218 243.123) rotate(-90)">
+      <rect id="Screen-2" data-name="Screen" width="243" height="126" rx="20" transform="translate(-0.191 0)" fill="#f0f0f0"/>
+      <path id="Screen_-_Outline-2" data-name="Screen - Outline" d="M15.515,5.818a9.708,9.708,0,0,0-9.7,9.7v95.417a9.708,9.708,0,0,0,9.7,9.7H227.294a9.708,9.708,0,0,0,9.7-9.7V15.515a9.708,9.708,0,0,0-9.7-9.7H15.515m0-5.818H227.294a15.515,15.515,0,0,1,15.515,15.515v95.417a15.515,15.515,0,0,1-15.515,15.515H15.515A15.515,15.515,0,0,1,0,110.932V15.515A15.515,15.515,0,0,1,15.515,0Z" transform="translate(0)"/>
+      <text id="IT" transform="translate(99.809 63) rotate(90)" font-size="78" font-family="Flamenco-Regular, Flamenco" letter-spacing="0.01em"><tspan x="-34.086" y="0">IT</tspan></text>
+      <g id="Group_5" data-name="Group 5" transform="translate(233.724 60.508) rotate(90)">
+        <circle id="Ellipse_1" data-name="Ellipse 1" cx="2.5" cy="2.5" r="2.5" transform="translate(0.492 4.915) rotate(-90)"/>
+      </g>
+    </g>
+  </g>
+</svg>
