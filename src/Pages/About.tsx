@@ -1,7 +1,20 @@
-import React from "react"
-import { Box, VStack, Stack, Text, Image, Link, Center } from "@chakra-ui/react"
+import React, { useLayoutEffect, useState } from "react"
+import {
+	Box,
+	VStack,
+	Stack,
+	Text,
+	Image,
+	Link,
+	Center,
+	Skeleton,
+} from "@chakra-ui/react"
 
 const About = () => {
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
 	return (
 		<>
 			<Box
@@ -13,7 +26,7 @@ const About = () => {
 				p={5}
 				_before={{
 					content: `''`,
-					bgImage: { base: "assets/itsig-icon.svg", lg: "none" },
+					bgImage: { base: "/itsig-icon.svg", lg: "none" },
 					opacity: "0.2",
 					bgSize: "contain",
 					bgRepeat: "no-repeat",
@@ -32,7 +45,7 @@ const About = () => {
 					justify={{ lg: "space-around" }}
 					mb={3.5}
 					align="center"
-					spacing={-20}>
+					spacing={5}>
 					<Stack
 						direction="column"
 						textAlign={{ base: "center", lg: "left" }}
@@ -64,10 +77,11 @@ const About = () => {
 							</Text>
 						</Box>
 					</Stack>
+
 					<Image
 						display={{ base: "none", lg: "block" }}
-						src="assets/itsig-icon.svg"
-						w="25%"
+						src="/itsig-icon.svg"
+						w="30%"
 					/>
 				</Stack>
 			</Box>
@@ -77,7 +91,7 @@ const About = () => {
 					justify={["center", "center"]}
 					mt={{ base: "5", lg: "10" }}
 					px={10}
-					maxW={{base: "75ch" ,lg: "90ch"}}>
+					maxW={{ base: "75ch", lg: "90ch" }}>
 					<Box>
 						<Text
 							fontSize={{ base: "2xl", lg: "4xl" }}

@@ -30,10 +30,10 @@ const pages: NavbarItems[] = [
 		pageTitle: "Home",
 		pageUrl: "",
 	},
-	{
-		pageTitle: "Resources",
-		pageUrl: "resource",
-	},
+	// {
+	// 	pageTitle: "Resources",
+	// 	pageUrl: "resource",
+	// },
 	{
 		pageTitle: "About",
 		pageUrl: "about",
@@ -45,13 +45,17 @@ const Navbar = () => {
 	const location = useLocation()
 	const { colorMode, toggleColorMode } = useColorMode()
 	const [currentPath, setCurrentPath] = useState(
-		location.pathname.split("/").at(-1),
+		location.pathname.split("/")[location.pathname.split("/").length - 1],
 	)
 
 	const [bgColor, setBgColor] = useState<any>("hsl(0, 0%, 0%, 0.05)")
 
 	useEffect(() => {
-		setCurrentPath(location.pathname.split("/").at(-1))
+		setCurrentPath(
+			location.pathname.split("/")[
+				location.pathname.split("/").length - 1
+			],
+		)
 	}, [location])
 
 	useLayoutEffect(() => {
@@ -103,7 +107,7 @@ const Navbar = () => {
 					</Menu>
 				</Box>
 				<Image
-					src="../assets/itsig.svg"
+					src="/itsig.svg"
 					w={{ base: "4.5em", md: "5.5em" }}
 					h="auto"
 				/>

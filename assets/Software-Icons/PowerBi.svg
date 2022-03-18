@@ -21,7 +21,6 @@
       <g id="Group" transform="translate(31.492)">
         <rect id="Rectangle" width="88.99" height="256" rx="10.565" transform="translate(104.025)" fill="url(#linear-gradient)"/>
         <g id="Combined-Shape">
-          <path id="Path_1059" data-name="Path 1059" d="M140.6,245.435V256H62.171a10.565,10.565,0,0,1-10.565-10.565V74.362A10.565,10.565,0,0,1,62.171,63.8h67.86A10.565,10.565,0,0,1,140.6,74.362Z"/>
           <path id="Path_1060" data-name="Path 1060" d="M140.6,245.435V256H62.171a10.565,10.565,0,0,1-10.565-10.565V74.362A10.565,10.565,0,0,1,62.171,63.8h67.86A10.565,10.565,0,0,1,140.6,74.362Z" fill="url(#linear-gradient-2)"/>
         </g>
         <path id="Combined-Shape-2" data-name="Combined-Shape" d="M88.99,245.435V256H10.565A10.565,10.565,0,0,1,0,245.435V138.565A10.565,10.565,0,0,1,10.565,128h67.86A10.565,10.565,0,0,1,88.99,138.565Z" fill-rule="evenodd" fill="url(#linear-gradient-3)"/>

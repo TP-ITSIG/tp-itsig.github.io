@@ -26,9 +26,9 @@ const Resource = () => {
 		return sub.abbreviation.toUpperCase() == subjectAbbrev.toUpperCase()
 	})[0]
 
-	// useLayoutEffect(() => {
-	// 	window.scrollTo(0, 0)
-	// }, [])
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
 
 	return (
 		<Stack direction={"column"} width={"100%"}>
@@ -90,8 +90,8 @@ const Resource = () => {
 					))}
 				</Stack>
 			</Box>
-
-			<VStack justifyContent="center" mt={{ base: 20 }}>
+			<br />
+			<VStack justifyContent="center">
 				<Text
 					fontSize={{ base: "md", lg: "xl" }}
 					borderBottom={{
@@ -114,7 +114,9 @@ const Resource = () => {
 							/>
 						))
 					) : (
-						<Text>Nothing special needed for this :D</Text>
+						<Text fontSize={{ base: "md", lg: "xl" }}>
+							Nothing special needed for this :D
+						</Text>
 					)}
 				</HStack>
 			</VStack>
