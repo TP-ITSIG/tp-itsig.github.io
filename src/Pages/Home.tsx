@@ -21,7 +21,7 @@ const Home = () => {
 				_before={{
 					content: `''`,
 					bgImage: { base: "/home-icon.svg", lg: "none" },
-					opacity: "0.2",
+					opacity: "0.175",
 					bgSize: "contain",
 					bgRepeat: "no-repeat",
 					bgPosition: "center",
@@ -93,7 +93,7 @@ const Home = () => {
 						<Text
 							fontSize={{ base: "sm", md: "md", lg: "lg" }}
 							fontWeight="medium"
-							maxW={{ lg: "55ch" }}>
+							maxW={{ base: "55ch" }}>
 							We have put together this website to give you a
 							general overview of what to expect for each module
 							so that you would feel better prepared for your
