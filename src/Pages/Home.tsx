@@ -1,4 +1,4 @@
-import { Box, SimpleGrid, Text, Image, Stack } from "@chakra-ui/react"
+import { Box, SimpleGrid, Text, Image, Stack, Tag } from "@chakra-ui/react"
 import { useLayoutEffect } from "react"
 
 import SubjectCard from "../Components/SubjectCard"
@@ -44,6 +44,18 @@ const Home = () => {
 						direction="column"
 						textAlign={{ base: "center", lg: "left" }}>
 						<Box>
+							{/* <Text
+								fontSize={{
+									base: "3xl",
+									md: "4xl",
+									lg: "4xl",
+									xl: "5xl",
+								}}
+								color="itsig_blue"
+								fontWeight="bold"
+								textAlign={{ base: "center", lg: "left" }}>
+								Diploma of Information Technology
+							</Text> */}
 							<Text
 								fontSize={{
 									base: "3xl",
@@ -52,7 +64,8 @@ const Home = () => {
 									xl: "5xl",
 								}}
 								fontWeight="bold"
-								textAlign={{ base: "center", lg: "left" }}>
+								textAlign={{ base: "center", lg: "left" }}
+								mb={-3.5}>
 								Welcome to the
 							</Text>
 							<Text
@@ -68,12 +81,22 @@ const Home = () => {
 							</Text>
 						</Box>
 						<Text
-							fontSize={{ base: "sm", md: "md", lg: "lg" }}
+							fontSize={{ base: "md", md: "lg", lg: "xl" }}
 							fontWeight="semibold"
+							maxW={{ lg: "80ch" }}>
+							Hello we are from the{" "}
+							<span style={{ color: "hsl(207, 87%, 30%)" }}>
+								Diploma in Information Technology!
+							</span>
+							{`\n`}
+						</Text>
+						<Text
+							fontSize={{ base: "sm", md: "md", lg: "lg" }}
+							fontWeight="medium"
 							maxW={{ lg: "55ch" }}>
-							This website provides resources to give you a
+							We have put together this website to give you a
 							general overview of what to expect for each module
-							so that you might feel better prepared for your
+							so that you would feel better prepared for your
 							first semester with us.
 							<br />
 							<br />
