@@ -58,18 +58,6 @@ const Home = () => {
 						direction="column"
 						textAlign={{ base: "center", lg: "left" }}>
 						<Box>
-							{/* <Text
-								fontSize={{
-									base: "3xl",
-									md: "4xl",
-									lg: "4xl",
-									xl: "5xl",
-								}}
-								color="itsig_blue"
-								fontWeight="bold"
-								textAlign={{ base: "center", lg: "left" }}>
-								Diploma of Information Technology
-							</Text> */}
 							<Text
 								fontSize={{
 									base: "3xl",
@@ -99,7 +87,7 @@ const Home = () => {
 							fontWeight="semibold"
 							maxW={{ lg: "80ch" }}>
 							Hello we are from the{" "}
-							<span style={{ color: "hsl(207, 87%, 30%)" }}>
+							<span style={{ color: "hsl(221, 55%, 63%)" }}>
 								Diploma in Information Technology!
 							</span>
 							{`\n`}

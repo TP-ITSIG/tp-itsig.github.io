@@ -12,7 +12,6 @@ import {
 } from "@chakra-ui/react"
 
 const About = () => {
-
 	const { colorMode } = useColorMode()
 
 	useLayoutEffect(() => {
@@ -35,7 +34,7 @@ const About = () => {
 				_before={{
 					content: `''`,
 					bgImage: { base: "/itsig-icon.svg", lg: "none" },
-					opacity: "0.2",
+					opacity: "0.175",
 					bgSize: "contain",
 					bgRepeat: "no-repeat",
 					bgPosition: "center",
@@ -43,7 +42,7 @@ const About = () => {
 					m: 2,
 					top: 0,
 					left: 0,
-					bottom: 0,
+					bottom: 2,
 					right: 0,
 					zIndex: -1,
 				}}
@@ -132,7 +131,11 @@ const About = () => {
 
 						<Text fontSize={{ base: "md", lg: "xl" }} pt={-4}>
 							We are a CCA consisting of students from the{" "}
-							<span style={{ color: "hsl(207, 87%, 30%)" }}>
+							<span
+								style={{
+									color: "hsl(221, 55%, 63%)",
+									fontWeight: "600",
+								}}>
 								{" "}
 								Diploma in Information Technology
 							</span>
@@ -145,6 +148,7 @@ const About = () => {
 								href="https://www.instagram.com/itsigtp/"
 								isExternal
 								style={{
+									fontWeight: "600",
 									background:
 										"linear-gradient(to bottom right, #833ab4, #fd1d1d, #fcb045)",
 									WebkitBackgroundClip: "text",

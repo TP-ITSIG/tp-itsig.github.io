@@ -95,12 +95,19 @@ const Navbar = () => {
 						<MenuButton
 							as={IconButton}
 							icon={<IoMenu />}
+							filter={
+								currentPath === "" || currentPath === "about"
+									? colorMode === "light"
+										? "none"
+										: "invert(100%)"
+									: "none"
+							}
 							aria-label="menu-icon"
 							colorScheme="undefined"
 							color="hsla(0, 0%, 0%, 0.9)"
 							fontSize="2xl"
 						/>
-						<MenuList bgColor="hsla(0, 0%, 100%, 0.95)">
+						<MenuList>
 							{pages.map(page => (
 								<MenuItem
 									key={page.pageUrl}

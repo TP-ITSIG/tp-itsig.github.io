@@ -46,10 +46,18 @@ const SubjectCard = (props: SubjectCardProps) => {
 			<Box my={2} px={{ base: 2, lg: 3 }}>
 				<Text
 					fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
-					fontWeight="bold">
+					fontWeight="bold"
+					_hover={{
+						cursor: "pointer",
+					}}>
 					{props.title}
 				</Text>
-				<Text fontSize={{ base: "xs", md: "sm" }} mb={4}>
+				<Text
+					fontSize={{ base: "xs", md: "sm" }}
+					mb={4}
+					_hover={{
+						cursor: "pointer",
+					}}>
 					{props.description}
 				</Text>
 			</Box>
