@@ -6,12 +6,12 @@ import Navbar from "./Components/Navbar"
 import About from "./Pages/About"
 import Home from "./Pages/Home"
 import Resource from "./Pages/Resource"
-import ReactGA from "react-ga"
+import ReactGA from "react-ga4"
 
 const App = () => {
 	const location = useLocation()
 	ReactGA.initialize("G-RRCEHPXBET")
-	ReactGA.pageview(window.location.pathname + window.location.search)
+	ReactGA.send("pageview")
 
 	useEffect(() => {
 		console.info(`
