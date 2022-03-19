@@ -1,5 +1,6 @@
 import { Box } from "@chakra-ui/react"
-import { Route, Routes } from "react-router-dom"
+import { useEffect } from "react"
+import { Route, Routes, useLocation } from "react-router-dom"
 import Footer from "./Components/Footer"
 import Navbar from "./Components/Navbar"
 import About from "./Pages/About"
@@ -7,7 +8,10 @@ import Home from "./Pages/Home"
 import Resource from "./Pages/Resource"
 
 const App = () => {
-	console.info(`
+	const location = useLocation()
+
+	useEffect(() => {
+		console.info(`
 ██╗████████╗███████╗██╗ ██████╗ 
 ██║╚══██╔══╝██╔════╝██║██╔════╝ 
 ██║   ██║   ███████╗██║██║  ███╗
@@ -21,6 +25,7 @@ Well since your already here, We're actually recruiting Dip IT students into our
 
 Just DM "supercalifragilisticexpialidocious" to our Instagram if you're interested in joining us!
 `)
+	}, [location])
 
 	return (
 		<Box minH={"100vh"} transition="all normal">
