@@ -1,19 +1,24 @@
-import { Box, Center, Image, Text } from "@chakra-ui/react"
+import { Box, Center, Image, Text, useColorMode } from "@chakra-ui/react"
 import { useNavigate } from "react-router-dom"
 
 interface SubjectCardProps {
 	title: string
 	description: string
-	image: string
+	imageLight: string
+	imageDark: string
 	color: string
 	bgColor: string
 }
 
 const SubjectCard = (props: SubjectCardProps) => {
 	const navigate = useNavigate()
+	const { colorMode } = useColorMode()
 
 	return (
 		<Box
+			bgColor={
+				colorMode === "light" ? "hsl(0, 0%, 98%)" : "hsl(222, 24%, 10%)"
+			}
 			borderColor={props.color}
 			borderWidth={3.5}
 			borderRadius={15}
@@ -28,7 +33,15 @@ const SubjectCard = (props: SubjectCardProps) => {
 				navigate(`/resource/${props.title}`)
 			}}>
 			<Center bg={props.bgColor} w="auto" minH="60%" maxH="60%">
-				<Image py={2} src={props.image} boxSize="125px" />
+				<Image
+					py={1}
+					src={
+						colorMode === "light"
+							? props.imageLight
+							: props.imageDark
+					}
+					boxSize={{ base: "80%", sm: "60%", lg: "35%" }}
+				/>
 			</Center>
 			<Box my={2} px={{ base: 2, lg: 3 }}>
 				<Text

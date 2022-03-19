@@ -15,6 +15,7 @@ import {
 	Icon,
 	IconButton,
 	Tooltip,
+	useColorMode,
 } from "@chakra-ui/react"
 import { useState } from "react"
 import { Resource } from "../Models/Resource"
@@ -27,6 +28,7 @@ interface ResourceCardProps {
 }
 
 const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
+	const { colorMode } = useColorMode()
 	const [isIframeLoading, setIsIframeLoading] = useState(true)
 
 	return (
@@ -116,7 +118,7 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 								fontSize={{ base: "sm", md: "md", lg: "lg" }}
 								key={index}
 								href={link.url}
-								color="blue"
+								color="iit_blue"
 								isExternal>
 								{link.title}
 							</Link>

@@ -13,9 +13,10 @@ import {
 	MenuList,
 	position,
 	Spacer,
+	useColorMode,
 } from "@chakra-ui/react"
 import { useEffect, useLayoutEffect, useState } from "react"
-import { IoMenu, IoClose } from "react-icons/io5"
+import { IoMenu, IoSunny, IoMoon } from "react-icons/io5"
 import { useNavigate, useLocation } from "react-router-dom"
 import { subjects } from "../Models/Subjects"
 
@@ -42,11 +43,16 @@ const pages: NavbarItems[] = [
 const Navbar = () => {
 	const navigate = useNavigate()
 	const location = useLocation()
+	const { colorMode, toggleColorMode } = useColorMode()
 	const [currentPath, setCurrentPath] = useState(
 		location.pathname.split("/")[location.pathname.split("/").length - 1],
 	)
+	const navBg =
+		colorMode === "light"
+			? "hsl(0, 0%, 0%, 0.05)"
+			: "hsl(0, 0%, 100%, 0.05)"
 
-	const [bgColor, setBgColor] = useState<any>("hsl(0, 0%, 0%, 0.05)")
+	const [bgColor, setBgColor] = useState<any>(navBg)
 
 	useEffect(() => {
 		setCurrentPath(
@@ -62,32 +68,39 @@ const Navbar = () => {
 				setBgColor(subjects[i].color)
 				break
 			} else {
-				setBgColor("hsl(0, 0%, 0%, 0.05)")
+				colorMode === "light"
+					? setBgColor("hsl(0, 0%, 0%, 0.05)")
+					: setBgColor("hsl(0, 0%, 100%, 0.05)")
 			}
 		}
-	}, [currentPath])
+	}, [currentPath, colorMode])
 
 	return (
 		<Box
-			bg={bgColor}
+			bgColor={bgColor}
+			// transition="background-color 0.3s ease-out"
 			w="100%"
 			py={{ base: 4, lg: 5 }}
-			px={{ base: 1, lg: 4 }}>
+			px={{ base: 2, lg: 4 }}>
 			<HStack
-				justifyContent={{ base: "space-between", lg: "flex-start" }}>
+				justifyContent={{ base: "space-between", lg: "flex-start" }}
+				alignContent="center">
 				<Box display={{ base: "block", lg: "none" }}>
-					<Menu preventOverflow matchWidth flip autoSelect={false}>
+					<Menu
+						preventOverflow
+						matchWidth
+						flip
+						gutter={2}
+						autoSelect={false}>
 						<MenuButton
 							as={IconButton}
-							isRound
 							icon={<IoMenu />}
 							aria-label="menu-icon"
-							variant="solid"
-							colorScheme="transparent"
-							color="black"
+							colorScheme="undefined"
+							color="hsla(0, 0%, 0%, 0.9)"
 							fontSize="2xl"
 						/>
-						<MenuList>
+						<MenuList bgColor="hsla(0, 0%, 100%, 0.95)">
 							{pages.map(page => (
 								<MenuItem
 									key={page.pageUrl}
@@ -104,6 +117,13 @@ const Navbar = () => {
 					src="/itsig.svg"
 					w={{ base: "4.5em", md: "5.5em" }}
 					h="auto"
+					filter={
+						currentPath === "" || currentPath === "about"
+							? colorMode === "light"
+								? "none"
+								: "invert(100%)"
+							: "none"
+					}
 				/>
 				<HStack
 					display={{ base: "none", lg: "block" }}
@@ -118,9 +138,15 @@ const Navbar = () => {
 									: "normal"
 							}
 							fontSize="xl"
-							colorScheme="black"
+							color={
+								currentPath === "" || currentPath === "about"
+									? colorMode === "light"
+										? "black"
+										: "white"
+									: "black"
+							}
 							variant="link"
-							sx={{ transition: "all 0.15s ease-out" }}
+							sx={{ transition: "font-weight 0.15s ease-out" }}
 							onClick={() => {
 								navigate(page.pageUrl)
 							}}>
@@ -128,10 +154,20 @@ const Navbar = () => {
 						</Button>
 					))}
 				</HStack>
-				<Box
-					display={{ base: "block", lg: "none" }}
-					w="40px"
-					h="40px"
+				<Spacer display={{ base: "none", lg: "block" }} />
+				<IconButton
+					aria-label="color-mode-toggle"
+					icon={colorMode === "light" ? <IoMoon /> : <IoSunny />}
+					colorScheme="whiteAlpha"
+					color={
+						currentPath === "" || currentPath === "about"
+							? colorMode === "light"
+								? "hsla(0, 0%, 0%, 0.75)"
+								: "hsla(0, 0%, 100%, 0.75)"
+							: "hsla(0, 0%, 0%, 0.75)"
+					}
+					fontSize="xl"
+					onClick={toggleColorMode}
 				/>
 			</HStack>
 		</Box>

@@ -40,7 +40,7 @@ const Resource = () => {
 				<Center
 					fontWeight="bold"
 					fontSize={{ base: 24, md: 36, lg: 42 }}>
-					<Text align="center" pb={3.5}>
+					<Text align="center" color="black" pb={3.5}>
 						{subject.name}
 					</Text>
 				</Center>

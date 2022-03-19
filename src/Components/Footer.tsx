@@ -54,7 +54,7 @@ const Footer = () => {
 							/>
 						</Tooltip>
 						<Image
-							src="/itsig-icon.svg"
+							src="/itsig-footer.svg"
 							w={{ base: "4.5em", md: "4.5em" }}
 							h="auto"
 							_hover={{
