@@ -19,6 +19,7 @@ import { useEffect, useLayoutEffect, useState } from "react"
 import { IoMenu, IoSunny, IoMoon } from "react-icons/io5"
 import { useNavigate, useLocation } from "react-router-dom"
 import { subjects } from "../Models/Subjects"
+import ReactGA from "react-ga4"
 
 interface NavbarItems {
 	pageTitle: string
@@ -60,6 +61,7 @@ const Navbar = () => {
 				location.pathname.split("/").length - 1
 			],
 		)
+		ReactGA.send({ hitType: "pageview", page: location.pathname })
 	}, [location])
 
 	useLayoutEffect(() => {

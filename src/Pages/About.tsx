@@ -106,7 +106,7 @@ const About = () => {
 							fontWeight="bold">
 							What is this website about?
 						</Text>
-						<Text fontSize={{ base: "md", lg: "xl" }}>
+						<Text mb={3} fontSize={{ base: "md", lg: "xl" }}>
 							We know the transition from secondary school or ITE
 							to Poly can come as a big shock to you in terms of
 							what we learn, so we made this website for
@@ -119,6 +119,14 @@ const About = () => {
 							idea of what to expect in your first semester with
 							us.
 						</Text>
+
+						<Link
+							href="https://www.privacypolicies.com/live/0f15cdbd-2f76-49ec-8046-188e8d6695bd"
+							isExternal
+							color="iit_blue"
+							fontSize={{ base: "sm", lg: "lg" }}>
+							Click here to view our Privacy Policy
+						</Link>
 					</Box>
 
 					<Box>

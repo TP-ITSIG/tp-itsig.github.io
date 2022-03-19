@@ -11,7 +11,7 @@ import ReactGA from "react-ga4"
 const App = () => {
 	const location = useLocation()
 	ReactGA.initialize("G-RRCEHPXBET")
-	ReactGA.send("pageview")
+	
 
 	useEffect(() => {
 		console.info(`
