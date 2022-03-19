@@ -50,7 +50,7 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 							<iframe
 								width="100%"
 								height="100%"
-								src={resource.thumbnail}
+								src={`${resource.thumbnail}&rel=0`}
 								allowFullScreen
 								onLoad={() => setIsIframeLoading(false)}
 							/>

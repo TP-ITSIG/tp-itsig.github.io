@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useLayoutEffect, useState } from "react"
 import {
 	Box,
 	VStack,
@@ -11,6 +11,10 @@ import {
 } from "@chakra-ui/react"
 
 const About = () => {
+	useLayoutEffect(() => {
+		window.scrollTo(0, 0)
+	}, [])
+
 	return (
 		<>
 			<Box
@@ -41,7 +45,7 @@ const About = () => {
 					justify={{ lg: "space-around" }}
 					mb={3.5}
 					align="center"
-					spacing={-20}>
+					spacing={5}>
 					<Stack
 						direction="column"
 						textAlign={{ base: "center", lg: "left" }}
@@ -77,7 +81,7 @@ const About = () => {
 					<Image
 						display={{ base: "none", lg: "block" }}
 						src="/itsig-icon.svg"
-						w="25%"
+						w="30%"
 					/>
 				</Stack>
 			</Box>

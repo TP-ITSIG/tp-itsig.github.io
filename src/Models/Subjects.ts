@@ -15,8 +15,7 @@ export const subjects: Subject[] = [
 				title: "Learning How to Code",
 				content:
 					"A fun video to introduce to you how you should approach learning how to code.",
-				thumbnail:
-					"https://www.youtube.com/embed?v=NtfbWkxJTHw&list=PLkdNeERjj7-6n0ItDJZQMD6561UzxDQ_B&index=1",
+				thumbnail: "https://www.youtube.com/embed/NtfbWkxJTHw?",
 				type: ResourceType.VIDEO,
 			},
 
@@ -24,16 +23,14 @@ export const subjects: Subject[] = [
 				title: "Android Studio Starter",
 				content:
 					"An explanation of what an Integrated Development Environment (IDE) is and what Android Studio is about.",
-				thumbnail:
-					"https://www.youtube.com/embed?v=NCoekcDxbrI&list=PLkdNeERjj7-6n0ItDJZQMD6561UzxDQ_B&index=2",
+				thumbnail: "https://www.youtube.com/embed/NCoekcDxbrI?",
 				type: ResourceType.VIDEO,
 			},
 			{
 				title: "Introduction to Java",
 				content:
 					"A short introduction to java programming - if you’d like to follow along, you can use Jdoodle as an online java compiler in place of Eclipse",
-				thumbnail:
-					"https://www.youtube.com/embed?v=RRubcjpTkks&list=PLkdNeERjj7-6n0ItDJZQMD6561UzxDQ_B&index=3",
+				thumbnail: "https://www.youtube.com/embed/RRubcjpTkks?",
 				type: ResourceType.VIDEO,
 				resourceLinks: [
 					{
@@ -89,20 +86,20 @@ export const subjects: Subject[] = [
 				title: "Introduction to CRISP-DM Methodology",
 				content:
 					"CRISP-DM models the lifecycle of a data analytics project.",
-				thumbnail: "https://www.youtube.com/embed/q_okDS2RtzY",
+				thumbnail: "https://www.youtube.com/embed/q_okDS2RtzY?",
 				type: ResourceType.VIDEO,
 			},
 			{
 				title: "Types of Graphs and when to use them",
 				content:
 					"It is important to know what different types of charts are for. This video provides a quick summary of the different types of graphs and their uses.",
-				thumbnail: "https://www.youtube.com/embed/yrTB5JSQPqY",
+				thumbnail: "https://www.youtube.com/embed/yrTB5JSQPqY?",
 				type: ResourceType.VIDEO,
 			},
 			{
 				title: "What is KNIME?",
 				content: "Introduction to the data tool you’ll be using",
-				thumbnail: "https://www.youtube.com/embed/Pom9AuI9yg4",
+				thumbnail: "https://www.youtube.com/embed/Pom9AuI9yg4?",
 				type: ResourceType.VIDEO,
 			},
 		],
@@ -133,14 +130,14 @@ export const subjects: Subject[] = [
 			{
 				title: "Evolution of the Internet",
 				content: "A little history of the internet as we know it today",
-				thumbnail: "https://www.youtube.com/embed/km9-XQZkOSE",
+				thumbnail: "https://www.youtube.com/embed/km9-XQZkOSE?",
 				type: ResourceType.VIDEO,
 			},
 			{
 				title: "How the internet works",
 				content:
 					"Now that you know a bit about history of the internet, you may be wondering how it actually works. Watch this video to find out!",
-				thumbnail: "https://www.youtube.com/embed/7_LPdttKXPc",
+				thumbnail: "https://www.youtube.com/embed/7_LPdttKXPc?",
 				type: ResourceType.VIDEO,
 			},
 			{
@@ -204,14 +201,14 @@ export const subjects: Subject[] = [
 				title: "UX Crash Course",
 				content:
 					"A crash course on what User Experience Design is about, basic design principles and the design process",
-				thumbnail: "https://www.youtube.com/embed/_lyzy-vChh4",
+				thumbnail: "https://www.youtube.com/embed/_lyzy-vChh4?",
 				type: ResourceType.VIDEO,
 			},
 			{
 				title: "DesignBytes: Intro to Material Design",
 				content:
 					"Design systems make our experience of using apps and websites more consistent.  When designing Android apps, we want to make the apps on an Android device more coherent — Material Design is a design system by Google that lays out design principles for you to follow when developing for their platforms. ",
-				thumbnail: "https://www.youtube.com/embed/p4gmvHyuZzw",
+				thumbnail: "https://www.youtube.com/embed/p4gmvHyuZzw?",
 				type: ResourceType.VIDEO,
 			},
 			{
@@ -247,7 +244,7 @@ export const subjects: Subject[] = [
 				title: "Discrete Mathematics for Computer Science",
 				content:
 					"As the topics covered in LOMA are all related to Discrete Mathematics, here's a short introduction to this branch of Mathematics.",
-				thumbnail: "https://www.youtube.com/embed/q4L-wUF3yig",
+				thumbnail: "https://www.youtube.com/embed/q4L-wUF3yig?",
 				type: ResourceType.VIDEO,
 			},
 			{
@@ -262,7 +259,7 @@ export const subjects: Subject[] = [
 				title: "How to Predict the Spread of Epidemics | Computational Social Networks",
 				content:
 					"A high level practical application of graph theory — modelling a social network.",
-				thumbnail: "https://www.youtube.com/embed/uKVQERi83lM",
+				thumbnail: "https://www.youtube.com/embed/uKVQERi83lM?",
 				type: ResourceType.VIDEO,
 			},
 		],
