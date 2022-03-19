@@ -12,15 +12,23 @@ import {
 	Icon,
 	Image,
 	Stack,
+	useColorMode,
 } from "@chakra-ui/react"
 import { useNavigate } from "react-router-dom"
 
 const Footer = () => {
+	const { colorMode } = useColorMode()
+
 	const navigate = useNavigate()
 
 	return (
 		<Box
-			bg="rgba(0, 0, 0, 0.06)"
+			bgColor={
+				colorMode === "light"
+					? "hsl(0, 0%, 0%, 0.05)"
+					: "hsl(0, 0%, 100%, 0.025)"
+			}
+			mt="auto"
 			p={{ base: 1.5, md: 2 }}
 			sx={{ w: "100%" }}>
 			<Center>
@@ -55,7 +63,7 @@ const Footer = () => {
 						</Tooltip>
 						<Image
 							src="/itsig-footer.svg"
-							w={{ base: "4.5em", md: "4.5em" }}
+							w={{ base: "4em", md: "4.5em" }}
 							h="auto"
 							_hover={{
 								cursor: "pointer",

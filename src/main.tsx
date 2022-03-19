@@ -10,7 +10,7 @@ const theme = extendTheme({
 	useSystemColorMode: false,
 	colors: {
 		iit_blue: "hsl(207, 100%, 54%)",
-		itsig_blue: "hsl(207, 87%, 30%)",
+		itsig_blue: "hsl(221, 55%, 63%)",
 	},
 	fonts: {
 		heading: '"Poppins", sans-serif',
@@ -21,6 +21,13 @@ const theme = extendTheme({
 			baseStyle: {
 				_focus: {
 					boxShadow: "none",
+				},
+			},
+		},
+		Text: {
+			baseStyle: {
+				_hover: {
+					cursor: "default",
 				},
 			},
 		},
