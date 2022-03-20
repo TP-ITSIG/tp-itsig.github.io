@@ -24,7 +24,9 @@ const App = () => {
                                 
 WoAh what are you doing in the console?
 
-Well since your already here, We're actually recruiting Dip IT students into our CCA!
+Well...
+
+Since you're already here, We're actually recruiting Dip IT students into our CCA!
 
 Just DM "supercalifragilisticexpialidocious" to our Instagram if you're interested in joining us!
 `)
