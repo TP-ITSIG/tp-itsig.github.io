@@ -153,7 +153,7 @@ const About = () => {
 							windbreakers, starting software projects like this
 							website, and many more. Follow us on{" "}
 							<Link
-								href="https://www.instagram.com/itsigtp/"
+								href="https://www.instagram.com/tp.itsig/"
 								isExternal
 								style={{
 									fontWeight: "600",
