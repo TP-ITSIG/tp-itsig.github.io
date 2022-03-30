@@ -84,7 +84,7 @@ const Footer = () => {
 								fontSize="3xl"
 								onClick={() => {
 									window.open(
-										"https://www.instagram.com/tp.itsig/",
+										"https://www.github.com/tp-itsig/",
 									)
 								}}
 							/>
