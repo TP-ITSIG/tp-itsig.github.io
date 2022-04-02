@@ -56,7 +56,7 @@ const Footer = () => {
 								fontSize="3xl"
 								onClick={() => {
 									window.open(
-										"https://www.instagram.com/itsigtp/",
+										"https://www.instagram.com/tp.itsig/",
 									)
 								}}
 							/>
