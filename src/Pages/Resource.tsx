@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react"
 import ResourceCard from "../Components/ResourceCard"
-import { subjects } from "../Models/Subjects"
+import { subjects } from "../Resources/Resources"
 import { useLocation } from "react-router-dom"
 import {
 	Box,

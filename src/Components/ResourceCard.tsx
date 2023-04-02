@@ -19,7 +19,7 @@ import {
 } from "@chakra-ui/react"
 import { useState } from "react"
 import { Resource } from "../Models/Resource"
-import { ResourceType } from "../Models/ResourceType"
+import { ResourceType } from "../Interfaces/ResourceType"
 import { FiExternalLink } from "react-icons/fi"
 
 interface ResourceCardProps {

@@ -10,7 +10,7 @@ import {
 import { useLayoutEffect } from "react"
 
 import SubjectCard from "../Components/SubjectCard"
-import { subjects } from "../Models/Subjects"
+import { subjects } from "../Resources/Resources"
 
 const Home = () => {
 	const { colorMode } = useColorMode()

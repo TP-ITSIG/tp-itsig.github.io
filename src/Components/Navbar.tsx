@@ -18,7 +18,7 @@ import {
 import { useEffect, useLayoutEffect, useState } from "react"
 import { IoMenu, IoSunny, IoMoon } from "react-icons/io5"
 import { useNavigate, useLocation } from "react-router-dom"
-import { subjects } from "../Models/Subjects"
+import { subjects } from "../Resources/Resources"
 import ReactGA from "react-ga4"
 
 interface NavbarItems {
