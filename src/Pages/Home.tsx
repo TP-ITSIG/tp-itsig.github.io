@@ -10,7 +10,7 @@ import {
 import { useLayoutEffect } from "react"
 
 import SubjectCard from "../Components/SubjectCard"
-import { subjects } from "../Resources/Resources"
+import { Subjects } from "../Resources/Subjects"
 
 const Home = () => {
 	const { colorMode } = useColorMode()
@@ -142,7 +142,7 @@ const Home = () => {
 				</Stack>
 
 				<SimpleGrid columns={{ base: 2, md: 3 }} gap={5} rowGap={7}>
-					{subjects.map(subject => (
+					{Subjects.map(subject => (
 						<SubjectCard
 							key={subject.abbreviation.toLowerCase()}
 							title={subject.abbreviation}

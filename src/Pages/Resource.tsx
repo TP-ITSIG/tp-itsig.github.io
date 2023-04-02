@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react"
 import ResourceCard from "../Components/ResourceCard"
-import { subjects } from "../Resources/Resources"
+import { Subjects } from "../Resources/Subjects"
 import { useLocation } from "react-router-dom"
 import {
 	Box,
@@ -22,7 +22,7 @@ const Resource = () => {
 	const location = useLocation()
 	const pathNameArray = location.pathname.split("/")
 	const subjectAbbrev = pathNameArray[pathNameArray.length - 1]
-	const subject = subjects.filter(sub => {
+	const subject = Subjects.filter(sub => {
 		return sub.abbreviation.toUpperCase() == subjectAbbrev.toUpperCase()
 	})[0]
 

@@ -18,7 +18,7 @@ import {
 import { useEffect, useLayoutEffect, useState } from "react"
 import { IoMenu, IoSunny, IoMoon } from "react-icons/io5"
 import { useNavigate, useLocation } from "react-router-dom"
-import { subjects } from "../Resources/Resources"
+import { Subjects } from "../Resources/Subjects"
 import ReactGA from "react-ga4"
 
 interface NavbarItems {
@@ -65,9 +65,9 @@ const Navbar = () => {
 	}, [location])
 
 	useLayoutEffect(() => {
-		for (let i = 0; i < subjects.length; i++) {
-			if (currentPath === subjects[i].abbreviation) {
-				setBgColor(subjects[i].color)
+		for (let i = 0; i < Subjects.length; i++) {
+			if (currentPath === Subjects[i].abbreviation) {
+				setBgColor(Subjects[i].color)
 				break
 			} else {
 				colorMode === "light"
