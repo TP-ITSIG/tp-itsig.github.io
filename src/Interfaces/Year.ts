@@ -7,6 +7,7 @@ export interface Year {
 	image: string
 	updated: string
 	creator: string
+	creatorLink: string
 	semester1: Semester
 	semester2: Semester
 }

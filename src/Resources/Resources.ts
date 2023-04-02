@@ -11,6 +11,7 @@ const Resources: Year[] = [
 		image: "../../assets/Year-Icons/IIT_Year1.svg",
 		updated: "April 2023",
 		creator: "ITSIG",
+		creatorLink: "https://www.instagram.com/tp.itsig",
 		semester1: {
 			name: "Semester 1 (COMT, UXID, DAVA, LOMA, CYFUN & Others)",
 			subjects: [COMT, UXID, DAVA, LOMA, CYFUN, Others],
@@ -28,6 +29,7 @@ const Resources: Year[] = [
 		image: "../../assets/Year-Icons/DipIT_Year2.svg",
 		updated: "April 2023",
 		creator: "ITSIG",
+		creatorLink: "https://www.instagram.com/tp.itsig",
 		semester1: {
 			name: "Semester 1 (MBAP, CADV & AMDT)",
 			subjects: undefined,
@@ -38,3 +40,5 @@ const Resources: Year[] = [
 		},
 	},
 ]
+
+export default Resources
