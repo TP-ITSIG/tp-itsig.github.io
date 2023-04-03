@@ -8,7 +8,7 @@ const Resources: Year[] = [
 		name: "IIT Year 1",
 		course: "Common",
 		description: "What every IIT student will take in Year 1!",
-		image: "../../assets/Year-Icons/IIT_Year1.svg",
+		image: "/Year-Icons/IIT_Year1.svg",
 		updated: "April 2023",
 		creator: "ITSIG",
 		creatorLink: "https://www.instagram.com/tp.itsig",
@@ -29,7 +29,7 @@ const Resources: Year[] = [
 		course: "IT",
 		description:
 			"Information Technology students takes these subjects in Year 2!",
-		image: "../../assets/Year-Icons/DipIT_Year2.svg",
+		image: "/Year-Icons/DipIT_Year2.svg",
 		updated: "April 2023",
 		creator: "ITSIG",
 		creatorLink: "https://www.instagram.com/tp.itsig",

@@ -27,8 +27,7 @@ const SubjectCard = (props: SubjectCardProps) => {
 				boxShadow: `0px 8px 12px ${props.bgColor}`,
 				cursor: "pointer",
 			}}
-			transition="box-shadow 0.3s ease-out"
-			overflow="hidden">
+			transition="box-shadow 0.3s ease-out">
 			<a href={`#/resource/${props.title}`}>
 				<Center bg={props.bgColor} w="auto" minH="60%" maxH="60%">
 					<Image
@@ -41,7 +40,7 @@ const SubjectCard = (props: SubjectCardProps) => {
 						boxSize={{ base: "80%", sm: "60%", lg: "60%" }}
 					/>
 				</Center>
-				<Box my={2} px={{ base: 2, lg: 3 }}>
+				<Box h="100%" my={2} px={{ base: 2, lg: 3 }}>
 					<Text
 						fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
 						fontWeight="bold"
@@ -51,8 +50,8 @@ const SubjectCard = (props: SubjectCardProps) => {
 						{props.title}
 					</Text>
 					<Text
-						fontSize={{ base: "xs", md: "sm" }}
-						pb={8}
+						noOfLines={{ base: 2, lg: 4 }}
+						fontSize={{ base: "xs", md: "md" }}
 						_hover={{
 							cursor: "pointer",
 						}}>

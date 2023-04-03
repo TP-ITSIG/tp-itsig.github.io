@@ -35,7 +35,31 @@ const YearCard = (props: YearCardProps) => {
 	const content = Resources.find(resource => resource.course === props.course)
 
 	return content === undefined ? (
-		<></>
+		<Box
+			bgColor={
+				colorMode === "light"
+					? "hsl(0, 0%, 0%, 0.05)"
+					: "hsl(0, 0%, 80%, 0.05)"
+			}
+			maxW="100%"
+			borderRadius={{ base: "16px", lg: "20px" }}
+			my={4}
+			mx={4}
+			px={{ base: "2", md: "4" }}
+			py={{ base: "2", md: "4" }}>
+			<Center>
+				<Text
+					fontSize={{
+						base: "sm",
+						md: "lg",
+						lg: "2xl",
+						xl: "2xl",
+					}}
+					textAlign="center">
+					Check back here in a while 👀
+				</Text>
+			</Center>
+		</Box>
 	) : (
 		<Box
 			bgColor={
@@ -64,7 +88,7 @@ const YearCard = (props: YearCardProps) => {
 				justifyContent="flex-start"
 				direction={{ base: "column", lg: "row" }}>
 				<Stack
-					maxW={{ base: "100%", lg: "35%" }}
+					maxW={{ base: "100%", lg: "30%" }}
 					direction={{ base: "row", lg: "column" }}
 					justifyContent="start">
 					<VStack align="start">
@@ -90,6 +114,7 @@ const YearCard = (props: YearCardProps) => {
 							<span>
 								<a href={content.creatorLink} target="_blank">
 									<Tooltip
+										placement="top"
 										hasArrow
 										label={content.creatorHelp}
 										aria-label={content.creatorHelp}>
@@ -97,6 +122,7 @@ const YearCard = (props: YearCardProps) => {
 											_hover={{
 												cursor: "pointer",
 											}}
+											display="inline-block"
 											textDecoration="underline"
 											fontSize={{
 												base: "sm",
@@ -129,6 +155,7 @@ const YearCard = (props: YearCardProps) => {
 										lg: "xl",
 										xl: "xl",
 									}}
+									display="inline-block"
 									fontWeight="medium">
 									{content.updated}
 								</Text>
@@ -165,8 +192,8 @@ const YearCard = (props: YearCardProps) => {
 										fontSize={{
 											base: "sm",
 											md: "lg",
-											lg: "xl",
-											xl: "xl",
+											lg: "2xl",
+											xl: "2xl",
 										}}
 										fontWeight="regular">
 										{semester.name}

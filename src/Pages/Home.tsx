@@ -97,7 +97,7 @@ const Home = () => {
 				</Stack>
 			</Box>
 			<YearSelect setCourse={setSelectedCourse} />
-			<YearCard course={selectedCourse}></YearCard>
+			<YearCard course={selectedCourse} />
 		</Box>
 	)
 }
