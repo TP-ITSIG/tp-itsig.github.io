@@ -210,7 +210,8 @@ const YearCard = (props: YearCardProps) => {
 													lg: "xl",
 													xl: "xl",
 												}}>
-												Check back here in a week 👀
+												Keep an eye out for new content
+												👀
 											</Text>
 										</Center>
 									) : (

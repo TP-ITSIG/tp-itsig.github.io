@@ -1,11 +1,12 @@
 import { ResourceType } from "../Interfaces/ResourceType"
+import { Subject } from "../Interfaces/Subject"
 
-const COMT = {
+const COMT: Subject = {
 	name: "Computational Thinking",
-	tagline: "Develop an Android Application",
+	tagline: "Create apps with Python and JupyterNotebook!	",
 	abbreviation: "COMT",
 	description:
-		"This module teaches the fundamentals of programming using the Java programming language. Using your new skills, you will transform your UXID prototype into a real Android app with Android Studio.",
+		"This module teaches the fundamentals of programming using the Python programming language. Using your new skills, you will create an application with Tkinter to better visualise your changes in code.",
 	color: "hsl(154, 74%, 69%)",
 	bgColor: "hsla(154, 74%, 69%, 0.3)",
 	imageLight: "Subject-Icons/Light/COMT-L.svg",
@@ -14,98 +15,111 @@ const COMT = {
 		{
 			title: "Learning How to Code",
 			content:
-				"A fun video to introduce to you how you should approach learning how to code.",
+				"A fun video to introduce you on how to approach learning coding",
 			thumbnail: "https://www.youtube.com/embed/NtfbWkxJTHw?",
 			type: ResourceType.VIDEO,
 		},
 
 		{
-			title: "Android Studio Starter",
+			title: "Quickstart guide to JupyterNotebook",
 			content:
-				"An explanation of what an Integrated Development Environment (IDE) is and what Android Studio is about.",
-			thumbnail: "https://www.youtube.com/embed/NCoekcDxbrI?",
+				"Get a quick rundown of JupyterNotebook and the fundamentals to the tool that you'll be using to write Python code. Prettify it with Markdown inside your notebooks as well!",
+			thumbnail: "https://www.youtube.com/embed/jZ952vChhuI?",
 			type: ResourceType.VIDEO,
 		},
 		{
-			title: "Introduction to Java",
+			title: "Python in 100 seconds",
 			content:
-				"A short introduction to java programming - if you’d like to follow along, you can use Jdoodle as an online java compiler in place of Eclipse",
-			thumbnail: "https://www.youtube.com/embed/RRubcjpTkks?",
+				"Understand why Python is so commonly used and the basics of Python in one video!",
+			thumbnail: "https://www.youtube.com/embed/x7X9w_GIm1s?",
 			type: ResourceType.VIDEO,
 			resourceLinks: [
 				{
-					title: "Online Java Compiler",
-					url: "https://www.jdoodle.com/online-java-compiler/",
+					title: "Online Python Editor",
+					url: "https://www.online-python.com/",
 				},
 			],
 		},
+
 		{
-			title: "Codecademy",
+			title: "Tkinter Tutorial",
 			content:
-				"An interactive online course with exercises to help you learn Java. Attempting the free topics within each module will do",
+				"Create a quick app with Tkinter and get understand Tkinter's component system",
+			thumbnail: "https://www.youtube.com/embed/ibf5cx221hk?",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "Codeacademy: Python 3 Tutorial",
+			content:
+				"Learn Python in more depth through this free interactive course by Codeacademy. Attempting the free topics within each module will do",
 			thumbnail:
 				"https://cdn.discordapp.com/attachments/952818890906419230/953200075088228362/codecademy.png",
 			type: ResourceType.IMAGE,
-			imageUrl: "https://www.codecademy.com/learn/learn-java",
-		},
-		{
-			title: "Udemy: Java Tutorial for Complete Beginners",
-			content:
-				"A more in-depth course for you to learn how to code in Java. Don't worry if you have never done programming before as this course doesn't require any prior programming knowledge",
-			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/953850404544872468/image_5.png",
-			type: ResourceType.IMAGE,
-			imageUrl: "https://www.udemy.com/course/java-tutorial/",
+			imageUrl: "https://www.codecademy.com/learn/learn-python-3",
 		},
 	],
 	advanced: [""],
 	software: [
 		{
-			name: "Android Studio",
-			icon: "/Software-Icons/AndroidStudio.svg",
-			url: "https://developer.android.com/studio/index.html",
+			name: "Anaconda",
+			icon: "/Software-Icons/Anaconda.svg",
+			url: "https://docs.anaconda.com/anaconda/install/index.html",
 		},
 		{
-			name: "Github",
-			icon: "/Software-Icons/Github.svg",
+			name: "GitHub",
+			icon: "/Software-Icons/GitHub.svg",
 			url: "https://github.com/",
 		},
 	],
 }
 
-const UXID = {
+const UXID: Subject = {
 	name: "User Experience and Interface Design",
-	tagline: "Design and prototype your app",
+	tagline: "Designing User Interfaces with User Experience in Mind.",
 	abbreviation: "UXID",
 	description:
-		"This module teaches you about the UX design process. You will then carry out a design project to come up with wireframes that will be later translated to a fully functional app in COMT.",
+		"This module introduces the concept of Human-Centered Design, and the idea of designing an user interface with the user in mind. You will learn the about User Experience Design and how to design an effective user interface using Adobe XD.",
 	color: "hsl(289, 100%, 82%)",
 	bgColor: "hsl(289, 100%, 82%, 0.3)",
 	imageLight: "Subject-Icons/Light/UXID-L.svg",
 	imageDark: "Subject-Icons/Dark/UXID-D.svg",
 	resources: [
 		{
-			title: "UX Crash Course",
+			title: "UI vs UX, Whats the difference?",
 			content:
-				"A crash course on what User Experience Design is about, basic design principles and the design process",
-			thumbnail: "https://www.youtube.com/embed/_lyzy-vChh4?",
+				"A quick video explaining the difference between UI vs UX, the design flow process ",
+			thumbnail: "https://www.youtube.com/embed/5CxXhyhT6Fc?",
 			type: ResourceType.VIDEO,
 		},
 		{
-			title: "DesignBytes: Intro to Material Design",
+			title: "Persona & Task Flow in Adobe XD",
 			content:
-				"Design systems make our experience of using apps and websites more consistent.  When designing Android apps, we want to make the apps on an Android device more coherent — Material Design is a design system by Google that lays out design principles for you to follow when developing for their platforms. ",
-			thumbnail: "https://www.youtube.com/embed/p4gmvHyuZzw?",
-			type: ResourceType.VIDEO,
-		},
-		{
-			title: "material.io",
-			content:
-				"A resource website containing guidelines for Google's material design principles. Following these guidelines will enable you to make a more professional looking UI and provide a better UX for you application.",
+				"What is a Persona? Why do we need a task flow? These are all things UX researchers uses to better understand the target audience of the service or application. Part of a playlist series that goes in depth into UI/UX inside Adobe XD, feel free to continue watching the playlist if you'd like.",
 			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/953179627784917022/eec66db1fc167b50a8e21692fcd38286.png",
-			imageUrl: "https://material.io/design",
-			type: ResourceType.IMAGE,
+				"https://www.youtube.com/embed?v=Em2vKwE_bsg&list=PLttcEXjN1UcHbhOF4J99QKUiOqt9ETgnb&index=4",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "Low vs High Fidelity Wireframes in Adobe XD",
+			content:
+				"What is the difference between a Low vs a High Fidelity Wireframe? How is this useful in better understanding the requirements of our application? Part of that same playlist!",
+			thumbnail:
+				"https://www.youtube.com/embed?v=NIOOH5oyjxw&list=PLttcEXjN1UcHbhOF4J99QKUiOqt9ETgnb&index=5",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "Helpful tips on how to effectively use Colours in your UX Design",
+			content:
+				"The colours used in your design can improve the quality of the design by a lot, as it can distinguish to the user that certain elements have higher importance than the other! Consistency in colours can help your design too as well.",
+			thumbnail: "https://www.youtube.com/embed/r8r_tstxJzc?",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "Amateur vs Pro UI Design Examples (a Before & After)",
+			content:
+				"View the difference between an Amateur and a Pro design and figure out if you can pick up some subtle improvements that you can use within your own design as well!",
+			thumbnail: "https://www.youtube.com/embed/XhdLvVmUjTQ?",
+			type: ResourceType.VIDEO,
 		},
 	],
 	advanced: [""],
@@ -118,7 +132,7 @@ const UXID = {
 	],
 }
 
-const DAVA = {
+const DAVA: Subject = {
 	name: "Data Analytics and Visualisation",
 	tagline: "Visualise and analyse big data",
 	abbreviation: "DAVA",
@@ -129,6 +143,13 @@ const DAVA = {
 	imageLight: "Subject-Icons/Light/DAVA-L.svg",
 	imageDark: "Subject-Icons/Dark/DAVA-D.svg",
 	resources: [
+		{
+			title: "Big Data in 5 minutes",
+			content:
+				'Understand what is "Big Data" and learn how it is used in our everyday life.',
+			thumbnail: "https://www.youtube.com/embed/bAyrObl7TYE?",
+			type: ResourceType.VIDEO,
+		},
 		{
 			title: "Introduction to CRISP-DM Methodology",
 			content:
@@ -165,7 +186,7 @@ const DAVA = {
 	],
 }
 
-const LOMA = {
+const LOMA: Subject = {
 	name: "Logic and Mathematics",
 	tagline: "Learn about Discrete Mathematics",
 	abbreviation: "LOMA",
@@ -184,18 +205,18 @@ const LOMA = {
 			type: ResourceType.VIDEO,
 		},
 		{
-			title: "Intro to Graph Theory | Definitions & Ex: 7 Bridges of Konigsberg",
+			title: "Intro to Graph Theory",
 			content:
-				"An introduction to graph theory — the first chapter in LOMA. This also links to playlist that nicely explains many of the LOMA chapters. If you are interested, the next 3 videos continue on graph theory as well.",
+				"An introduction to graph theory — the first chapter in LOMA. This also links to playlist that nicely explains many of the LOMA chapters (Logic, Recursion and Functions). If you are interested, the next 3 videos continue on graph theory as well.",
 			thumbnail:
 				"https://www.youtube.com/embed?v=C7YrMRdLkqo&list=PLHXZ9OQGMqxersk8fUxiUMSIx0DBqsKZS&index=81",
 			type: ResourceType.VIDEO,
 		},
 		{
-			title: "How to Predict the Spread of Epidemics | Computational Social Networks",
+			title: "Understanding Logic Gates",
 			content:
-				"A high level practical application of graph theory — modelling a social network.",
-			thumbnail: "https://www.youtube.com/embed/uKVQERi83lM?",
+				"Logic gates are the backbone of our digital devices, learn how they work together to create everything you see digitally.",
+			thumbnail: "https://www.youtube.com/embed/INEtYZqtjTo?",
 			type: ResourceType.VIDEO,
 		},
 	],
@@ -203,79 +224,69 @@ const LOMA = {
 	software: [],
 }
 
-const CYFUN = {
-	name: "Network Technology",
-	tagline: "Learn about the internet and simulate computer networks",
-	abbreviation: "NETY",
+const CYFUN: Subject = {
+	name: "Cybersecurity Fundamentals",
+	tagline: "The first steps to Cybersecurity Knowledge",
+	abbreviation: "CYFUN",
 	description:
-		"This module teaches you the basics of computer networking which will help you throughout your time in IIT. You will learn to describe networking systems with the OSI Model and understand how the internet works. You will also simulate networks with Packet Tracer.",
+		"This subject aims to equip students with the knowledge of IT security and its application, as well as practical skills to secure data. It also aims to equip students with the knowledge and skills to implement digital security to minimise operational risks in an organisation and raise individual cybersecurity awareness.",
 	color: "hsl(189, 100%, 40%)",
 	bgColor: "hsla(189, 100%, 40%, 0.3)",
-	imageLight: "Subject-Icons/Light/NETY-L.svg",
-	imageDark: "Subject-Icons/Dark/NETY-D.svg",
+	imageLight: "Subject-Icons/Light/CYFUN-L.svg",
+	imageDark: "Subject-Icons/Dark/CYFUN-D.svg",
 	resources: [
 		{
-			title: "Evolution of the Internet",
-			content: "A little history of the internet as we know it today",
-			thumbnail: "https://www.youtube.com/embed/km9-XQZkOSE?",
-			type: ResourceType.VIDEO,
-		},
-		{
-			title: "How the internet works",
+			title: "Defend The Crown (iOS/Android)",
 			content:
-				"Now that you know a bit about history of the internet, you may be wondering how it actually works. Watch this video to find out!",
-			thumbnail: "https://www.youtube.com/embed/7_LPdttKXPc?",
-			type: ResourceType.VIDEO,
-		},
-		{
-			title: "Computer Networks: Crash Course Computer Science",
-			content:
-				"An introduction to computer networks. As it is part of a three part series, we have added them to a playlist :)",
+				"Play the mobile game Defend the Crown to learn about Cybersecurity principles.",
 			thumbnail:
-				"https://www.youtube.com/embed?v=3QhU9jd03a0&list=PLkdNeERjj7-4jU7H0sGN02q9uyZO_JoDb&index=1",
-			type: ResourceType.VIDEO,
+				"https://cdn.discordapp.com/attachments/952818890906419230/1092537052412792872/defendthecrownposter.png",
+			type: ResourceType.IMAGE,
+			imageUrl:
+				"https://apps.apple.com/au/app/defend-the-crown/id1550656752",
+			resourceLinks: [
+				{
+					title: "Download it on Apple App Store",
+					url: "https://apps.apple.com/au/app/defend-the-crown/id1550656752",
+				},
+				{
+					title: "Download it on Google Play Store",
+					url: "https://play.google.com/store/apps/details?id=com.PNNL.DefendtheCrown",
+				},
+			],
+		},
+		{
+			title: "Personal Data Protection Act (PDPA)",
+			content:
+				"Get to know the essentials of the Personal Data Protection Act (PDPA) through these interactive learning tools developed by the PDPC. The course covers the basics you will need to know about the key terms and organisations' obligations under the PDPA and offer ways in which data protection officers can develop good data protection policies and practices.",
+			thumbnail:
+				"https://cdn.discordapp.com/attachments/952818890906419230/1092538185994735656/pdpa.PNG",
+			type: ResourceType.IMAGE,
+			imageUrl:
+				"https://www.pdpc.gov.sg/Help-and-Resources/2018/01/E-Learning-Programme",
 		},
 		{
 			title: "Cisco NetAcad: Introduction to Cybersecurity",
 			content:
-				"A intro to cybersecurity course by Cisco which will enable you to discover the world of cybersecurity and its impact as you learn about the most common threats, attacks and vulnerabilities.",
+				"This introductory course takes you inside the world of cybersecurity. You will learn cybersecurity basics to protect your personal digital life and gain insights into the biggest security challenges companies, governments, and educational institutions face today. Cybersecurity professionals who can protect and defend an organization's network are in high demand.",
 			thumbnail:
 				"https://cdn.discordapp.com/attachments/952818890906419230/953207201080692736/file.jpg",
 			type: ResourceType.IMAGE,
 			imageUrl:
-				"https://www.netacad.com/courses/cybersecurity/introduction-cybersecurity",
-		},
-		{
-			title: "Cisco NetAcad: Networking Essentials",
-			content:
-				"A networking course by Cisco which will enable you to learn the basic networking concepts and skills.",
-			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/953209971963723787/Cisco.png",
-			type: ResourceType.IMAGE,
-			imageUrl:
-				"https://www.netacad.com/courses/networking/networking-essentials",
-		},
-		{
-			title: "Singtel Cyber Security Experience",
-			content:
-				"A nationwide initiative sponsored by Singtel designed to raise Cyber literacy among students and teachers. It introduces and inspires students to explore Cyber careers and build the skills needed.",
-			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/953213617677926400/singtel-experience-logo_1.png",
-			type: ResourceType.IMAGE,
-			imageUrl: "https://singtelcyberexperience.com/",
+				"https://skillsforall.com/course/introduction-to-cybersecurity",
 		},
 	],
 	advanced: [""],
 	software: [
 		{
-			name: "Packet Tracer",
-			icon: "/Software-Icons/PacketTracer.svg",
-			url: "https://www.netacad.com/courses/packet-tracer",
+			name: "VirtualBox",
+			icon: "/Software-Icons/VirtualBox.svg",
+			url: "https://www.virtualbox.org/wiki/Downloads",
 		},
 	],
 }
 
-const Others = {
+const Others: Subject = {
 	name: "Others",
 	tagline: "Useful miscellaneous resources",
 	abbreviation: "Others",
@@ -329,6 +340,15 @@ const Others = {
 				"https://cdn.discordapp.com/attachments/952818890906419230/953289905486852136/unknown.png",
 			imageUrl: "https://wordcounter.tnitish.com/",
 			type: ResourceType.IMAGE,
+		},
+		{
+			title: "GPA Calculator",
+			content:
+				"Calculate your future or current GPA and see what you can buy with your GPA!",
+			thumbnail:
+				"https://cdn.discordapp.com/attachments/952818890906419230/1092539786469834804/gpacalculator.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://gpa-buy-wat.vercel.app/",
 		},
 	],
 	advanced: [""],
