@@ -19,7 +19,6 @@ import {
 } from "@chakra-ui/react"
 
 const selectedTabSx = {
-	color: "white",
 	borderColor: "itsig_blue",
 	bgColor: "itsig_blue",
 }
@@ -40,7 +39,6 @@ const tabSx = {
 	borderRadius: 8,
 	borderWidth: 2,
 	borderColor: "itsig_blue",
-	color: "white",
 }
 
 const courses = [
@@ -105,6 +103,8 @@ const YearSelect = (props: YearSelectProps) => {
 				<TabList justifyContent="space-evenly" gap={2}>
 					<Tab
 						{...tabSx}
+						color={colorMode === "light" ? "black" : "white"}
+						fontWeight="semibold"
 						_selected={selectedTabSx}
 						_hover={hoverTabSx}
 						_active={activeTabSx}>
@@ -118,6 +118,8 @@ const YearSelect = (props: YearSelectProps) => {
 					</Tab>
 					<Tab
 						{...tabSx}
+						color={colorMode === "light" ? "black" : "white"}
+						fontWeight="semibold"
 						_selected={selectedTabSx}
 						_hover={hoverTabSx}
 						_active={activeTabSx}>

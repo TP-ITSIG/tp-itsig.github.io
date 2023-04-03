@@ -4,6 +4,7 @@ import { useLayoutEffect, useState } from "react"
 import SubjectCard from "../Components/SubjectCard"
 import { Subjects } from "../Resources/Subjects"
 import YearSelect from "../Components/YearSelect"
+import YearCard from "../Components/YearCard"
 
 const Home = () => {
 	useLayoutEffect(() => {
@@ -96,7 +97,7 @@ const Home = () => {
 				</Stack>
 			</Box>
 			<YearSelect setCourse={setSelectedCourse} />
-			<Text>{selectedCourse}</Text>
+			<YearCard course={selectedCourse}></YearCard>
 		</Box>
 	)
 }
