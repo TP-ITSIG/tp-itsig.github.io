@@ -8,6 +8,6 @@ export interface Year {
 	updated: string
 	creator: string
 	creatorLink: string
-	semester1: Semester
-	semester2: Semester
+	creatorHelp: string | undefined
+	semesters: Semester[]
 }

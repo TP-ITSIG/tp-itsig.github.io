@@ -18,6 +18,7 @@ import {
 	AccordionButton,
 	AccordionIcon,
 	AccordionPanel,
+	Tooltip,
 } from "@chakra-ui/react"
 
 import Resources from "../Resources/Resources"
@@ -48,24 +49,22 @@ const YearCard = (props: YearCardProps) => {
 			mx={4}
 			px={{ base: "2", md: "4" }}
 			py={{ base: "2", md: "4" }}>
-			<Center>
-				<Text
-					fontSize={{
-						base: "2xl",
-						md: "4xl",
-						lg: "4xl",
-						xl: "4xl",
-					}}
-					fontWeight="bold"
-					textAlign={{ base: "center", lg: "left" }}>
-					{content?.name}
-				</Text>
-			</Center>
+			<Text
+				fontSize={{
+					base: "2xl",
+					md: "4xl",
+					lg: "4xl",
+					xl: "4xl",
+				}}
+				fontWeight="bold"
+				textAlign={{ base: "center", lg: "left" }}>
+				{content?.name}
+			</Text>
 			<Stack
 				justifyContent="flex-start"
 				direction={{ base: "column", lg: "row" }}>
 				<Stack
-					maxW={{ base: "100%", lg: "30%" }}
+					maxW={{ base: "100%", lg: "35%" }}
 					direction={{ base: "row", lg: "column" }}
 					justifyContent="start">
 					<VStack align="start">
@@ -87,8 +86,32 @@ const YearCard = (props: YearCardProps) => {
 								xl: "xl",
 							}}
 							fontWeight="regular">
-							📝 Content curated by {content.creator}
+							📝 Content curated by{" "}
+							<span>
+								<a href={content.creatorLink} target="_blank">
+									<Tooltip
+										hasArrow
+										label={content.creatorHelp}
+										aria-label={content.creatorHelp}>
+										<Text
+											_hover={{
+												cursor: "pointer",
+											}}
+											textDecoration="underline"
+											fontSize={{
+												base: "sm",
+												md: "lg",
+												lg: "xl",
+												xl: "xl",
+											}}
+											fontWeight="medium">
+											{content.creator}
+										</Text>
+									</Tooltip>
+								</a>
+							</span>
 						</Text>
+
 						<Text
 							fontSize={{
 								base: "sm",
@@ -97,7 +120,19 @@ const YearCard = (props: YearCardProps) => {
 								xl: "xl",
 							}}
 							fontWeight="regular">
-							🕐 Last updated in {content.updated}
+							🕐 Last updated in{" "}
+							<span>
+								<Text
+									fontSize={{
+										base: "sm",
+										md: "lg",
+										lg: "xl",
+										xl: "xl",
+									}}
+									fontWeight="medium">
+									{content.updated}
+								</Text>
+							</span>
 						</Text>
 					</VStack>
 					<Image
@@ -106,80 +141,78 @@ const YearCard = (props: YearCardProps) => {
 				</Stack>
 
 				<VStack w="100%">
-					<Accordion allowMultiple allowToggle w="100%">
-						<AccordionItem>
-							<AccordionButton justifyContent="space-between">
-								<Text
-									fontSize={{
-										base: "sm",
-										md: "lg",
-										lg: "xl",
-										xl: "xl",
-									}}
-									fontWeight="regular">
-									{content.semester1.name}
-								</Text>
-								<AccordionIcon />
-							</AccordionButton>
-							<AccordionPanel>
-								<SimpleGrid
-									columns={{ base: 2, md: 3 }}
-									gap={4}
-									rowGap={4}>
-									{content.semester1.subjects?.map(
-										subject => (
-											<SubjectCard
-												key={subject.abbreviation.toLowerCase()}
-												title={subject.abbreviation}
-												description={subject.tagline}
-												imageLight={subject.imageLight}
-												imageDark={subject.imageDark}
-												color={subject.color}
-												bgColor={subject.bgColor}
-											/>
-										),
+					<Accordion
+						defaultIndex={
+							new Date().getMonth() + 1 >= 3 &&
+							new Date().getMonth() + 1 <= 8
+								? 0
+								: 1
+						}
+						allowMultiple
+						allowToggle
+						w="100%">
+						{content.semesters.map((semester, index) => (
+							<AccordionItem
+								mb={4}
+								bgColor={
+									colorMode === "light" ? "white" : "gray.800"
+								}
+								border="none"
+								borderRadius="16px"
+								key={index}>
+								<AccordionButton justifyContent="space-between">
+									<Text
+										fontSize={{
+											base: "sm",
+											md: "lg",
+											lg: "xl",
+											xl: "xl",
+										}}
+										fontWeight="regular">
+										{semester.name}
+									</Text>
+									<AccordionIcon />
+								</AccordionButton>
+								<AccordionPanel>
+									{semester.subjects == undefined ? (
+										<Center>
+											<Text
+												fontSize={{
+													base: "sm",
+													md: "lg",
+													lg: "xl",
+													xl: "xl",
+												}}>
+												Check back here in a week 👀
+											</Text>
+										</Center>
+									) : (
+										<SimpleGrid
+											columns={{ base: 2, md: 3 }}
+											gap={4}
+											rowGap={4}>
+											{semester.subjects?.map(subject => (
+												<SubjectCard
+													key={subject.abbreviation.toLowerCase()}
+													title={subject.abbreviation}
+													description={
+														subject.tagline
+													}
+													imageLight={
+														subject.imageLight
+													}
+													imageDark={
+														subject.imageDark
+													}
+													color={subject.color}
+													bgColor={subject.bgColor}
+												/>
+											))}
+										</SimpleGrid>
 									)}
-								</SimpleGrid>
-							</AccordionPanel>
-						</AccordionItem>
-					</Accordion>
-
-					<Accordion allowMultiple allowToggle w="100%">
-						<AccordionItem>
-							<AccordionButton justifyContent="space-between">
-								<Text
-									fontSize={{
-										base: "sm",
-										md: "lg",
-										lg: "xl",
-										xl: "xl",
-									}}
-									fontWeight="regular">
-									{content.semester2.name}
-								</Text>
-								<AccordionIcon />
-							</AccordionButton>
-							<AccordionPanel>
-								<SimpleGrid
-									columns={{ base: 2, md: 3 }}
-									gap={5}
-									rowGap={7}>
-									{content.semester2.subjects?.map(
-										subject => (
-											<SubjectCard
-												key={subject.abbreviation.toLowerCase()}
-												title={subject.abbreviation}
-												description={subject.tagline}
-												imageLight={subject.imageLight}
-												imageDark={subject.imageDark}
-												color={subject.color}
-												bgColor={subject.bgColor}
-											/>
-										),
-									)}
-								</SimpleGrid>
-							</AccordionPanel>
-						</AccordionItem>
+								</AccordionPanel>
+							</AccordionItem>
+						))}
 					</Accordion>
 				</VStack>
 			</Stack>

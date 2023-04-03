@@ -38,7 +38,7 @@ const SubjectCard = (props: SubjectCardProps) => {
 								? props.imageLight
 								: props.imageDark
 						}
-						boxSize={{ base: "80%", sm: "60%", lg: "35%" }}
+						boxSize={{ base: "80%", sm: "60%", lg: "60%" }}
 					/>
 				</Center>
 				<Box my={2} px={{ base: 2, lg: 3 }}>
@@ -52,7 +52,7 @@ const SubjectCard = (props: SubjectCardProps) => {
 					</Text>
 					<Text
 						fontSize={{ base: "xs", md: "sm" }}
-						mb={4}
+						pb={8}
 						_hover={{
 							cursor: "pointer",
 						}}>

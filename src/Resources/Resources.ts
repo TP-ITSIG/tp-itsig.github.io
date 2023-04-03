@@ -12,14 +12,17 @@ const Resources: Year[] = [
 		updated: "April 2023",
 		creator: "ITSIG",
 		creatorLink: "https://www.instagram.com/tp.itsig",
-		semester1: {
-			name: "Semester 1 (COMT, UXID, DAVA, LOMA, CYFUN & Others)",
-			subjects: [COMT, UXID, DAVA, LOMA, CYFUN, Others],
-		},
-		semester2: {
-			name: "Semester 2 (ADEV, DBAV, DSAG & NECT)",
-			subjects: undefined,
-		},
+		creatorHelp: "With help from our lecturers!",
+		semesters: [
+			{
+				name: "Semester 1 (COMT, UXID, DAVA, LOMA, CYFUN & Others)",
+				subjects: [COMT, UXID, DAVA, LOMA, CYFUN, Others],
+			},
+			{
+				name: "Semester 2 (ADEV, DBAV, DSAG & NECT)",
+				subjects: undefined,
+			},
+		],
 	},
 	{
 		name: "Dip IT Year 2",
@@ -30,14 +33,17 @@ const Resources: Year[] = [
 		updated: "April 2023",
 		creator: "ITSIG",
 		creatorLink: "https://www.instagram.com/tp.itsig",
-		semester1: {
-			name: "Semester 1 (MBAP, CADV & AMDT)",
-			subjects: undefined,
-		},
-		semester2: {
-			name: "Semester 2 (FWEB, DEVOPS, MLDP & ITAD)",
-			subjects: undefined,
-		},
+		creatorHelp: undefined,
+		semesters: [
+			{
+				name: "Semester 1 (MBAP, CADV & AMDT)",
+				subjects: undefined,
+			},
+			{
+				name: "Semester 2 (FWEB, DEVOPS, MLDP & ITAD)",
+				subjects: undefined,
+			},
+		],
 	},
 ]
 
