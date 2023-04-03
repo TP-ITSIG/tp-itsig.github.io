@@ -1,33 +1,26 @@
-import {
-	Box,
-	SimpleGrid,
-	Text,
-	Image,
-	Stack,
-	Tag,
-	useColorMode,
-} from "@chakra-ui/react"
-import { useLayoutEffect } from "react"
+import { Box, SimpleGrid, Text, Image, Stack } from "@chakra-ui/react"
+import { useLayoutEffect, useState } from "react"
 
 import SubjectCard from "../Components/SubjectCard"
 import { Subjects } from "../Resources/Subjects"
+import YearSelect from "../Components/YearSelect"
 
 const Home = () => {
-	const { colorMode } = useColorMode()
-
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0)
 	}, [])
 
+	const [selectedCourse, setSelectedCourse] = useState("Common")
+
 	return (
-		<>
+		<Box maxW="1400px" margin="auto">
 			<Box
 				h="100%"
 				display="flex"
 				justifyContent="center"
 				alignItems="center"
 				borderBottomRadius="20px"
-				p={5}
+				p={4}
 				position="relative"
 				_before={{
 					content: `''`,
@@ -46,8 +39,8 @@ const Home = () => {
 				}}>
 				<Stack
 					direction={{ base: "column", lg: "row" }}
-					justify={{ lg: "space-around" }}
-					mb={3.5}
+					justify={{ lg: "space-evenly" }}
+					mb={1}
 					align="center"
 					spacing={0}>
 					<Stack
@@ -98,53 +91,13 @@ const Home = () => {
 					<Image
 						display={{ base: "none", lg: "block" }}
 						src="/home-icon.svg"
-						w="35%"
+						w="30%"
 					/>
 				</Stack>
 			</Box>
-
-			<Stack
-				direction={{ base: "column", lg: "row" }}
-				p={4}
-				mt={{ base: 2, lg: 8 }}>
-				<Stack direction="column" spacing={0} mb={2.5}>
-					<Text
-						fontWeight="bold"
-						fontSize={{
-							base: "2xl",
-							md: "3xl",
-							lg: "4xl",
-							xl: "5xl",
-						}}>
-						Year 1
-					</Text>
-					<Text
-						fontWeight="semibold"
-						fontSize={{
-							base: "xl",
-							md: "2xl",
-							lg: "3xl",
-							xl: "4xl",
-						}}>
-						Semester 1 Resources
-					</Text>
-				</Stack>
-
-				<SimpleGrid columns={{ base: 2, md: 3 }} gap={5} rowGap={7}>
-					{Subjects.map(subject => (
-						<SubjectCard
-							key={subject.abbreviation.toLowerCase()}
-							title={subject.abbreviation}
-							description={subject.tagline}
-							imageLight={subject.imageLight}
-							imageDark={subject.imageDark}
-							color={subject.color}
-							bgColor={subject.bgColor}
-						/>
-					))}
-				</SimpleGrid>
-			</Stack>
-		</>
+			<YearSelect setCourse={setSelectedCourse} />
+			<Text>{selectedCourse}</Text>
+		</Box>
 	)
 }
 
