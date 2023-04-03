@@ -28,15 +28,8 @@ const SubjectCard = (props: SubjectCardProps) => {
 				cursor: "pointer",
 			}}
 			transition="box-shadow 0.3s ease-out"
-			overflow="hidden"
-			onClick={() => {
-				navigate(`/resource/${props.title}`)
-			}}>
-			<a
-				href={`/#/resource/${props.title}`}
-				onClick={() => {
-					return false
-				}}>
+			overflow="hidden">
+			<a href={`#/resource/${props.title}`}>
 				<Center bg={props.bgColor} w="auto" minH="60%" maxH="60%">
 					<Image
 						py={1}

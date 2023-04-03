@@ -60,32 +60,34 @@ const ResourceCard = ({ resource, reverse }: ResourceCardProps) => {
 					</AspectRatio>
 				) : (
 					<Box position="relative">
-						<Image
-							width="100%"
-							height="100%"
-							borderRadius="xl"
-							objectFit="cover"
-							boxShadow={"0px 2px 12px hsl(0, 0%, 0%, 25%)"}
-							src={resource.thumbnail}
-							onClick={() => window.open(resource.imageUrl)}
-						/>
-						<Tooltip label="Open in new tab" placement="right">
-							<IconButton
-								aria-label="image-url-btn"
-								icon={<FiExternalLink />}
-								position="absolute"
-								bottom={2.5}
-								left={2.5}
-								size="md"
-								colorScheme="black"
-								color="white"
-								bgColor="hsla(0, 0%, 0%, 0.65)"
-								_hover={{ bgColor: "hsla(0, 0%, 0%, 0.75)" }}
-								_active={{ filter: "brightness(0.65)" }}
-								transition="all 0.35s ease"
-								onClick={() => window.open(resource.imageUrl)}
+						<a href={resource.imageUrl} target="_blank">
+							<Image
+								width="100%"
+								height="100%"
+								borderRadius="xl"
+								objectFit="cover"
+								boxShadow={"0px 2px 12px hsl(0, 0%, 0%, 25%)"}
+								src={resource.thumbnail}
 							/>
-						</Tooltip>
+							<Tooltip label="Open in new tab" placement="right">
+								<IconButton
+									aria-label="image-url-btn"
+									icon={<FiExternalLink />}
+									position="absolute"
+									bottom={2.5}
+									left={2.5}
+									size="md"
+									colorScheme="black"
+									color="white"
+									bgColor="hsla(0, 0%, 0%, 0.65)"
+									_hover={{
+										bgColor: "hsla(0, 0%, 0%, 0.75)",
+									}}
+									_active={{ filter: "brightness(0.65)" }}
+									transition="all 0.35s ease"
+								/>
+							</Tooltip>
+						</a>
 					</Box>
 				)}
 			</GridItem>
