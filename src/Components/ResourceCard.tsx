@@ -18,9 +18,9 @@ import {
 	useColorMode,
 } from "@chakra-ui/react"
 import { useState } from "react"
-import { Resource } from "../Models/Resource"
 import { ResourceType } from "../Interfaces/ResourceType"
 import { FiExternalLink } from "react-icons/fi"
+import { Resource } from "../Interfaces/Resource"
 
 interface ResourceCardProps {
 	resource: Resource

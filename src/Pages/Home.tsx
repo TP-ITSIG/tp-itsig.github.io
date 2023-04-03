@@ -90,7 +90,7 @@ const Home = () => {
 							fontSize={{ base: "sm", md: "md", lg: "lg" }}
 							fontWeight="medium"
 							maxW={{ base: "55ch" }}>
-							We’ve put together this website to give you a
+							We've put together this website to give you a
 							general overview of what to expect for each module
 							in your upcoming semesters!
 						</Text>
