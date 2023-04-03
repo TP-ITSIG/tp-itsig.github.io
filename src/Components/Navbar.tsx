@@ -139,9 +139,11 @@ const Navbar = () => {
 					spacing={5}
 					style={{ marginLeft: "3em" }}>
 					{pages.map(page => (
-						<a href={`#/${page.pageUrl}`} target="_self">
+						<a
+							href={`#/${page.pageUrl}`}
+							target="_self"
+							key={page.pageUrl}>
 							<Button
-								key={page.pageUrl}
 								fontWeight={
 									currentPath === page.pageUrl
 										? "bold"

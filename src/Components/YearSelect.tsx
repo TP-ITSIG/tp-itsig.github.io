@@ -161,7 +161,7 @@ const YearSelect = (props: YearSelectProps) => {
 								setSelectedCourse(courses[index].value)
 							}}>
 							<TabList justifyContent="space-evenly">
-								{courses.map(course => (
+								{courses.map((course, index) => (
 									<Tab
 										_hover={{
 											textDecoration: "underline",
@@ -170,7 +170,8 @@ const YearSelect = (props: YearSelectProps) => {
 										_selected={{
 											textDecoration: "underline",
 											fontWeight: "semibold",
-										}}>
+										}}
+										key={index}>
 										<Text
 											_hover={{
 												cursor: "pointer",
