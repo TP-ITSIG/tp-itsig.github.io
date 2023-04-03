@@ -32,35 +32,41 @@ const SubjectCard = (props: SubjectCardProps) => {
 			onClick={() => {
 				navigate(`/resource/${props.title}`)
 			}}>
-			<Center bg={props.bgColor} w="auto" minH="60%" maxH="60%">
-				<Image
-					py={1}
-					src={
-						colorMode === "light"
-							? props.imageLight
-							: props.imageDark
-					}
-					boxSize={{ base: "80%", sm: "60%", lg: "35%" }}
-				/>
-			</Center>
-			<Box my={2} px={{ base: 2, lg: 3 }}>
-				<Text
-					fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
-					fontWeight="bold"
-					_hover={{
-						cursor: "pointer",
-					}}>
-					{props.title}
-				</Text>
-				<Text
-					fontSize={{ base: "xs", md: "sm" }}
-					mb={4}
-					_hover={{
-						cursor: "pointer",
-					}}>
-					{props.description}
-				</Text>
-			</Box>
+			<a
+				href={`/#/resource/${props.title}`}
+				onClick={() => {
+					return false
+				}}>
+				<Center bg={props.bgColor} w="auto" minH="60%" maxH="60%">
+					<Image
+						py={1}
+						src={
+							colorMode === "light"
+								? props.imageLight
+								: props.imageDark
+						}
+						boxSize={{ base: "80%", sm: "60%", lg: "35%" }}
+					/>
+				</Center>
+				<Box my={2} px={{ base: 2, lg: 3 }}>
+					<Text
+						fontSize={{ base: "lg", md: "xl", lg: "2xl" }}
+						fontWeight="bold"
+						_hover={{
+							cursor: "pointer",
+						}}>
+						{props.title}
+					</Text>
+					<Text
+						fontSize={{ base: "xs", md: "sm" }}
+						mb={4}
+						_hover={{
+							cursor: "pointer",
+						}}>
+						{props.description}
+					</Text>
+				</Box>
+			</a>
 		</Box>
 	)
 }

@@ -35,7 +35,13 @@ const Footer = () => {
 				<VStack justifyItems="center">
 					<HStack spacing={1}>
 						<Text fontSize={{ base: "sm", md: "md" }}>
-							Made with love
+							Project made with ❤️ by{" "}
+							<span
+								style={{
+									fontWeight: "600",
+								}}>
+								ITSIG
+							</span>
 						</Text>
 						{/* <Text
 							fontSize={{ base: "sm", md: "md" }}
@@ -48,46 +54,46 @@ const Footer = () => {
 							label="ITSIG Instagram"
 							aria-label="ITSIG Instagram"
 							placement="left">
-							<IconButton
-								isRound
-								bg="transparent"
-								aria-label="ITSIG Instagram"
-								icon={<FaInstagram />}
-								fontSize="3xl"
-								onClick={() => {
-									window.open(
-										"https://www.instagram.com/tp.itsig/",
-									)
-								}}
-							/>
+							<a
+								href="https://www.instagram.com/tp.itsig"
+								target="_blank">
+								<IconButton
+									isRound
+									bg="transparent"
+									aria-label="ITSIG Instagram"
+									icon={<FaInstagram />}
+									fontSize="3xl"
+								/>
+							</a>
 						</Tooltip>
-						<Image
-							src="/itsig-footer.svg"
-							w={{ base: "4em", md: "4.5em" }}
-							h="auto"
-							_hover={{
-								cursor: "pointer",
-							}}
-							onClick={() => {
-								navigate("/about")
-							}}
-						/>
+						<Tooltip label="About us" aria-label="Our about page">
+							<a href="/#/about">
+								<Image
+									src="/itsig-footer.svg"
+									w={{ base: "4em", md: "4.5em" }}
+									h="auto"
+									_hover={{
+										cursor: "pointer",
+									}}
+								/>
+							</a>
+						</Tooltip>
+
 						<Tooltip
 							label="ITSIG GitHub"
 							aria-label="ITSIG GitHub"
 							placement="right">
-							<IconButton
-								isRound
-								bg="transparent"
-								aria-label="ITSIG GitHub"
-								icon={<SiGithub />}
-								fontSize="3xl"
-								onClick={() => {
-									window.open(
-										"https://www.github.com/tp-itsig/",
-									)
-								}}
-							/>
+							<a
+								href="https://www.github.com/tp-itsig/"
+								target="_blank">
+								<IconButton
+									isRound
+									bg="transparent"
+									aria-label="ITSIG GitHub"
+									icon={<SiGithub />}
+									fontSize="3xl"
+								/>
+							</a>
 						</Tooltip>
 					</HStack>
 				</VStack>

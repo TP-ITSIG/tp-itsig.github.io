@@ -81,8 +81,10 @@ const Navbar = () => {
 		<Box
 			bgColor={bgColor}
 			// transition="background-color 0.3s ease-out"
-			w="100%"
-			py={{ base: 4, lg: 5 }}
+			maxW="100%"
+			borderRadius={{ base: "16px", lg: "20px" }}
+			my={4}
+			mx={4}
 			px={{ base: 2, lg: 4 }}>
 			<HStack
 				justifyContent={{ base: "space-between", lg: "flex-start" }}
@@ -123,16 +125,13 @@ const Navbar = () => {
 					</Menu>
 				</Box>
 				<Image
-					src="/itsig.svg"
-					w={{ base: "4.5em", md: "5.5em" }}
+					src="/ITSIG_Logo_No_BG.svg"
+					w={{ base: "3.5em", md: "5.5em" }}
 					h="auto"
-					filter={
-						currentPath === "" || currentPath === "about"
-							? colorMode === "light"
-								? "none"
-								: "invert(100%)"
-							: "none"
-					}
+					_before={{
+						padding: "0px",
+						margin: "0px",
+					}}
 				/>
 				<HStack
 					display={{ base: "none", lg: "block" }}

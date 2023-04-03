@@ -22,16 +22,13 @@ const Home = () => {
 	return (
 		<>
 			<Box
+				h="100%"
 				display="flex"
 				justifyContent="center"
 				alignItems="center"
-				bgColor={
-					colorMode === "light"
-						? "hsl(0, 0%, 0%, 0.05)"
-						: "hsl(0, 0%, 100%, 0.05)"
-				}
 				borderBottomRadius="20px"
 				p={5}
+				position="relative"
 				_before={{
 					content: `''`,
 					bgImage: { base: "/home-icon.svg", lg: "none" },
@@ -46,8 +43,7 @@ const Home = () => {
 					bottom: 0,
 					right: 0,
 					zIndex: -1,
-				}}
-				position="relative">
+				}}>
 				<Stack
 					direction={{ base: "column", lg: "row" }}
 					justify={{ lg: "space-around" }}
@@ -57,31 +53,29 @@ const Home = () => {
 					<Stack
 						direction="column"
 						textAlign={{ base: "center", lg: "left" }}>
-						<Box>
-							<Text
-								fontSize={{
-									base: "3xl",
-									md: "4xl",
-									lg: "4xl",
-									xl: "5xl",
-								}}
-								fontWeight="bold"
-								textAlign={{ base: "center", lg: "left" }}
-								mb={-3.5}>
-								Welcome to the
-							</Text>
-							<Text
-								fontSize={{
-									base: "2xl",
-									md: "3xl",
-									lg: "4xl",
-									xl: "5xl",
-								}}
-								fontWeight="bold"
-								color="iit_blue">
-								School of Informatics & IT
-							</Text>
-						</Box>
+						<Text
+							fontSize={{
+								base: "3xl",
+								md: "4xl",
+								lg: "4xl",
+								xl: "5xl",
+							}}
+							fontWeight="bold"
+							textAlign={{ base: "center", lg: "left" }}
+							mb={-3.5}>
+							Welcome to the
+						</Text>
+						<Text
+							fontSize={{
+								base: "2xl",
+								md: "3xl",
+								lg: "4xl",
+								xl: "5xl",
+							}}
+							fontWeight="bold"
+							color="iit_blue">
+							School of Informatics & IT
+						</Text>
 						<Text
 							fontSize={{ base: "md", md: "lg", lg: "xl" }}
 							fontWeight="semibold"
@@ -96,14 +90,9 @@ const Home = () => {
 							fontSize={{ base: "sm", md: "md", lg: "lg" }}
 							fontWeight="medium"
 							maxW={{ base: "55ch" }}>
-							We have put together this website to give you a
+							We’ve put together this website to give you a
 							general overview of what to expect for each module
-							so that you would feel better prepared for your
-							first semester with us.
-							<br />
-							<br />
-							We hope you will find the information that we
-							curated useful!
+							in your upcoming semesters!
 						</Text>
 					</Stack>
 					<Image
@@ -117,7 +106,7 @@ const Home = () => {
 			<Stack
 				direction={{ base: "column", lg: "row" }}
 				p={4}
-				mt={{ base: 2, lg: 10 }}>
+				mt={{ base: 2, lg: 8 }}>
 				<Stack direction="column" spacing={0} mb={2.5}>
 					<Text
 						fontWeight="bold"

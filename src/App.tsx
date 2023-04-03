@@ -11,7 +11,6 @@ import ReactGA from "react-ga4"
 const App = () => {
 	const location = useLocation()
 	ReactGA.initialize("G-RRCEHPXBET")
-	
 
 	useEffect(() => {
 		console.info(`
@@ -33,8 +32,8 @@ Just DM "supercalifragilisticexpialidocious" to our Instagram if you're interest
 	}, [location])
 
 	return (
-		<Box minH={"100vh"} transition="all normal">
-			<Box maxW="1500px" margin="auto" mb={10}>
+		<Box transition="all normal">
+			<Box minH={"100vh"} maxW="1500px" margin="auto" mb={10}>
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<Home />} />

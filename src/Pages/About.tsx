@@ -24,11 +24,6 @@ const About = () => {
 				display="flex"
 				justifyContent="center"
 				alignItems="center"
-				bgColor={
-					colorMode === "light"
-						? "hsl(0, 0%, 0%, 0.05)"
-						: "hsl(0, 0%, 100%, 0.05)"
-				}
 				borderBottomRadius="20px"
 				p={5}
 				_before={{
