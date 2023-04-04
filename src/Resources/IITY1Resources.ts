@@ -78,7 +78,7 @@ const UXID: Subject = {
 	tagline: "Designing User Interfaces with User Experience in Mind.",
 	abbreviation: "UXID",
 	description:
-		"This subject introduces the concept of Human-Centered Design, and its practice to create useful digital products and interfaces that offer an enriching user experience (UX). The topics covered include designing sustainable interfaces, need findings, sketching and prototyping for interactive experience, and usability testing with accessibility considerations.",
+		"This module introduces the concept of Human-Centered Design, and its practice to create useful digital products and interfaces that offer an enriching user experience (UX). The topics covered include designing sustainable interfaces, need findings, sketching and prototyping for interactive experience, and usability testing with accessibility considerations.",
 	color: "hsl(289, 100%, 82%)",
 	bgColor: "hsl(289, 100%, 82%, 0.3)",
 	imageLight: "Subject-Icons/Light/UXID-L.svg",
@@ -319,7 +319,7 @@ const Others: Subject = {
 		{
 			title: "OneDrive",
 			content:
-				"As a student, you are entitled to 5 TB of cloud storage in OneDrive. You’ll never know when your laptop or PC might crash so always put your assignments in the cloud! Just login with your student email and install the OneDrive app.",
+				"As a student, you are entitled to 5 TB of cloud storage in OneDrive. You'll never know when your laptop or PC might crash so always put your assignments in the cloud! Just login with your student email and install the OneDrive app.",
 			thumbnail:
 				"https://cdn.discordapp.com/attachments/952818890906419230/952819838831722527/034863f0-3f42-11ec-ae75-30d439f4a7f4.png",
 			resourceLinks: [
@@ -342,13 +342,33 @@ const Others: Subject = {
 			type: ResourceType.IMAGE,
 		},
 		{
-			title: "GPA Calculator",
+			title: "GPA Buy Wat? - A GPA Calculator",
 			content:
-				"Calculate your future or current GPA and see what you can buy with your GPA!",
+				"Do you overthink all the possible combinations of your grade for a module that makes up your future GPA? Use this calculator and see the exact combination to get your desired GPA!",
 			thumbnail:
 				"https://cdn.discordapp.com/attachments/952818890906419230/1092539786469834804/gpacalculator.png",
 			type: ResourceType.IMAGE,
 			imageUrl: "https://gpa-buy-wat.vercel.app/",
+		},
+		{
+			title: "Transito - SG Bus Timings",
+			content:
+				"Want to decide when to start sprinting for your bus so you aren't late for class? Use this bus timing app made by one of our students to quickly see when your bus is arriving with the app's modern and clean ✨aesthetic✨",
+			thumbnail:
+				"https://cdn.discordapp.com/attachments/952818890906419230/1092705965062758450/image.png",
+			type: ResourceType.IMAGE,
+			imageUrl:
+				"https://play.google.com/store/apps/details?id=com.tnitish.transito",
+			resourceLinks: [
+				{
+					title: "Download on Google Play Store",
+					url: "https://play.google.com/store/apps/details?id=com.tnitish.transito",
+				},
+				{
+					title: "App Store (coming soon!)",
+					url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+				},
+			],
 		},
 	],
 	advanced: [""],
