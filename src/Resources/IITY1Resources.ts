@@ -78,7 +78,7 @@ const UXID: Subject = {
 	tagline: "Designing User Interfaces with User Experience in Mind.",
 	abbreviation: "UXID",
 	description:
-		"This module introduces the concept of Human-Centered Design, and the idea of designing an user interface with the user in mind. You will learn the about User Experience Design and how to design an effective user interface using Adobe XD.",
+		"This subject introduces the concept of Human-Centered Design, and its practice to create useful digital products and interfaces that offer an enriching user experience (UX). The topics covered include designing sustainable interfaces, need findings, sketching and prototyping for interactive experience, and usability testing with accessibility considerations.",
 	color: "hsl(289, 100%, 82%)",
 	bgColor: "hsl(289, 100%, 82%, 0.3)",
 	imageLight: "Subject-Icons/Light/UXID-L.svg",
