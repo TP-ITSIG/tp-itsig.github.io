@@ -164,7 +164,7 @@ const YearCard = (props: YearCardProps) => {
 					</VStack>
 					<Image
 						src={content.image}
-						w={{ base: "8em", lg: "20em" }}></Image>
+						w={{ base: "8em", md: "16em", lg: "20em" }}></Image>
 				</Stack>
 
 				<VStack w="100%">
