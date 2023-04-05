@@ -3,7 +3,7 @@ import { Subject } from "../Interfaces/Subject"
 
 const COMT: Subject = {
 	name: "Computational Thinking",
-	tagline: "Create apps with Python and JupyterNotebook!	",
+	tagline: "Create apps with Python and Tkinter inside Jupyter Notebook!",
 	abbreviation: "COMT",
 	description:
 		"This module teaches the fundamentals of programming using the Python programming language. Using your new skills, you will create an application with Tkinter to better visualise your changes in code.",
@@ -35,7 +35,7 @@ const COMT: Subject = {
 			type: ResourceType.VIDEO,
 			resourceLinks: [
 				{
-					title: "Online Python Editor",
+					title: "Try writing Python in this online Python editor",
 					url: "https://www.online-python.com/",
 				},
 			],
@@ -75,7 +75,8 @@ const COMT: Subject = {
 
 const UXID: Subject = {
 	name: "User Experience and Interface Design",
-	tagline: "Designing User Interfaces with User Experience in Mind.",
+	tagline:
+		"Learn about designing User Interfaces with a human-centered approach",
 	abbreviation: "UXID",
 	description:
 		"This module introduces the concept of Human-Centered Design, and its practice to create useful digital products and interfaces that offer an enriching user experience (UX). The topics covered include designing sustainable interfaces, need findings, sketching and prototyping for interactive experience, and usability testing with accessibility considerations.",
@@ -134,27 +135,49 @@ const UXID: Subject = {
 
 const DAVA: Subject = {
 	name: "Data Analytics and Visualisation",
-	tagline: "Visualise and analyse big data",
+	tagline: "Explore, Analyse and Visualise Big Data",
 	abbreviation: "DAVA",
 	description:
-		"This module teaches you the basics of data analytics following the CRISP-DM Methodology. You will learn to understand, prepare and evaluate your data using tools like KNIME and Power BI.",
+		"Have you ever thought about how Spotify Wrapped works? Data Analysis and Visualisation is how Spotify can provide you every year with the fun statistics of your account! This module teaches you the foundation of data analytics and visualisation. You will learn to understand, prepare and evaluate your data using tools like KNIME and create beautiful dashboards with Power BI.",
 	color: "hsl(43, 100%, 65%)",
 	bgColor: "hsla(43, 100%, 65%, 0.3)",
 	imageLight: "Subject-Icons/Light/DAVA-L.svg",
 	imageDark: "Subject-Icons/Dark/DAVA-D.svg",
 	resources: [
 		{
-			title: "Big Data in 5 minutes",
+			title: "What is Data Analytics? a quick explainer video",
 			content:
-				'Understand what is "Big Data" and learn how it is used in our everyday life.',
-			thumbnail: "https://www.youtube.com/embed/bAyrObl7TYE?",
+				"An quick introduction to Data Analytics and its process, tools and understand how it's transforming our world, giving us a better idea on threats in Cybersecurity, User's retention on applications, or perhaps the little new AI you may have heard called ChatGPT!",
+			thumbnail: "https://www.youtube.com/embed/shoT0k8ZzeM?",
 			type: ResourceType.VIDEO,
+			resourceLinks: [
+				{
+					title: "You can read a more detailed blog post here",
+					url: "https://www.projectcubicle.com/what-is-data-analytics-definition-with-examples/",
+				},
+			],
 		},
 		{
-			title: "Introduction to CRISP-DM Methodology",
+			title: "Visualise the Titanic's data!",
 			content:
-				"CRISP-DM models the lifecycle of a data analytics project.",
-			thumbnail: "https://www.youtube.com/embed/q_okDS2RtzY?",
+				"Explore around in this interactive web application and see how you can identify a person from within the dataset. Challenge: Try to find the Captain and see whether or not he went down with the ship or escaped onto a lifeboat!",
+			thumbnail:
+				"https://cdn.discordapp.com/attachments/952818890906419230/1093211388605911131/davadashboard.jpg",
+			type: ResourceType.IMAGE,
+			imageUrl:
+				"https://sanddance.azurewebsites.net/BeachPartyApp/BeachPartyApp.html",
+			resourceLinks: [
+				{
+					title: "Play around in the interactive Dashboard",
+					url: "https://sanddance.azurewebsites.net/BeachPartyApp/BeachPartyApp.html",
+				},
+			],
+		},
+		{
+			title: "Using real world data to make an impact",
+			content:
+				"Data can be used to streamline the efficiency of a process, or prepare for future disasters, or perhaps give you recommendations on YouTube! This video goes over some excellent examples on how you can use data analytics in real world problems.",
+			thumbnail: "https://www.youtube.com/embed/JIcXC_3Gfow?",
 			type: ResourceType.VIDEO,
 		},
 		{
@@ -162,12 +185,6 @@ const DAVA: Subject = {
 			content:
 				"It is important to know what different types of charts are for. This video provides a quick summary of the different types of graphs and their uses.",
 			thumbnail: "https://www.youtube.com/embed/yrTB5JSQPqY?",
-			type: ResourceType.VIDEO,
-		},
-		{
-			title: "What is KNIME?",
-			content: "Introduction to the data tool you’ll be using",
-			thumbnail: "https://www.youtube.com/embed/Pom9AuI9yg4?",
 			type: ResourceType.VIDEO,
 		},
 	],
@@ -217,6 +234,20 @@ const LOMA: Subject = {
 			content:
 				"Logic gates are the backbone of our digital devices, learn how they work together to create everything you see digitally.",
 			thumbnail: "https://www.youtube.com/embed/INEtYZqtjTo?",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "Learn how to write recursive formulas",
+			content:
+				"Recursion is used in computing for all sorts of things, this video introduces it in an easy to understand way!",
+			thumbnail: "https://www.youtube.com/embed/bguje4yGTK0?",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "A quick review of sequences and series",
+			content:
+				"Summation and sequences is a concept that can be akinned to the for loops that we use in programming, You can learn more about sequences and series in this video which may come in handy in the future!",
+			thumbnail: "https://www.youtube.com/embed/Tj89FA-d0f8?",
 			type: ResourceType.VIDEO,
 		},
 	],
