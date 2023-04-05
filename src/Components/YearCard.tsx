@@ -189,6 +189,9 @@ const YearCard = (props: YearCardProps) => {
 								key={index}>
 								<AccordionButton justifyContent="space-between">
 									<Text
+										_hover={{
+											cursor: "pointer",
+										}}
 										fontSize={{
 											base: "sm",
 											md: "lg",
