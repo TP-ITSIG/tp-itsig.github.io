@@ -17,6 +17,7 @@ import {
 	Button,
 	Center,
 } from "@chakra-ui/react"
+import { useSearchParams } from "react-router-dom"
 
 const selectedTabSx = {
 	borderColor: "itsig_blue",
@@ -69,13 +70,25 @@ interface YearSelectProps {
 }
 
 const YearSelect = (props: YearSelectProps) => {
+	const [searchParams, setSearchParams] = useSearchParams()
 	const [selectedCourse, setSelectedCourse] = useState("Common")
 	const [selectedYear2, setSelectedYear2] = useState("IT")
 	const { colorMode } = useColorMode()
 
+	const tabChangeHandler = (index: number) => {
+		setSelectedYear2(courses[index].value)
+		setSelectedCourse(courses[index].value)
+	}
+
 	useEffect(() => {
 		props.setCourse(selectedCourse)
 	}, [selectedCourse])
+
+	useEffect(() => {
+		if (searchParams.get("course")) {
+			setSelectedCourse(searchParams.get("course")!)
+		}
+	}, [searchParams])
 
 	return (
 		<Box
@@ -93,6 +106,7 @@ const YearSelect = (props: YearSelectProps) => {
 			<Tabs
 				variant="unstyled"
 				size={useBreakpointValue({ base: "sm", md: "md" })}
+				index={selectedCourse === "Common" ? 0 : 1}
 				onChange={index => {
 					if (index === 0) {
 						setSelectedCourse("Common")
@@ -156,9 +170,11 @@ const YearSelect = (props: YearSelectProps) => {
 								base: "sm",
 								md: "md",
 							})}
+							index={courses.findIndex(
+								course => course.value === selectedCourse,
+							)}
 							onChange={index => {
-								setSelectedYear2(courses[index].value)
-								setSelectedCourse(courses[index].value)
+								tabChangeHandler(index)
 							}}>
 							<TabList justifyContent="space-evenly">
 								{courses.map((course, index) => (

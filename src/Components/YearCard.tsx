@@ -23,7 +23,6 @@ import {
 
 import Resources from "../Resources/Resources"
 import SubjectCard from "./SubjectCard"
-import { MdOutlineUpdate } from "react-icons/md"
 
 interface YearCardProps {
 	course: string

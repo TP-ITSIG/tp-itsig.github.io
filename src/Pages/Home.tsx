@@ -1,17 +1,36 @@
 import { Box, SimpleGrid, Text, Image, Stack } from "@chakra-ui/react"
-import { useLayoutEffect, useState } from "react"
+import { useEffect, useLayoutEffect, useState } from "react"
 
 import SubjectCard from "../Components/SubjectCard"
 import { Subjects } from "../Resources/Subjects"
 import YearSelect from "../Components/YearSelect"
 import YearCard from "../Components/YearCard"
+import { useParams, useSearchParams } from "react-router-dom"
+import { FiLogIn } from "react-icons/fi"
 
 const Home = () => {
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0)
 	}, [])
 
+	const [searchParams, setSearchParams] = useSearchParams()
+
 	const [selectedCourse, setSelectedCourse] = useState("Common")
+
+	useEffect(() => {
+		if (selectedCourse !== "Common") {
+			setSearchParams(
+				{
+					course: selectedCourse,
+				},
+				{
+					replace: false,
+				},
+			)
+		} else {
+			setSearchParams(new URLSearchParams({}))
+		}
+	}, [selectedCourse])
 
 	return (
 		<Box maxW="1400px" margin="auto">
