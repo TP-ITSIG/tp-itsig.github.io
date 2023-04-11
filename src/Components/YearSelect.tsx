@@ -16,8 +16,10 @@ import {
 	useBreakpointValue,
 	Button,
 	Center,
+	Spacer,
 } from "@chakra-ui/react"
 import { useSearchParams } from "react-router-dom"
+import Sparkles from "react-sparkle"
 
 const selectedTabSx = {
 	borderColor: "itsig_blue",
@@ -46,22 +48,27 @@ const courses = [
 	{
 		name: "IT",
 		value: "IT",
+		sparkle: true,
 	},
 	{
 		name: "AAI",
 		value: "AAI",
+		sparkle: false,
 	},
 	{
 		name: "BDA",
 		value: "BDA",
+		sparkle: false,
 	},
 	{
 		name: "CDF",
 		value: "CDF",
+		sparkle: false,
 	},
 	{
 		name: "IGD/GDD",
 		value: "IGD",
+		sparkle: false,
 	},
 ]
 
@@ -188,16 +195,38 @@ const YearSelect = (props: YearSelectProps) => {
 											fontWeight: "semibold",
 										}}
 										key={index}>
-										<Text
-											_hover={{
-												cursor: "pointer",
-											}}
-											fontSize={{
-												base: "sm",
-												md: "xl",
+										<span
+											style={{
+												position: "relative",
 											}}>
-											{course.name}
-										</Text>
+											<Text
+												position="relative"
+												_hover={{
+													cursor: "pointer",
+												}}
+												fontSize={{
+													base: "sm",
+													md: "xl",
+												}}>
+												{course.name}{" "}
+												{course.sparkle && (
+													<Sparkles
+														color={
+															colorMode ===
+															"light"
+																? "hsl(43, 100%, 50%)"
+																: "hsl(43, 94%, 61%)"
+														}
+														flicker={false}
+														count={8}
+														minSize={10}
+														maxSize={15}
+														fadeOutSpeed={8}
+														overflowPx={15}
+													/>
+												)}
+											</Text>
+										</span>
 									</Tab>
 								))}
 							</TabList>
