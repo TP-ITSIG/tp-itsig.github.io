@@ -20,6 +20,7 @@ import {
 } from "@chakra-ui/react"
 import { useSearchParams } from "react-router-dom"
 import Sparkles from "react-sparkle"
+import ReactGA from "react-ga4"
 
 const selectedTabSx = {
 	borderColor: "itsig_blue",
@@ -89,6 +90,12 @@ const YearSelect = (props: YearSelectProps) => {
 
 	useEffect(() => {
 		props.setCourse(selectedCourse)
+
+		// Creates Event Data to send to Google Analytics, which will be used to track the selected course
+		ReactGA.send({
+			hitType: "event",
+			eventAction: selectedCourse,
+		})
 	}, [selectedCourse])
 
 	useEffect(() => {
@@ -145,11 +152,26 @@ const YearSelect = (props: YearSelectProps) => {
 						_hover={hoverTabSx}
 						_active={activeTabSx}>
 						<Text
+							position="relative"
 							fontSize={{
 								base: "md",
 								md: "xl",
 							}}>
 							Year 2
+							<Sparkles
+								color={
+									colorMode === "light"
+										? "hsl(43, 100%, 50%)"
+										: "hsl(43, 94%, 61%)"
+								}
+								flicker={false}
+								count={2}
+								minSize={10}
+								maxSize={20}
+								fadeOutSpeed={6}
+								overflowPx={20}>
+								{" "}
+							</Sparkles>
 						</Text>
 					</Tab>
 				</TabList>
@@ -218,11 +240,11 @@ const YearSelect = (props: YearSelectProps) => {
 																: "hsl(43, 94%, 61%)"
 														}
 														flicker={false}
-														count={8}
+														count={2}
 														minSize={10}
 														maxSize={15}
-														fadeOutSpeed={8}
-														overflowPx={15}
+														fadeOutSpeed={6}
+														overflowPx={20}
 													/>
 												)}
 											</Text>
