@@ -1,13 +1,9 @@
-import { Box, SimpleGrid, Text, Image, Stack } from "@chakra-ui/react"
+import { Box, Text, Image, Stack } from "@chakra-ui/react"
 import { useEffect, useLayoutEffect, useState } from "react"
 
-import SubjectCard from "../Components/SubjectCard"
-import { Subjects } from "../Resources/Subjects"
 import YearSelect from "../Components/YearSelect"
 import YearCard from "../Components/YearCard"
-import { useParams, useSearchParams } from "react-router-dom"
-import { FiLogIn } from "react-icons/fi"
-
+import { useSearchParams } from "react-router-dom"
 const Home = () => {
 	useLayoutEffect(() => {
 		window.scrollTo(0, 0)

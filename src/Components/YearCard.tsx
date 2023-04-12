@@ -1,18 +1,12 @@
-import React from "react"
-
 import {
 	Box,
 	SimpleGrid,
 	Text,
 	Image,
 	Stack,
-	Tag,
-	useColorMode,
-	Button,
-	Center,
-	HStack,
 	VStack,
-	Icon,
+	useColorMode,
+	Center,
 	Accordion,
 	AccordionItem,
 	AccordionButton,
