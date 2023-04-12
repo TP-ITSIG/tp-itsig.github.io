@@ -2,6 +2,7 @@ import { Subject } from "../Interfaces/Subject"
 import { ResourceType } from "../Interfaces/ResourceType"
 import { Year } from "../Interfaces/Year"
 import { COMT, CYFUN, DAVA, LOMA, Others, UXID } from "./IITY1Resources"
+import { MBAP, CADV, AMDT } from "./ITY2Resources"
 
 const Resources: Year[] = [
 	{
@@ -37,7 +38,7 @@ const Resources: Year[] = [
 		semesters: [
 			{
 				name: "Semester 1 (MBAP, CADV & AMDT)",
-				subjects: undefined,
+				subjects: [MBAP, CADV, AMDT],
 			},
 			{
 				name: "Semester 2 (FWEB, DEVOPS, MLDP & ITAD)",

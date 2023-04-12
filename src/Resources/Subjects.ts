@@ -3,5 +3,16 @@
 
 import { COMT, UXID, DAVA, LOMA, CYFUN, Others } from "./IITY1Resources"
 import { Subject } from "../Interfaces/Subject"
+import { MBAP, CADV, AMDT } from "./ITY2Resources"
 
-export const Subjects: Subject[] = [COMT, UXID, DAVA, LOMA, CYFUN, Others]
+export const Subjects: Subject[] = [
+	COMT,
+	UXID,
+	DAVA,
+	LOMA,
+	CYFUN,
+	Others,
+	MBAP,
+	CADV,
+	AMDT,
+]
