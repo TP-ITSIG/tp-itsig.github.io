@@ -125,15 +125,17 @@ const Navbar = () => {
 						</MenuList>
 					</Menu>
 				</Box>
-				<Image
-					src="/ITSIG_Logo_No_BG.svg"
-					w={{ base: "3.5em", md: "5.5em" }}
-					h="auto"
-					_before={{
-						padding: "0px",
-						margin: "0px",
-					}}
-				/>
+				<a href={"/#/"}>
+					<Image
+						src="/ITSIG_Logo_No_BG.svg"
+						w={{ base: "3.5em", md: "5.5em" }}
+						h="auto"
+						_before={{
+							padding: "0px",
+							margin: "0px",
+						}}
+					/>
+				</a>
 				<HStack
 					display={{ base: "none", lg: "block" }}
 					spacing={5}
