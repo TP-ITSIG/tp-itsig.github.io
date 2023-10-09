@@ -1,6 +1,6 @@
 import React, { useLayoutEffect } from "react"
 import ResourceCard from "../Components/ResourceCard"
-import { subjects } from "../Models/Subjects"
+import { Subjects } from "../Resources/Subjects"
 import { useLocation } from "react-router-dom"
 import {
 	Box,
@@ -14,15 +14,17 @@ import {
 	Image,
 	Stack,
 	Text,
+	useColorMode,
 	VStack,
 } from "@chakra-ui/react"
 import SoftwareButton from "../Components/SoftwareButton"
 
 const Resource = () => {
+	const { colorMode, toggleColorMode } = useColorMode()
 	const location = useLocation()
 	const pathNameArray = location.pathname.split("/")
 	const subjectAbbrev = pathNameArray[pathNameArray.length - 1]
-	const subject = subjects.filter(sub => {
+	const subject = Subjects.filter(sub => {
 		return sub.abbreviation.toUpperCase() == subjectAbbrev.toUpperCase()
 	})[0]
 
@@ -31,38 +33,25 @@ const Resource = () => {
 	}, [])
 
 	return (
-		<Stack direction={"column"} width={"100%"}>
-			<Box
-				bgColor={subject.color}
-				py={8}
-				borderBottomRadius="20px"
-				mb={5}>
-				<Center
-					fontWeight="bold"
-					fontSize={{ base: 24, md: 36, lg: 42 }}>
-					<Text align="center" color="black" pb={3.5}>
-						{subject.name}
-					</Text>
-				</Center>
-			</Box>
+		<Stack direction={"column"} width={"100%"} pt={{ base: 0, md: 4 }}>
 			<Box px={3}>
 				<Center>
 					<Stack
 						width={{ base: "100%", md: "75%" }}
 						textAlign="center"
-						maxW="75ch"
+						maxW="100ch"
 						paddingBottom={5}
 						justify="center">
 						<Text
 							fontWeight="bold"
-							fontSize={{ base: "2xl", lg: "3xl" }}>
+							fontSize={{ base: "4xl", lg: "5xl" }}>
 							What is{" "}
 							<span style={{ color: subject.color }}>
 								{subject.name}{" "}
 							</span>
 							about?
 						</Text>
-						<Text fontSize={{ base: "sm", md: "md", lg: "lg" }}>
+						<Text fontSize={{ base: "md", md: "lg", lg: "xl" }}>
 							{subject.description}
 						</Text>
 					</Stack>
@@ -95,9 +84,13 @@ const Resource = () => {
 				<Text
 					fontSize={{ base: "md", lg: "xl" }}
 					borderBottom={{
-						base: "1.25px solid black",
-						md: "2.25px solid black",
+						base: "1.25px solid",
+						md: "2.25px solid",
 					}}
+					borderBottomColor={
+						colorMode === "light" ? "black" : "white"
+					}
+					pb={2}
 					px={"3.5%"}
 					fontWeight="medium"
 					mb={1.5}>

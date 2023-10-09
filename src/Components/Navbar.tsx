@@ -13,12 +13,13 @@ import {
 	MenuList,
 	position,
 	Spacer,
+	Tooltip,
 	useColorMode,
 } from "@chakra-ui/react"
 import { useEffect, useLayoutEffect, useState } from "react"
 import { IoMenu, IoSunny, IoMoon } from "react-icons/io5"
 import { useNavigate, useLocation } from "react-router-dom"
-import { subjects } from "../Models/Subjects"
+import { Subjects } from "../Resources/Subjects"
 import ReactGA from "react-ga4"
 
 interface NavbarItems {
@@ -65,14 +66,14 @@ const Navbar = () => {
 	}, [location])
 
 	useLayoutEffect(() => {
-		for (let i = 0; i < subjects.length; i++) {
-			if (currentPath === subjects[i].abbreviation) {
-				setBgColor(subjects[i].color)
+		for (let i = 0; i < Subjects.length; i++) {
+			if (currentPath === Subjects[i].abbreviation) {
+				setBgColor(Subjects[i].color)
 				break
 			} else {
 				colorMode === "light"
 					? setBgColor("hsl(0, 0%, 0%, 0.05)")
-					: setBgColor("hsl(0, 0%, 100%, 0.05)")
+					: setBgColor("hsl(0, 0%, 80%, 0.1)")
 			}
 		}
 	}, [currentPath, colorMode])
@@ -80,9 +81,11 @@ const Navbar = () => {
 	return (
 		<Box
 			bgColor={bgColor}
-			// transition="background-color 0.3s ease-out"
-			w="100%"
-			py={{ base: 4, lg: 5 }}
+			transition="background-color 0.1s ease-out"
+			maxW="100%"
+			borderRadius={{ base: "16px", lg: "20px" }}
+			my={4}
+			mx={4}
 			px={{ base: 2, lg: 4 }}>
 			<HStack
 				justifyContent={{ base: "space-between", lg: "flex-start" }}
@@ -122,62 +125,72 @@ const Navbar = () => {
 						</MenuList>
 					</Menu>
 				</Box>
-				<Image
-					src="/itsig.svg"
-					w={{ base: "4.5em", md: "5.5em" }}
-					h="auto"
-					filter={
-						currentPath === "" || currentPath === "about"
-							? colorMode === "light"
-								? "none"
-								: "invert(100%)"
-							: "none"
-					}
-				/>
+				<a href={"/#/"}>
+					<Image
+						src="/ITSIG_Logo_No_BG.svg"
+						w={{ base: "3.5em", md: "5.5em" }}
+						h="auto"
+						_before={{
+							padding: "0px",
+							margin: "0px",
+						}}
+					/>
+				</a>
 				<HStack
 					display={{ base: "none", lg: "block" }}
 					spacing={5}
 					style={{ marginLeft: "3em" }}>
 					{pages.map(page => (
-						<Button
-							key={page.pageUrl}
-							fontWeight={
-								currentPath === page.pageUrl
-									? "semibold"
-									: "normal"
-							}
-							fontSize="xl"
-							color={
-								currentPath === "" || currentPath === "about"
-									? colorMode === "light"
-										? "black"
-										: "white"
-									: "black"
-							}
-							variant="link"
-							sx={{ transition: "font-weight 0.15s ease-out" }}
-							onClick={() => {
-								navigate(page.pageUrl)
-							}}>
-							{page.pageTitle}
-						</Button>
+						<a
+							href={`#/${page.pageUrl}`}
+							target="_self"
+							key={page.pageUrl}>
+							<Button
+								fontWeight={
+									currentPath === page.pageUrl
+										? "bold"
+										: "normal"
+								}
+								fontSize="xl"
+								color={
+									currentPath === "" ||
+									currentPath === "about"
+										? colorMode === "light"
+											? "black"
+											: "white"
+										: "black"
+								}
+								variant="link"
+								sx={{
+									transition: "font-weight 0.1s ease-out",
+								}}>
+								{page.pageTitle}
+							</Button>
+						</a>
 					))}
 				</HStack>
 				<Spacer display={{ base: "none", lg: "block" }} />
-				<IconButton
-					aria-label="color-mode-toggle"
-					icon={colorMode === "light" ? <IoMoon /> : <IoSunny />}
-					colorScheme="whiteAlpha"
-					color={
-						currentPath === "" || currentPath === "about"
-							? colorMode === "light"
-								? "hsla(0, 0%, 0%, 0.75)"
-								: "hsla(0, 0%, 100%, 0.75)"
-							: "hsla(0, 0%, 0%, 0.75)"
-					}
-					fontSize="xl"
-					onClick={toggleColorMode}
-				/>
+				<Tooltip
+					label={
+						colorMode === "light"
+							? "I'm a vampire"
+							: "Burn my eyes plz"
+					}>
+					<IconButton
+						aria-label="color-mode-toggle"
+						icon={colorMode === "light" ? <IoMoon /> : <IoSunny />}
+						colorScheme="whiteAlpha"
+						color={
+							currentPath === "" || currentPath === "about"
+								? colorMode === "light"
+									? "hsla(0, 0%, 0%, 0.75)"
+									: "hsla(0, 0%, 100%, 0.75)"
+								: "hsla(0, 0%, 0%, 0.75)"
+						}
+						fontSize="xl"
+						onClick={toggleColorMode}
+					/>
+				</Tooltip>
 			</HStack>
 		</Box>
 	)
