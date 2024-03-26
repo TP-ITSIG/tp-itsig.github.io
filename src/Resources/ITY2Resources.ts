@@ -53,8 +53,7 @@ const MBAP: Subject = {
 			title: "Flutter Codelabs",
 			content:
 				"Follow the interactive and detailed guide made by the Flutter team through this Codelabs to create & learn a variety of ways to use Flutter",
-			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/1095514159233376266/fluttercodelabs.png",
+			thumbnail: "/Images/IITY2/fluttercodelabs.png",
 			type: ResourceType.IMAGE,
 			imageUrl: "https://docs.flutter.dev/codelabs",
 			resourceLinks: [

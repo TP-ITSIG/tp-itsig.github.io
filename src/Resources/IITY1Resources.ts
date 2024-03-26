@@ -52,8 +52,7 @@ const COMT: Subject = {
 			title: "Codeacademy: Python 3 Tutorial",
 			content:
 				"Learn Python in more depth through this free interactive course by Codeacademy. Attempting the free topics within each module will do",
-			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/953200075088228362/codecademy.png",
+			thumbnail: "/Images/IITY1/codecademy.png",
 			type: ResourceType.IMAGE,
 			imageUrl: "https://www.codecademy.com/learn/learn-python-3",
 		},
@@ -161,8 +160,7 @@ const DAVA: Subject = {
 			title: "Visualise the Titanic's data!",
 			content:
 				"Explore around in this interactive web application and see how you can identify a person from within the dataset. Challenge: Try to find the Captain and see whether or not he went down with the ship or escaped onto a lifeboat!",
-			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/1093211388605911131/davadashboard.jpg",
+			thumbnail: "/Images/IITY1/davadashboard.jpg",
 			type: ResourceType.IMAGE,
 			imageUrl:
 				"https://sanddance.azurewebsites.net/BeachPartyApp/BeachPartyApp.html",
@@ -270,8 +268,7 @@ const CYFUN: Subject = {
 			title: "Defend The Crown (iOS/Android)",
 			content:
 				"Play the mobile game Defend the Crown to learn about Cybersecurity principles.",
-			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/1092537052412792872/defendthecrownposter.png",
+			thumbnail: "/Images/IITY1/defendthecrownposter.png",
 			type: ResourceType.IMAGE,
 			imageUrl:
 				"https://apps.apple.com/au/app/defend-the-crown/id1550656752",
@@ -290,8 +287,7 @@ const CYFUN: Subject = {
 			title: "Personal Data Protection Act (PDPA)",
 			content:
 				"Get to know the essentials of the Personal Data Protection Act (PDPA) through these interactive learning tools developed by the PDPC. The course covers the basics you will need to know about the key terms and organisations' obligations under the PDPA and offer ways in which data protection officers can develop good data protection policies and practices.",
-			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/1092538185994735656/pdpa.PNG",
+			thumbnail: "/Images/IITY1/pdpa.png",
 			type: ResourceType.IMAGE,
 			imageUrl:
 				"https://www.pdpc.gov.sg/Help-and-Resources/2018/01/E-Learning-Programme",
@@ -300,8 +296,7 @@ const CYFUN: Subject = {
 			title: "Cisco NetAcad: Introduction to Cybersecurity",
 			content:
 				"This introductory course takes you inside the world of cybersecurity. You will learn cybersecurity basics to protect your personal digital life and gain insights into the biggest security challenges companies, governments, and educational institutions face today. Cybersecurity professionals who can protect and defend an organization's network are in high demand.",
-			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/953207201080692736/file.jpg",
+			thumbnail: "/Images/IITY1/cisco.jpg",
 			type: ResourceType.IMAGE,
 			imageUrl:
 				"https://skillsforall.com/course/introduction-to-cybersecurity",
@@ -332,8 +327,7 @@ const Others: Subject = {
 			title: "GitHub Student Developer Pack",
 			content:
 				"As a student, you are eligible to register for this programme. Enjoy many deals such as free domain names, free web hosting, free Microsoft Azure credits, free IntelliJ subscription and many more! What are you waiting for? Sign up for a GitHub account and apply for the student developer pack.",
-			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/952825328462610432/main-background_1.png",
+			thumbnail: "/Images/IITY1/github-student.png",
 			resourceLinks: [
 				{
 					title: "Benefits of the GitHub Student Developer Pack",
@@ -351,8 +345,7 @@ const Others: Subject = {
 			title: "OneDrive",
 			content:
 				"As a student, you are entitled to 5 TB of cloud storage in OneDrive. You'll never know when your laptop or PC might crash so always put your assignments in the cloud! Just login with your student email and install the OneDrive app.",
-			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/952819838831722527/034863f0-3f42-11ec-ae75-30d439f4a7f4.png",
+			thumbnail: "/Images/IITY1/onedrive.png",
 			resourceLinks: [
 				{
 					title: "Sign into OneDrive here!",
@@ -367,8 +360,7 @@ const Others: Subject = {
 			title: "Word Counter",
 			content:
 				'A simple word counter that counts the number of words in a text. However, unlike other word counters, it includes a "ignore in-text citation" checkbox which filters out words in brackets (like these) from the word count. Might come in handy when you are writing essays for TPFun subjects ;D',
-			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/953289905486852136/unknown.png",
+			thumbnail: "/Images/IITY1/wordcounter.png",
 			imageUrl: "https://wordcounter.tnitish.com/",
 			type: ResourceType.IMAGE,
 		},
@@ -376,8 +368,7 @@ const Others: Subject = {
 			title: "GPA Buy Wat? - A GPA Calculator",
 			content:
 				"Do you overthink all the possible combinations of your grade for a module that makes up your future GPA? Use this calculator and see the exact combination to get your desired GPA!",
-			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/1092539786469834804/gpacalculator.png",
+			thumbnail: "/Images/IITY1/gpacalculator.png",
 			type: ResourceType.IMAGE,
 			imageUrl: "https://gpa-buy-wat.vercel.app/",
 		},
@@ -385,19 +376,17 @@ const Others: Subject = {
 			title: "Transito - SG Bus Timings",
 			content:
 				"Want to decide when to start sprinting for your bus so you aren't late for class? Use this bus timing app made by one of our students to quickly see when your bus is arriving with the app's modern and clean ✨aesthetic✨",
-			thumbnail:
-				"https://cdn.discordapp.com/attachments/952818890906419230/1092705965062758450/image.png",
+			thumbnail: "/Images/IITY1/transito.png",
 			type: ResourceType.IMAGE,
-			imageUrl:
-				"https://play.google.com/store/apps/details?id=com.tnitish.transito",
+			imageUrl: "https://transito.tnitish.com",
 			resourceLinks: [
 				{
-					title: "Download on Google Play Store",
-					url: "https://play.google.com/store/apps/details?id=com.tnitish.transito",
+					title: "Google Play (Android)",
+					url: "https://transito.tnitish.com/android",
 				},
 				{
-					title: "App Store (coming soon!)",
-					url: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+					title: "App Store (iPhones)",
+					url: "https://transito.tnitish.com/ios",
 				},
 			],
 		},
