@@ -395,4 +395,216 @@ const Others: Subject = {
 	software: [],
 }
 
-export { COMT, UXID, DAVA, LOMA, CYFUN, Others }
+const DSAG: Subject = {
+	name: "Data Structures and Algorithms",
+	tagline: "Learn about Data srtuctures and algoritms",
+	abbreviation: "DSAG",
+	description:
+		"This subject introduces students to the fundamentals of recursion and data structures in solving problems using a programming language. Topics covered include stacks, queues, linked lists and trees. Searching techniques and sorting algorithms will also be covered.",
+	color: "hsl(43, 100%, 65%)",
+	bgColor: "hsla(43, 100%, 65%, 0.3)",
+	imageLight: "Subject-Icons/Light/DSAG-L.svg",
+	imageDark: "Subject-Icons/Dark/DSAG-D.svg",
+	resources: [
+		{
+			title: "Turtle module",
+			content:
+				"In the initial lessons of DSAG, we'll be exploring the Python Turtle module. It would be beneficial if you could take some time to familiarize yourself with the Turtle module.",
+			thumbnail: "/Images/IITY1/pythonturtle.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://realpython.com/beginners-guide-python-turtle/",
+			resourceLinks: [
+				{
+					title: "You can read a more detailed post here",
+					url: "https://realpython.com/beginners-guide-python-turtle/",
+				},
+			],
+		},
+		{
+			title: "Sorting",
+			content:
+				"One of the first sorting algorithms we'll cover in DSAG is Bubble Sort. It would be helpful to experiment with it by stepping through the process to visualize how Bubble Sort organizes elements in an array. We will also learn about Selection Sort and Insertion Sort. Feel free to visualize these algorithms as well to gain a better understanding.",
+			thumbnail: "/Images/IITY1/bubblesort.jpg",
+			type: ResourceType.IMAGE,
+			imageUrl:
+				"https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/visualize/",
+			resourceLinks: [
+				{
+					title: "Play around in the interactive dashboard",
+					url: "https://www.hackerearth.com/practice/algorithms/sorting/bubble-sort/visualize/",
+				},
+			],
+		},
+		{
+			title: "Binary Search",
+			content:
+				"One of the search algorithms you'll learn is Binary Search. It's an efficient method, but it requires the elements to be sorted beforehand.",
+			thumbnail: "/Images/IITY1/binarysearch.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.programiz.com/dsa/binary-search",
+			resourceLinks: [
+				{
+					title: "You can read a more detailed post here",
+					url: "https://www.programiz.com/dsa/binary-search",
+				},
+			],
+		},
+		{
+			title: "Intro to Big O notation",
+			content:
+				"One of the most challenging topics in DSAG is Big O notation. This video offers a solid introduction to the concept.",
+			thumbnail:
+				"https://www.youtube.com/embed/aWKEBEg55ps?si=hn8spvaTggk1ylSU",
+			type: ResourceType.VIDEO,
+		},
+	],
+	advanced: [""],
+	software: [
+		{
+			name: "Anaconda",
+			icon: "/Software-Icons/Anaconda.svg",
+			url: "https://docs.anaconda.com/anaconda/install/index.html",
+		},
+	],
+}
+
+const ADEV: Subject = {
+	name: "Application Development Project",
+	tagline: "Design and Develop Web Applications",
+	abbreviation: "ADEV",
+	description:
+		"This subject will introduce the skills required to develop a web application using the latest technologies. Project design, development and deployment will also be covered.",
+	color: "hsl(154, 74%, 69%)",
+	bgColor: "hsla(154, 74%, 69%, 0.3)",
+	imageLight: "Subject-Icons/Light/ADEV-L.svg",
+	imageDark: "Subject-Icons/Dark/ADEV-D.svg",
+	resources: [
+		{
+			title: "JavaScript in 100 Seconds",
+			content:
+				"JavaScript is the the programming language that built the web. Learn how it evolved into a powerful tool for building websites, servers with Node.js, mobile apps, desktop software, and more.",
+			thumbnail:
+				"https://www.youtube.com/embed/DHjqpvDnNGE?si=F7oTH93sVS2CB-Pw",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "HTML in 100 Seconds",
+			content:
+				"Ready to build your first website? HTML or Hypertext Markup Language is one of the core building blocks of the web. Learn the history of HTML and how it's used to give structure to a webpage.",
+			thumbnail:
+				"https://www.youtube.com/embed/ok-plXXHlWw?si=6Wvh3s1_iwnhJB8i",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "CSS in 100 Seconds",
+			content:
+				"Cascading Style Sheets or CSS is the language that makes HTML websites look pretty. Learn how concepts like cascade, specificity, inheritance, and the box model influence the appearance of a webpage.",
+			thumbnail:
+				"https://www.youtube.com/embed/OEV8gMkCHXQ?si=E8XBTvqvT4id3qUe",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "Jumpstart in HTML",
+			content:
+				"Learn to create a simple web page using HTML in this step-by-step tutorial. You'll learn the basics of HTML structure, common elements like headers, paragraphs, and forms, and best practices for writing clean, semantic code. By the end of the video, you'll be able to build your own HTML web page.",
+			thumbnail:
+				"https://www.youtube.com/embed/FQdaUv95mR8?si=AZDFkReA1u5EXCvJ",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "Jumpstart into CSS",
+			content:
+				"This video covers CSS syntax, how to add CSS to your HTML, CSS colors, CSS units, the box model, and best practices for CSS walking through a full example of CSS being used to style an HTML page. By the end of this video you will know enough about CSS to style any basic web pages in your own projects!",
+			thumbnail:
+				"https://www.youtube.com/embed/1PnVor36_40?si=BzSHSL7H16DJFgKA",
+			type: ResourceType.VIDEO,
+		},
+	],
+	advanced: [""],
+	software: [
+		{
+			name: "Visual Studio Code",
+			icon: "/Software-Icons/VSCode.svg",
+			url: "https://code.visualstudio.com/download",
+		},
+		{
+			name: "Node.js",
+			icon: "/Software-Icons/NodeJs.svg",
+			url: "https://nodejs.org/en/download/prebuilt-installer",
+		},
+	],
+}
+const DBAV: Subject = {
+	name: "Database Application Development",
+	tagline: "Design and Implement Effective Databases",
+	abbreviation: "DBAV",
+	description:
+		"This subject introduces the fundamental concepts of relational database systems, the design methods specific to relational database, database manipulation using a database query language, and the techniques of implementing relational databases. It will also cover implementation of simple applications to access relational database.",
+	color: "hsl(289, 100%, 82%)",
+	bgColor: "hsl(289, 100%, 82%, 0.3)",
+	imageLight: "Subject-Icons/Light/DBAV-L.svg",
+	imageDark: "Subject-Icons/Dark/DBAV-D.svg",
+	resources: [
+		{
+			title: "Database Concepts",
+			content:
+				"This database tutorial will help beginners understand the basics of database management systems. We use helpful analogies to explain a high-level overview of spreadsheets, tables, and database management systems. The logic and concepts in this tutorial will make it easier to understand the more technical aspects of database architecture and Entity Relationship Diagrams (ERD).",
+			thumbnail:
+				"https://www.youtube.com/embed/wR0jg0eQsZA?si=mJiL80mFR5Urk96P",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "SQL in 100 Seconds",
+			content:
+				"Learn the fundamentals of Structured Query Language SQL! Even though it's over 40 years old, the world's most popular databases still run on SQL.",
+			thumbnail:
+				"https://www.youtube.com/embed/zsjvFFKOm3c?si=7DYRq5ubU0TW1J4V",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "How to create a database",
+			content:
+				"In this tutorial, you'll learn how to manage MySQL databases with essential commands like CREATE, USE, ALTER, and DROP. Through practical examples, we'll explain how to create a new database, select it for use, modify its structure, and delete it when no longer needed. By the end of this video, you'll have a solid understanding of how to manage MySQL databases effectively.",
+			thumbnail:
+				"https://www.youtube.com/embed/9LQ9rGoGfYQ?si=ZYU2T5DR6CRd03ZD",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "How to create a table",
+			content:
+				"n this tutorial, you'll learn how to create tables in MySQL step by step. We'll cover everything from defining table structures, setting data types, and adding primary keys to creating relationships between tables. Through practical examples, you'll see how to design and implement tables that effectively store and organise data. By the end of this video, you'll be able to create your own MySQL tables with confidence.",
+			thumbnail:
+				"https://www.youtube.com/embed/XfrgCK6BX5w?si=ohhXSOQqGcjySoJK",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "MySql Tutorials",
+			content:
+				"MySQL is a widely used relational database management system (RDBMS). MySQL is free and open-source. MySQL is ideal for both small and large applications. Start learning MySQL with this comprehsenvie guide.",
+			thumbnail: "/Images/IITY1/mysqlw3school.jpg",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.w3schools.com/MySQL/default.asp	",
+			resourceLinks: [
+				{
+					title: "You can look at the tutorials here",
+					url: "https://www.w3schools.com/MySQL/default.asp	",
+				},
+			],
+		},
+	],
+	advanced: [""],
+	software: [
+		{
+			name: "Node.js",
+			icon: "/Software-Icons/NodeJs.svg",
+			url: "https://nodejs.org/en/download/prebuilt-installer",
+		},
+		{
+			name: "MySQL",
+			icon: "/Software-Icons/MySQL.svg",
+			url: "https://dev.mysql.com/downloads/",
+		},
+	],
+}
+
+export { COMT, UXID, DAVA, LOMA, CYFUN, DSAG, ADEV, DBAV, Others }

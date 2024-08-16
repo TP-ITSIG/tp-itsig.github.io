@@ -1,7 +1,17 @@
 import { Subject } from "../Interfaces/Subject"
 import { ResourceType } from "../Interfaces/ResourceType"
 import { Year } from "../Interfaces/Year"
-import { COMT, CYFUN, DAVA, LOMA, Others, UXID } from "./IITY1Resources"
+import {
+	ADEV,
+	COMT,
+	CYFUN,
+	DAVA,
+	DBAV,
+	DSAG,
+	LOMA,
+	Others,
+	UXID,
+} from "./IITY1Resources"
 import { MBAP, CADV, AMDT } from "./ITY2Resources"
 
 const Resources: Year[] = [
@@ -10,7 +20,7 @@ const Resources: Year[] = [
 		course: "Common",
 		description: "What every IIT student will take in Year 1!",
 		image: "/Year-Icons/IIT_Year1.svg",
-		updated: "April 2023",
+		updated: "August 2024",
 		creator: "ITSIG",
 		creatorLink: "https://www.instagram.com/tp.itsig",
 		creatorHelp: "With help from our lecturers!",
@@ -21,7 +31,7 @@ const Resources: Year[] = [
 			},
 			{
 				name: "Semester 2 (ADEV, DBAV, DSAG & NECT)",
-				subjects: undefined,
+				subjects: [ADEV, DBAV, DSAG],
 			},
 		],
 	},
