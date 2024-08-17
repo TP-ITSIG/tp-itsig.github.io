@@ -539,7 +539,7 @@ const DBAV: Subject = {
 	tagline: "Design and Implement Effective Databases",
 	abbreviation: "DBAV",
 	description:
-		"This subject introduces the fundamental concepts of relational database systems, the design methods specific to relational database, database manipulation using a database query language, and the techniques of implementing relational databases. It will also cover implementation of simple applications to access relational database.",
+		"This subject covers the basics of relational databases, including design, query languages, implementation techniques, and building simple applications to access databases.",
 	color: "hsl(289, 100%, 82%)",
 	bgColor: "hsl(289, 100%, 82%, 0.3)",
 	imageLight: "Subject-Icons/Light/DBAV-L.svg",
