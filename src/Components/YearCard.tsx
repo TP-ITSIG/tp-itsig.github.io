@@ -164,7 +164,7 @@ const YearCard = (props: YearCardProps) => {
 					<Accordion
 						defaultIndex={
 							new Date().getMonth() + 1 >= 3 &&
-							new Date().getMonth() + 1 <= 8
+							new Date().getMonth() + 1 <= 7
 								? 0
 								: 1
 						}
