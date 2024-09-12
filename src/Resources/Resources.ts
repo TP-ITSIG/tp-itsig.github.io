@@ -9,6 +9,7 @@ import {
 	DBAV,
 	DSAG,
 	LOMA,
+	NECT,
 	Others,
 	UXID,
 } from "./IITY1Resources"
@@ -31,7 +32,7 @@ const Resources: Year[] = [
 			},
 			{
 				name: "Semester 2 (ADEV, DBAV, DSAG & NECT)",
-				subjects: [ADEV, DBAV, DSAG],
+				subjects: [ADEV, DBAV, DSAG, NECT],
 			},
 		],
 	},

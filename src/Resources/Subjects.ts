@@ -11,6 +11,7 @@ import {
 	DSAG,
 	ADEV,
 	DBAV,
+	NECT,
 } from "./IITY1Resources"
 import { Subject } from "../Interfaces/Subject"
 import { MBAP, CADV, AMDT } from "./ITY2Resources"
@@ -27,5 +28,6 @@ export const Subjects: Subject[] = [
 	AMDT,
 	DSAG,
 	ADEV,
+	NECT,
 	DBAV,
 ]

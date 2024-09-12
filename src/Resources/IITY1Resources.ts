@@ -607,4 +607,49 @@ const DBAV: Subject = {
 	],
 }
 
-export { COMT, UXID, DAVA, LOMA, CYFUN, DSAG, ADEV, DBAV, Others }
+const NECT: Subject = {
+	name: "Network and Cloud Technology",
+	tagline: "Understanding Networks and Cloud Computing",
+	abbreviation: "NECT",
+	description:
+		"This subject covers the theoretical and practical aspects of network and cloud technology. Topics covered include how data is transmitted within an organisation and via the internet, as well as cloud computing technologies, its benefits, organisation, cloud usage, and risks.",
+	color: "hsl(24, 100%, 64%)",
+	bgColor: "hsl(24, 100%, 64%, 0.3)",
+	imageLight: "Subject-Icons/Light/NECT-L.svg",
+	imageDark: "Subject-Icons/Dark/NECT-D.svg",
+	resources: [
+		{
+			title: "Networking Basics",
+			content:
+				"The Networking Basics course from Cisco Networking Academy introduces foundational networking concepts, including how networks operate, devices involved, IP addressing, and protocols that enable communication over the internet. It provides an essential understanding of how data is transmitted and helps prepare learners for more advanced networking topics.",
+			thumbnail: "/Images/IITY1/networking.png",
+			type: ResourceType.IMAGE,
+			imageUrl:
+				"https://www.netacad.com/courses/networking-basics?courseLang=en-US",
+			resourceLinks: [
+				{
+					title: "You can look at the course here",
+					url: "https://www.netacad.com/courses/networking-basics?courseLang=en-US",
+				},
+			],
+		},
+		{
+			title: "Cloud Tehnologies",
+			content:
+				'The "What is AWS?" page from Amazon Web Services (AWS) introduces key concepts of cloud computing and the core services offered by AWS, including computing power, storage, databases, and networking. It provides an essential understanding of how AWS helps organizations scale and manage IT infrastructure in the cloud, offering flexibility, cost-efficiency, and global reach. The page also highlights various use cases, such as hosting applications, machine learning, and data processing, helping learners prepare for deeper exploration of AWS solutions and services.',
+			thumbnail: "/Images/IITY1/awscloudcomputing.jpg",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://aws.amazon.com/what-is-aws/?nc2=h_ql_le_int",
+			resourceLinks: [
+				{
+					title: "You can look at the resources here",
+					url: "https://aws.amazon.com/what-is-aws/?nc2=h_ql_le_int",
+				},
+			],
+		},
+	],
+	advanced: [""],
+	software: [],
+}
+
+export { COMT, UXID, DAVA, LOMA, CYFUN, DSAG, ADEV, DBAV, NECT, Others }
