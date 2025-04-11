@@ -92,19 +92,11 @@ const UXID: Subject = {
 			type: ResourceType.VIDEO,
 		},
 		{
-			title: "Persona & Task Flow in Adobe XD",
-			content:
-				"What is a Persona? Why do we need a task flow? These are all things UX researchers uses to better understand the target audience of the service or application. Part of a playlist series that goes in depth into UI/UX inside Adobe XD, feel free to continue watching the playlist if you'd like.",
-			thumbnail:
-				"https://www.youtube.com/embed?v=Em2vKwE_bsg&list=PLttcEXjN1UcHbhOF4J99QKUiOqt9ETgnb&index=4",
-			type: ResourceType.VIDEO,
-		},
-		{
-			title: "Low vs High Fidelity Wireframes in Adobe XD",
+			title: "Low vs High Fidelity Wireframes in Figma",
 			content:
 				"What is the difference between a Low vs a High Fidelity Wireframe? How is this useful in better understanding the requirements of our application? Part of that same playlist!",
 			thumbnail:
-				"https://www.youtube.com/embed?v=NIOOH5oyjxw&list=PLttcEXjN1UcHbhOF4J99QKUiOqt9ETgnb&index=5",
+				"https://www.youtube.com/embed/UU_eyUGWIEI?si=khJVgZSrx3vL6wfu",
 			type: ResourceType.VIDEO,
 		},
 		{
@@ -125,9 +117,9 @@ const UXID: Subject = {
 	advanced: [""],
 	software: [
 		{
-			name: "Adobe XD",
-			icon: "/Software-Icons/AdobeXD.svg",
-			url: "https://www.adobe.com/products/xd.html",
+			name: "Figma",
+			icon: "/Software-Icons/Figma.svg",
+			url: "https://www.figma.com/",
 		},
 	],
 }
