@@ -172,4 +172,51 @@ const AMDT: Subject = {
 	software: [],
 }
 
-export { MBAP, CADV, AMDT }
+const APPSEC: Subject = {
+	name: "Application Security",
+	tagline: "Building Security Into Web Apps",
+	abbreviation: "APPSEC",
+	description:
+		"This subject focuses on secure web application design and development. It discusses the inherent threats and vulnerabilities of web applications and the corresponding counter-measures.",
+	color: "hsl(150, 78%, 43%)",
+	bgColor: "hsla(150, 78%, 43%, 0.3)",
+	imageLight: "Subject-Icons/Light/APPSEC-L.svg",
+	imageDark: "Subject-Icons/Dark/APPSEC-D.svg",
+	resources: [
+		{
+			title: "OWASP Top 10 API Security Risks",
+			content:
+				"The OWASP Top 10 API Security Risks is a list of the most critical vulnerabilities in APIs, helping developers secure their applications against common threats.",
+			thumbnail: "/Images/IITY2/owasp-logo.png",
+			type: ResourceType.IMAGE,
+			imageUrl:
+				"https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+			resourceLinks: [
+				{
+					title: "Read the article",
+					url: "https://owasp.org/API-Security/editions/2023/en/0x11-t10/",
+				},
+			],
+		},
+	],
+	advanced: [""],
+	software: [
+		{
+			name: "Visual Studio Code",
+			icon: "/Software-Icons/VSCode.svg",
+			url: "https://code.visualstudio.com/download",
+		},
+		{
+			name: "Node.js",
+			icon: "/Software-Icons/NodeJs.svg",
+			url: "https://nodejs.org/en/download/prebuilt-installer",
+		},
+		{
+			name: "MongoDB Compass",
+			icon: "/Software-Icons/MongoDBCompass.svg",
+			url: "https://www.mongodb.com/products/tools/compass",
+		},
+	],
+}
+
+export { MBAP, CADV, AMDT, APPSEC }

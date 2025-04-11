@@ -13,7 +13,7 @@ import {
 	Others,
 	UXID,
 } from "./IITY1Resources"
-import { MBAP, CADV, AMDT } from "./ITY2Resources"
+import { MBAP, CADV, AMDT, APPSEC } from "./ITY2Resources"
 
 const Resources: Year[] = [
 	{
@@ -48,8 +48,8 @@ const Resources: Year[] = [
 		creatorHelp: undefined,
 		semesters: [
 			{
-				name: "Semester 1 (MBAP, CADV & AMDT)",
-				subjects: [MBAP, CADV, AMDT],
+				name: "Semester 1 (MBAP, CADV, AMDT & APPSEC)",
+				subjects: [MBAP, CADV, AMDT, APPSEC],
 			},
 			{
 				name: "Semester 2 (FWEB, DEVOPS, MLDP & ITAD)",
