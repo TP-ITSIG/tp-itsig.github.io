@@ -3,7 +3,7 @@ import { Subject } from "../Interfaces/Subject"
 
 const COMT: Subject = {
 	name: "Computational Thinking",
-	tagline: "Create apps with Python and Tkinter inside Jupyter Notebook!",
+	tagline: "Create apps with Python inside Jupyter Notebook!",
 	abbreviation: "COMT",
 	description:
 		"This module teaches the fundamentals of programming using the Python programming language. Using your new skills, you will create an application with Tkinter to better visualise your changes in code.",
