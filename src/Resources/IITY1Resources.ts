@@ -389,7 +389,7 @@ const Others: Subject = {
 
 const DSAG: Subject = {
 	name: "Data Structures and Algorithms",
-	tagline: "Learn about Data srtuctures and algoritms",
+	tagline: "Learn about Data structures and algoritms",
 	abbreviation: "DSAG",
 	description:
 		"This subject introduces students to the fundamentals of recursion and data structures in solving problems using a programming language. Topics covered include stacks, queues, linked lists and trees. Searching techniques and sorting algorithms will also be covered.",
