@@ -635,13 +635,16 @@ const NECT: Subject = {
 			resourceLinks: [
 				{
 					title: "You can look at the resources here",
-					url: "https://aws.amazon.com/what-is-aws/?nc2=h_ql_le_int",
+					url: "https://skillbuilder.aws/learn/WCQH9KVXSQ/introduction-to-aws-management-console/14VSESKDEA",
 				},
 			],
 		},
 	],
 	advanced: [""],
-	software: [],
+	software: [
+		// TODO - Add Cisco Packet Tracer
+		// TODO -Add AWS Management Console
+	],
 }
 
 export { COMT, UXID, DAVA, LOMA, CYFUN, DSAG, ADEV, DBAV, NECT, Others }
