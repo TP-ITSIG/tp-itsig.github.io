@@ -392,12 +392,25 @@ const DSAG: Subject = {
 	tagline: "Learn about Data structures and algoritms",
 	abbreviation: "DSAG",
 	description:
-		"This subject introduces students to the fundamentals of recursion and data structures in solving problems using a programming language. For this module, we will use python, covering topics covered include tuples, dictionaries, stacks, queues, linked lists and trees. Searching techniques and sorting algorithms will also be covered.",
+		"This subject introduces students to the fundamentals of recursion and data structures in solving problems using a programming language. For this module, we will use Python, covering topics covered include tuples, dictionaries, stacks, queues, linked lists and trees. Searching techniques and sorting algorithms will also be covered.",
 	color: "hsl(43, 100%, 65%)",
 	bgColor: "hsla(43, 100%, 65%, 0.3)",
 	imageLight: "Subject-Icons/Light/DSAG-L.svg",
 	imageDark: "Subject-Icons/Dark/DSAG-D.svg",
 	resources: [
+		{
+			title: "Intro to Data Structures",
+			content: "This short 3-minute summary will give you an overview of what to expect for your next semester.",
+			thumbnail: "/Images/IITY1/dsagintro.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://youtu.be/8e_PwxYGZrA?feature=shared",
+			resourceLinks: [
+				{
+					title: "You can look watch the video here",
+					url: "https://youtu.be/8e_PwxYGZrA?feature=shared"
+				}
+			]
+		},
 		{
 			title: "Turtle module",
 			content:
@@ -449,6 +462,19 @@ const DSAG: Subject = {
 				"https://www.youtube.com/embed/aWKEBEg55ps?si=hn8spvaTggk1ylSU",
 			type: ResourceType.VIDEO,
 		},
+		{
+			title: "Recursion",
+			content: "Recursion will be an important concept that you will definitely be tested on. This video will allow you to master and understand that topic in order to prepare you for your next test.",
+			thumbnail : "/Images/IITY1/recursion.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=m1Fjdnj_Mds",
+			resourceLinks : [
+				{
+					title: "You can watch the video here",
+					url: "https://www.youtube.com/watch?v=m1Fjdnj_Mds",
+				}
+			]
+		}
 	],
 	advanced: [""],
 	software: [
