@@ -392,12 +392,25 @@ const DSAG: Subject = {
 	tagline: "Learn about Data structures and algoritms",
 	abbreviation: "DSAG",
 	description:
-		"This subject introduces students to the fundamentals of recursion and data structures in solving problems using a programming language. Topics covered include stacks, queues, linked lists and trees. Searching techniques and sorting algorithms will also be covered.",
+		"This subject introduces students to the fundamentals of recursion and data structures in solving problems using a programming language. For this module, we will use Python, covering topics covered include tuples, dictionaries, stacks, queues, linked lists and trees. Searching techniques and sorting algorithms will also be covered.",
 	color: "hsl(43, 100%, 65%)",
 	bgColor: "hsla(43, 100%, 65%, 0.3)",
 	imageLight: "Subject-Icons/Light/DSAG-L.svg",
 	imageDark: "Subject-Icons/Dark/DSAG-D.svg",
 	resources: [
+		{
+			title: "Intro to Data Structures",
+			content: "This short 3-minute summary will give you an overview of what to expect for your next semester.",
+			thumbnail: "/Images/IITY1/dsagintro.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://youtu.be/8e_PwxYGZrA?feature=shared",
+			resourceLinks: [
+				{
+					title: "You can look watch the video here",
+					url: "https://youtu.be/8e_PwxYGZrA?feature=shared"
+				}
+			]
+		},
 		{
 			title: "Turtle module",
 			content:
@@ -430,7 +443,7 @@ const DSAG: Subject = {
 		{
 			title: "Binary Search",
 			content:
-				"One of the search algorithms you'll learn is Binary Search. It's an efficient method, but it requires the elements to be sorted beforehand.",
+				"One of the search algorithms you'll learn is Binary Search. It's an efficient method, but it requires the elements to be sorted beforehand. We will also learn about Sequential Search.",
 			thumbnail: "/Images/IITY1/binarysearch.png",
 			type: ResourceType.IMAGE,
 			imageUrl: "https://www.programiz.com/dsa/binary-search",
@@ -449,6 +462,19 @@ const DSAG: Subject = {
 				"https://www.youtube.com/embed/aWKEBEg55ps?si=hn8spvaTggk1ylSU",
 			type: ResourceType.VIDEO,
 		},
+		{
+			title: "Recursion",
+			content: "Recursion will be an important concept that you will definitely be tested on. This video will allow you to master and understand that topic in order to prepare you for your next test.",
+			thumbnail : "/Images/IITY1/recursion.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=m1Fjdnj_Mds",
+			resourceLinks : [
+				{
+					title: "You can watch the video here",
+					url: "https://www.youtube.com/watch?v=m1Fjdnj_Mds",
+				}
+			]
+		}
 	],
 	advanced: [""],
 	software: [
@@ -465,7 +491,7 @@ const ADEV: Subject = {
 	tagline: "Design and Develop Web Applications",
 	abbreviation: "ADEV",
 	description:
-		"This subject will introduce the skills required to develop a web application using the latest technologies. Project design, development and deployment will also be covered.",
+		"This subject will introduce the skills required to develop a web application using the latest technologies. Project design, development and deployment will also be covered. The coding languages you need for this module are HTML, CSS, JavaScript, and SQL.",
 	color: "hsl(154, 74%, 69%)",
 	bgColor: "hsla(154, 74%, 69%, 0.3)",
 	imageLight: "Subject-Icons/Light/ADEV-L.svg",
@@ -635,13 +661,24 @@ const NECT: Subject = {
 			resourceLinks: [
 				{
 					title: "You can look at the resources here",
-					url: "https://aws.amazon.com/what-is-aws/?nc2=h_ql_le_int",
+					url: "https://skillbuilder.aws/learn/WCQH9KVXSQ/introduction-to-aws-management-console/14VSESKDEA",
 				},
 			],
 		},
 	],
 	advanced: [""],
-	software: [],
+	software: [
+		{
+			name: "Cisco Packet Tracker",
+			icon: "/Software-Icons/PacketTracer.svg",
+			url: "https://www.netacad.com/resources/lab-downloads?courseLang=en-US",
+		},
+		{
+			name: "AWS Management Console",
+			icon: "/Software-Icons/AWS.svg",
+			url: "https://aws.amazon.com/free/?trk=6a99e239-96fc-4f80-bbee-4085b99c31c4&sc_channel=ps&ef_id=Cj0KCQjw0Y3HBhCxARIsAN7931UVYTVxy9UFGoXjRvMEH7zlqoautaoUTokm_AYEOM4ofl434y9q3UEaAg2bEALw_wcB:G:s&s_kwcid=AL!4422!3!770401419010!p!!g!!aws%20dashboard!22922886856!182921149126&gad_campaignid=22922886856&gbraid=0AAAAADjHtp_wBHeSe-tLRu2iaHmPITVES&gclid=Cj0KCQjw0Y3HBhCxARIsAN7931UVYTVxy9UFGoXjRvMEH7zlqoautaoUTokm_AYEOM4ofl434y9q3UEaAg2bEALw_wcB",
+		},
+	],
 }
 
 export { COMT, UXID, DAVA, LOMA, CYFUN, DSAG, ADEV, DBAV, NECT, Others }
