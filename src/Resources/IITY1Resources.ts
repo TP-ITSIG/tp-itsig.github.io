@@ -392,7 +392,7 @@ const DSAG: Subject = {
 	tagline: "Learn about Data structures and algoritms",
 	abbreviation: "DSAG",
 	description:
-		"This subject introduces students to the fundamentals of recursion and data structures in solving problems using a programming language. Topics covered include stacks, queues, linked lists and trees. Searching techniques and sorting algorithms will also be covered.",
+		"This subject introduces students to the fundamentals of recursion and data structures in solving problems using a programming language. For this module, we will use python, covering topics covered include tuples, dictionaries, stacks, queues, linked lists and trees. Searching techniques and sorting algorithms will also be covered.",
 	color: "hsl(43, 100%, 65%)",
 	bgColor: "hsla(43, 100%, 65%, 0.3)",
 	imageLight: "Subject-Icons/Light/DSAG-L.svg",
@@ -430,7 +430,7 @@ const DSAG: Subject = {
 		{
 			title: "Binary Search",
 			content:
-				"One of the search algorithms you'll learn is Binary Search. It's an efficient method, but it requires the elements to be sorted beforehand.",
+				"One of the search algorithms you'll learn is Binary Search. It's an efficient method, but it requires the elements to be sorted beforehand. We will also learn about Sequential Search.",
 			thumbnail: "/Images/IITY1/binarysearch.png",
 			type: ResourceType.IMAGE,
 			imageUrl: "https://www.programiz.com/dsa/binary-search",
