@@ -491,7 +491,7 @@ const ADEV: Subject = {
 	tagline: "Design and Develop Web Applications",
 	abbreviation: "ADEV",
 	description:
-		"This subject will introduce the skills required to develop a web application using the latest technologies. Project design, development and deployment will also be covered.",
+		"This subject will introduce the skills required to develop a web application using the latest technologies. Project design, development and deployment will also be covered. The coding languages you need for this module are HTML, CSS, JavaScript, and SQL.",
 	color: "hsl(154, 74%, 69%)",
 	bgColor: "hsla(154, 74%, 69%, 0.3)",
 	imageLight: "Subject-Icons/Light/ADEV-L.svg",
