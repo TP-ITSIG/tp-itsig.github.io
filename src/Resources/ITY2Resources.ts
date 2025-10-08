@@ -219,4 +219,135 @@ const APPSEC: Subject = {
 	],
 }
 
-export { MBAP, CADV, AMDT, APPSEC }
+const FWEB: Subject = {
+	name: "Full Stack Web Development",
+	tagline: "Design full-stack web-based applications.",
+	abbreviation: "FWEB",
+	description:
+		"This subject introduces the concepts of full-stack web-based applications. Topics covered include designing web pages and implementing the front-end and back-end technologies of a web application. Technological and design issues of web-based application development will also be discussed.",
+	color: "hsl(226, 67%, 67%)",
+	bgColor: "hsla(226, 67%, 67%, 0.3)",
+	imageLight: "Subject-Icons/Light/MBAP-L.svg", 
+	imageDark: "Subject-Icons/Dark/MBAP-D.svg",
+	resources: [
+		{
+			title: "JavaScript in 100 seconds",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=DHjqpvDnNGE",
+			type: ResourceType.VIDEO,
+		},
+
+		{
+			title: "ES6+ Features in JavaScript",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=eW6otoH290g",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "React in 100 Seconds",
+			content:
+				"",
+			thumbnail:
+				"https://www.youtube.com/watch?v=Tn6-PIqc4UM&pp=ygUTZXM3KyBpbiAxMDAgc2Vjb25kcw%3D%3D",
+			type: ResourceType.VIDEO,
+		},
+
+		{
+			title: "10 React Hooks Explained",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=TNhaISOUy6Q",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "MongoDB in 100 Seconds",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=-bt_y4Loofg",
+			type: ResourceType.VIDEO,
+		},
+	],
+	advanced: [""],
+	software: [],
+}
+
+const DEVOPS: Subject = {
+	name: "DevOps Essentials",
+	tagline: "Explore Application Deployment with Continuous Integration and Continuous Delivery.",
+	abbreviation: "DEVOPS",
+	description:
+		"This subject covers the development and deployment of applications using DevOps tools and Agile methodology. It introduces the concepts of Continuous Integration, Continuous Delivery and Continuous Deployment.",
+	color: "hsl(36, 100%, 50%)",
+	bgColor: "hsla(36, 100%, 50%, 0.3)",
+	imageLight: "Subject-Icons/Light/CADV-L.svg",
+	imageDark: "Subject-Icons/Dark/CADV-D.svg",
+	resources: [
+		{
+			title: "Basic Git Commands",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=tRZGeaHPoaw",
+			type: ResourceType.VIDEO,
+		},
+	],
+	advanced: [""],
+	software: [],
+}
+
+const MLDP: Subject = {
+	name: "Machine Learning for Developers",
+	tagline:
+		"Fundamentals of Algorithmic Machine Learning Methods.",
+	abbreviation: "MLDP",
+	description:
+		"This subject introduces the fundamentals of machine learning principles and practices. It covers a range of machine learning models and algorithmic machine learning methods, such as supervised learning.",
+	color: "hsl(314, 87%, 45%)",
+	bgColor: "hsla(314, 87%, 45%, 0.3)",
+	imageLight: "Subject-Icons/Light/AMDT-L.svg",
+	imageDark: "Subject-Icons/Dark/AMDT-D.svg",
+	resources: [
+		{
+			title: "Machine Learning Basics",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=3fsy2oheRdg",
+			type: ResourceType.VIDEO,
+		},
+	],
+	advanced: [""],
+	software: [],
+}
+
+const ITAD: Subject = {
+	name: "IoT Application Development",
+	tagline: "Learn about Design Principles for Connected Devices and Prototyping Techniques.",
+	abbreviation: "ITAD",
+	description:
+		"This subject covers the concepts of Distributed System Architecture like Service-Oriented Architecture, Representational State Transfer (REST) and Web Services, identification of technology and design principles for connected devices as well as prototyping techniques for developing web services.",
+	color: "hsl(150, 78%, 43%)",
+	bgColor: "hsla(150, 78%, 43%, 0.3)",
+	imageLight: "Subject-Icons/Light/APPSEC-L.svg",
+	imageDark: "Subject-Icons/Dark/APPSEC-D.svg",
+	resources: [
+		{
+			title: "What is the Internet of Things?",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=6mBO2vqLv38&t=81s",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "Service-Oriented Architecture (SOA) Explained in 3 Minutes",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=5P1cWeSyR94",
+			type: ResourceType.VIDEO,
+		},
+	],
+	advanced: [""],
+	software: [],
+}
+
+export { MBAP, CADV, AMDT, APPSEC, FWEB, DEVOPS, MLDP, ITAD }
