@@ -304,7 +304,33 @@ const DEVOPS: Subject = {
 		},
 	],
 	advanced: [""],
-	software: [],
+	software: [
+		{
+			name: "GitHub",
+			icon: "/Software-Icons/GitHub.svg",
+			url: "https://github.com/",
+		},
+		{
+			name: "Microsoft Teams",
+			icon: "/Software-Icons/MicrosoftTeams.svg",
+			url: "https://teams.live.com/free"
+		},
+		{
+			name: "Jenkins",
+			icon: "/Software-Icons/Jenkins.svg",
+			url: "https://www.jenkins.io/"
+		},
+		{
+			name: "Jira",
+			icon: "/Software-Icons/Jira.svg",
+			url: "https://www.atlassian.com/software/jira?campaign=18458074949&adgroup=140509303646&targetid=kwd-20723783302&matchtype=e&network=g&device=c&device_model=&creative=687972977753&keyword=jira%20download&placement=&target=&ds_eid=700000001558501&ds_e1=GOOGLE&gad_source=1&gad_campaignid=18458074949&gbraid=0AAAAAD_uzhB9F_djh7f8IhbSmG43s2lyy&gclid=Cj0KCQjwl5jHBhDHARIsAB0YqjzJO-GPeWJdNOclqCBEjr6Jqj37jamN3zdSwcGN9PftDYpxRI1AHaUaAkI-EALw_wcB"
+		},
+		{
+			name: "Docker",
+			icon: "/Software-Icons/Docker.svg",
+			url: "https://www.docker.com/get-started/"
+		},
+	],
 }
 
 const MLDP: Subject = {
