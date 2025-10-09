@@ -275,7 +275,12 @@ const FWEB: Subject = {
 			name: "MongoDB Compass",
 			icon: "/Software-Icons/MongoDBCompass.svg",
 			url: "https://www.mongodb.com/products/tools/compass"
-		}
+		},
+		{
+			name: "Node.js",
+			icon: "/Software-Icons/NodeJs.svg",
+			url: "https://nodejs.org/en/download/prebuilt-installer",
+		},
 	],
 }
 
