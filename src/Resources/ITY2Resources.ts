@@ -270,7 +270,13 @@ const FWEB: Subject = {
 		},
 	],
 	advanced: [""],
-	software: [],
+	software: [
+		{
+			name: "MongoDB Compass",
+			icon: "/Software-Icons/MongoDBCompass.svg",
+			url: "https://www.mongodb.com/products/tools/compass"
+		}
+	],
 }
 
 const DEVOPS: Subject = {
