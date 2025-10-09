@@ -353,7 +353,13 @@ const ITAD: Subject = {
 		},
 	],
 	advanced: [""],
-	software: [],
+	software: [
+		{
+			name: "Amazon Web Services",
+			icon: "/Software-Icons/AWS.svg",
+			url: "https://aws.amazon.com/free/?trk=6a99e239-96fc-4f80-bbee-4085b99c31c4&sc_channel=ps&ef_id=Cj0KCQjw0Y3HBhCxARIsAN7931UVYTVxy9UFGoXjRvMEH7zlqoautaoUTokm_AYEOM4ofl434y9q3UEaAg2bEALw_wcB:G:s&s_kwcid=AL!4422!3!770401419010!p!!g!!aws%20dashboard!22922886856!182921149126&gad_campaignid=22922886856&gbraid=0AAAAADjHtp_wBHeSe-tLRu2iaHmPITVES&gclid=Cj0KCQjw0Y3HBhCxARIsAN7931UVYTVxy9UFGoXjRvMEH7zlqoautaoUTokm_AYEOM4ofl434y9q3UEaAg2bEALw_wcB",
+		},
+	],
 }
 
 export { MBAP, CADV, AMDT, APPSEC, FWEB, DEVOPS, MLDP, ITAD }
