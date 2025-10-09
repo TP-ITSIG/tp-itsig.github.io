@@ -646,9 +646,13 @@ const NECT: Subject = {
 				"https://www.netacad.com/courses/networking-basics?courseLang=en-US",
 			resourceLinks: [
 				{
-					title: "You can look at the course here",
-					url: "https://www.netacad.com/courses/networking-basics?courseLang=en-US",
+					title: "Short Introduction: For Networking Basics - Computer Networking Explained | Cisco CCNA 200-301",
+					url: "https://www.youtube.com/watch?v=tSodBEAJz9Y&ab_channel=CertBros",
 				},
+				{
+					title: "In-Depth Introduction: For Networking Basics - Computer Networks: Crash Course Computer Science #28 ",
+					url: "https://www.youtube.com/watch?v=3QhU9jd03a0&ab_channel=CrashCourse"
+				}
 			],
 		},
 		{
@@ -660,9 +664,13 @@ const NECT: Subject = {
 			imageUrl: "https://aws.amazon.com/what-is-aws/?nc2=h_ql_le_int",
 			resourceLinks: [
 				{
-					title: "You can look at the resources here",
-					url: "https://skillbuilder.aws/learn/WCQH9KVXSQ/introduction-to-aws-management-console/14VSESKDEA",
+					title: "Short Introduction: For Cloud Technologies - What is Cloud Computing? | Amazon Web Services",
+					url: "https://www.youtube.com/watch?v=mxT233EdY5c&ab_channel=AmazonWebServices",
 				},
+				{
+					title: "In-Depth Introduction: For Cloud Technologies - Cloud Computing For Beginners | What is Cloud Computing | Cloud Computing Explained | Simplilearn",
+					url: "https://www.youtube.com/watch?v=RWgW-CgdIk0&ab_channel=Simplilearn"
+				}
 			],
 		},
 	],
