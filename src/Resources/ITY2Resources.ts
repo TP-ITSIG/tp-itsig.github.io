@@ -219,4 +219,189 @@ const APPSEC: Subject = {
 	],
 }
 
-export { MBAP, CADV, AMDT, APPSEC }
+const FWEB: Subject = {
+	name: "Full Stack Web Development",
+	tagline: "Design full-stack web-based applications.",
+	abbreviation: "FWEB",
+	description:
+		"This subject introduces the concepts of full-stack web-based applications. Topics covered include designing web pages and implementing the front-end and back-end technologies of a web application. Technological and design issues of web-based application development will also be discussed.",
+	color: "hsl(226, 67%, 67%)",
+	bgColor: "hsla(226, 67%, 67%, 0.3)",
+	imageLight: "Subject-Icons/Light/MBAP-L.svg", 
+	imageDark: "Subject-Icons/Dark/MBAP-D.svg",
+	resources: [
+		{
+			title: "JavaScript in 100 seconds",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=DHjqpvDnNGE",
+			type: ResourceType.VIDEO,
+		},
+
+		{
+			title: "ES6+ Features in JavaScript",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=eW6otoH290g",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "React in 100 Seconds",
+			content:
+				"",
+			thumbnail:
+				"https://www.youtube.com/watch?v=Tn6-PIqc4UM&pp=ygUTZXM3KyBpbiAxMDAgc2Vjb25kcw%3D%3D",
+			type: ResourceType.VIDEO,
+		},
+
+		{
+			title: "10 React Hooks Explained",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=TNhaISOUy6Q",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "MongoDB in 100 Seconds",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=-bt_y4Loofg",
+			type: ResourceType.VIDEO,
+		},
+	],
+	advanced: [""],
+	software: [
+		{
+			name: "MongoDB Compass",
+			icon: "/Software-Icons/MongoDBCompass.svg",
+			url: "https://www.mongodb.com/products/tools/compass"
+		},
+		{
+			name: "Node.js",
+			icon: "/Software-Icons/NodeJs.svg",
+			url: "https://nodejs.org/en/download/prebuilt-installer",
+		},
+	],
+}
+
+const DEVOPS: Subject = {
+	name: "DevOps Essentials",
+	tagline: "Explore Application Deployment with Continuous Integration and Continuous Delivery.",
+	abbreviation: "DEVOPS",
+	description:
+		"This subject covers the development and deployment of applications using DevOps tools and Agile methodology. It introduces the concepts of Continuous Integration, Continuous Delivery and Continuous Deployment.",
+	color: "hsl(36, 100%, 50%)",
+	bgColor: "hsla(36, 100%, 50%, 0.3)",
+	imageLight: "Subject-Icons/Light/CADV-L.svg",
+	imageDark: "Subject-Icons/Dark/CADV-D.svg",
+	resources: [
+		{
+			title: "Basic Git Commands",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=tRZGeaHPoaw",
+			type: ResourceType.VIDEO,
+		},
+	],
+	advanced: [""],
+	software: [
+		{
+			name: "GitHub",
+			icon: "/Software-Icons/GitHub.svg",
+			url: "https://github.com/",
+		},
+		{
+			name: "Microsoft Teams",
+			icon: "/Software-Icons/MicrosoftTeams.svg",
+			url: "https://teams.live.com/free"
+		},
+		{
+			name: "Jenkins",
+			icon: "/Software-Icons/Jenkins.svg",
+			url: "https://www.jenkins.io/"
+		},
+		{
+			name: "Jira",
+			icon: "/Software-Icons/Jira.svg",
+			url: "https://www.atlassian.com/software/jira?campaign=18458074949&adgroup=140509303646&targetid=kwd-20723783302&matchtype=e&network=g&device=c&device_model=&creative=687972977753&keyword=jira%20download&placement=&target=&ds_eid=700000001558501&ds_e1=GOOGLE&gad_source=1&gad_campaignid=18458074949&gbraid=0AAAAAD_uzhB9F_djh7f8IhbSmG43s2lyy&gclid=Cj0KCQjwl5jHBhDHARIsAB0YqjzJO-GPeWJdNOclqCBEjr6Jqj37jamN3zdSwcGN9PftDYpxRI1AHaUaAkI-EALw_wcB"
+		},
+		{
+			name: "Docker",
+			icon: "/Software-Icons/Docker.svg",
+			url: "https://www.docker.com/get-started/"
+		},
+	],
+}
+
+const MLDP: Subject = {
+	name: "Machine Learning for Developers",
+	tagline:
+		"Fundamentals of Algorithmic Machine Learning Methods.",
+	abbreviation: "MLDP",
+	description:
+		"This subject introduces the fundamentals of machine learning principles and practices. It covers a range of machine learning models and algorithmic machine learning methods, such as supervised learning.",
+	color: "hsl(314, 87%, 45%)",
+	bgColor: "hsla(314, 87%, 45%, 0.3)",
+	imageLight: "Subject-Icons/Light/AMDT-L.svg",
+	imageDark: "Subject-Icons/Dark/AMDT-D.svg",
+	resources: [
+		{
+			title: "Machine Learning Basics",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=3fsy2oheRdg",
+			type: ResourceType.VIDEO,
+		},
+	],
+	advanced: [""],
+	software: [
+		{
+			name: "Visual Studio Code",
+			icon: "/Software-Icons/VSCode.svg",
+			url: "https://code.visualstudio.com/download",
+		},
+		{
+			name: "Anaconda",
+			icon: "/Software-Icons/Anaconda.svg",
+			url: "https://docs.anaconda.com/anaconda/install/index.html",
+		},
+	],
+}
+
+const ITAD: Subject = {
+	name: "IoT Application Development",
+	tagline: "Learn about Design Principles for Connected Devices and Prototyping Techniques.",
+	abbreviation: "ITAD",
+	description:
+		"This subject covers the concepts of Distributed System Architecture like Service-Oriented Architecture, Representational State Transfer (REST) and Web Services, identification of technology and design principles for connected devices as well as prototyping techniques for developing web services.",
+	color: "hsl(150, 78%, 43%)",
+	bgColor: "hsla(150, 78%, 43%, 0.3)",
+	imageLight: "Subject-Icons/Light/APPSEC-L.svg",
+	imageDark: "Subject-Icons/Dark/APPSEC-D.svg",
+	resources: [
+		{
+			title: "What is the Internet of Things?",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=6mBO2vqLv38&t=81s",
+			type: ResourceType.VIDEO,
+		},
+		{
+			title: "Service-Oriented Architecture (SOA) Explained in 3 Minutes",
+			content:
+				"",
+			thumbnail: "https://www.youtube.com/watch?v=5P1cWeSyR94",
+			type: ResourceType.VIDEO,
+		},
+	],
+	advanced: [""],
+	software: [
+		{
+			name: "Amazon Web Services",
+			icon: "/Software-Icons/AWS.svg",
+			url: "https://aws.amazon.com/free/?trk=6a99e239-96fc-4f80-bbee-4085b99c31c4&sc_channel=ps&ef_id=Cj0KCQjw0Y3HBhCxARIsAN7931UVYTVxy9UFGoXjRvMEH7zlqoautaoUTokm_AYEOM4ofl434y9q3UEaAg2bEALw_wcB:G:s&s_kwcid=AL!4422!3!770401419010!p!!g!!aws%20dashboard!22922886856!182921149126&gad_campaignid=22922886856&gbraid=0AAAAADjHtp_wBHeSe-tLRu2iaHmPITVES&gclid=Cj0KCQjw0Y3HBhCxARIsAN7931UVYTVxy9UFGoXjRvMEH7zlqoautaoUTokm_AYEOM4ofl434y9q3UEaAg2bEALw_wcB",
+		},
+	],
+}
+
+export { MBAP, CADV, AMDT, APPSEC, FWEB, DEVOPS, MLDP, ITAD }

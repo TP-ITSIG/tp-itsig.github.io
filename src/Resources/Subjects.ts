@@ -14,7 +14,16 @@ import {
 	NECT,
 } from "./IITY1Resources"
 import { Subject } from "../Interfaces/Subject"
-import { MBAP, CADV, AMDT,APPSEC } from "./ITY2Resources"
+import { 
+	MBAP, 
+	CADV, 
+	AMDT, 
+	APPSEC, 
+	FWEB, 
+	DEVOPS, 
+	MLDP, 
+	ITAD 
+} from "./ITY2Resources"
 
 export const Subjects: Subject[] = [
 	COMT,
@@ -30,5 +39,9 @@ export const Subjects: Subject[] = [
 	ADEV,
 	NECT,
     DBAV,
-    APPSEC
+    APPSEC,
+	FWEB, 
+	DEVOPS, 
+	MLDP, 
+	ITAD
 ]

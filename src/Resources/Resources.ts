@@ -13,7 +13,16 @@ import {
 	Others,
 	UXID,
 } from "./IITY1Resources"
-import { MBAP, CADV, AMDT, APPSEC } from "./ITY2Resources"
+import { 
+	MBAP, 
+	CADV, 
+	AMDT, 
+	APPSEC, 
+	FWEB, 
+	DEVOPS, 
+	MLDP, 
+	ITAD 
+} from "./ITY2Resources"
 
 const Resources: Year[] = [
 	{
@@ -21,7 +30,7 @@ const Resources: Year[] = [
 		course: "Common",
 		description: "What every IIT student will take in Year 1!",
 		image: "/Year-Icons/IIT_Year1.svg",
-		updated: "August 2024",
+		updated: "October 2025",
 		creator: "ITSIG",
 		creatorLink: "https://www.instagram.com/tp.itsig",
 		creatorHelp: "With help from our lecturers!",
@@ -42,7 +51,7 @@ const Resources: Year[] = [
 		description:
 			"Information Technology students takes these subjects in Year 2!",
 		image: "/Year-Icons/DipIT_Year2.svg",
-		updated: "April 2023",
+		updated: "October 2025",
 		creator: "ITSIG",
 		creatorLink: "https://www.instagram.com/tp.itsig",
 		creatorHelp: undefined,
@@ -53,7 +62,7 @@ const Resources: Year[] = [
 			},
 			{
 				name: "Semester 2 (FWEB, DEVOPS, MLDP & ITAD)",
-				subjects: undefined,
+				subjects: [FWEB, DEVOPS, MLDP, ITAD],
 			},
 		],
 	},
