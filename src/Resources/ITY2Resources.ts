@@ -323,7 +323,18 @@ const MLDP: Subject = {
 		},
 	],
 	advanced: [""],
-	software: [],
+	software: [
+		{
+			name: "Visual Studio Code",
+			icon: "/Software-Icons/VSCode.svg",
+			url: "https://code.visualstudio.com/download",
+		},
+		{
+			name: "Anaconda",
+			icon: "/Software-Icons/Anaconda.svg",
+			url: "https://docs.anaconda.com/anaconda/install/index.html",
+		},
+	],
 }
 
 const ITAD: Subject = {
