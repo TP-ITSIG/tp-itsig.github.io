@@ -233,40 +233,70 @@ const FWEB: Subject = {
 		{
 			title: "JavaScript in 100 seconds",
 			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=DHjqpvDnNGE",
-			type: ResourceType.VIDEO,
+				"JavaScript is the the programming language that built the web. Learn how it evolved into a powerful tool for building websites, servers with Node.js, mobile apps, desktop software, and more.",
+			thumbnail: "/Images/IITY2/js-100.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=DHjqpvDnNGE",
 		},
 
 		{
 			title: "ES6+ Features in JavaScript",
 			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=eW6otoH290g",
-			type: ResourceType.VIDEO,
+				"Now that you've built your foundation for JavaScript, let's deep dive into ES6+ Features in JavaScript such as Arrow Functions, Template Literals, and more!",
+			thumbnail: "/Images/IITY2/es6+.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=eW6otoH290g"
 		},
 		{
 			title: "React in 100 Seconds",
-			content:
-				"",
-			thumbnail:
-				"https://www.youtube.com/watch?v=Tn6-PIqc4UM&pp=ygUTZXM3KyBpbiAxMDAgc2Vjb25kcw%3D%3D",
-			type: ResourceType.VIDEO,
+			content:"React is a little JavaScript library with a big influence over the webdev world. Learn the basics of React in 100 Seconds.",
+			thumbnail: "/Images/IITY2/react.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=Tn6-PIqc4UM&pp=ygUTZXM3KyBpbiAxMDAgc2Vjb25kcw%3D%3D",
+			resourceLinks: [
+				{
+					title: "You can learn React here",
+					url: "https://react.dev/learn",
+				},
+			]
 		},
 
 		{
 			title: "10 React Hooks Explained",
-			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=TNhaISOUy6Q",
-			type: ResourceType.VIDEO,
+			content: "React hooks provide a highly-efficient way to tap into framework features and organise reactive logic.",
+			thumbnail: "/Images/IITY2/react-hooks.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=TNhaISOUy6Q"
 		},
 		{
 			title: "MongoDB in 100 Seconds",
-			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=-bt_y4Loofg",
-			type: ResourceType.VIDEO,
+			content: "MongoDB is the world’s most popular document database with powerful capabilities like full-text search, geospatial queries, data aggregation, and more. Watch this 100 seconds to have a better idea of this application for your FWEB class!",
+			thumbnail: "/Images/IITY2/mongo.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=-bt_y4Loofg",
+			resourceLinks: [
+				{
+					title: "Getting Started with MongoDB & Mongoose",
+					url: "https://www.mongodb.com/developer/languages/javascript/getting-started-with-mongodb-and-mongoose/ ",
+				},
+			]
+		},
+		{
+			title: "MERN Stack",
+			content: "MERN is a pre-built technology stack to build websites and it's what you'll be using for this module. If you're more interested, some related topics you could explore that are not covered include TypeScript, Next.js, Redis, Redux, GraphQL, Docker + CI/CD pipelines. However, it is crucial you cultivate your basic understanding of HTML, CSS, JavaScript, Node.js, and Express.js.",
+			thumbnail: "/Images/IITY2/mern.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.mongodb.com/resources/languages/mern-stack",
+			resourceLinks: [
+				{
+					title: "MERN Stack Roadmap – How to Learn MERN and Become a Full-Stack Developer",
+					url: "https://www.freecodecamp.org/news/mern-stack-roadmap-what-you-need-to-know-to-build-full-stack-apps/",
+				},
+				{
+					title: "MERN Stack Tutorial for Beginners with Deployment – 2025 - freeCodeCamp",
+					url: "https://www.youtube.com/watch?v=F9gB5b4jgOI"
+				}
+			]
 		},
 	],
 	advanced: [""],
