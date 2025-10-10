@@ -221,7 +221,7 @@ const APPSEC: Subject = {
 
 const FWEB: Subject = {
 	name: "Full Stack Web Development",
-	tagline: "Design full-stack web-based applications.",
+	tagline: "Design full-stack web-based applications",
 	abbreviation: "FWEB",
 	description:
 		"This subject introduces the concepts of full-stack web-based applications. Topics covered include designing web pages and implementing the front-end and back-end technologies of a web application. Technological and design issues of web-based application development will also be discussed.",
@@ -316,7 +316,7 @@ const FWEB: Subject = {
 
 const DEVOPS: Subject = {
 	name: "DevOps Essentials",
-	tagline: "Explore Application Deployment with Continuous Integration and Continuous Delivery.",
+	tagline: "Explore Application Deployment with CI/CD",
 	abbreviation: "DEVOPS",
 	description:
 		"This subject covers the development and deployment of applications using DevOps tools and Agile methodology. It introduces the concepts of Continuous Integration, Continuous Delivery and Continuous Deployment.",
@@ -366,7 +366,7 @@ const DEVOPS: Subject = {
 const MLDP: Subject = {
 	name: "Machine Learning for Developers",
 	tagline:
-		"Fundamentals of Algorithmic Machine Learning Methods.",
+		"Fundamentals of Algorithmic Machine Learning Methods",
 	abbreviation: "MLDP",
 	description:
 		"This subject introduces the fundamentals of machine learning principles and practices. It covers a range of machine learning models and algorithmic machine learning methods, such as supervised learning.",
@@ -400,7 +400,7 @@ const MLDP: Subject = {
 
 const ITAD: Subject = {
 	name: "IoT Application Development",
-	tagline: "Learn about Design Principles for Connected Devices and Prototyping Techniques.",
+	tagline: "Design Principles for Connected Devices and Prototyping Techniques",
 	abbreviation: "ITAD",
 	description:
 		"This subject covers the concepts of Distributed System Architecture like Service-Oriented Architecture, Representational State Transfer (REST) and Web Services, identification of technology and design principles for connected devices as well as prototyping techniques for developing web services.",
