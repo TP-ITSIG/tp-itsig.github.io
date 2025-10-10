@@ -227,8 +227,8 @@ const FWEB: Subject = {
 		"This subject introduces the concepts of full-stack web-based applications. Topics covered include designing web pages and implementing the front-end and back-end technologies of a web application. Technological and design issues of web-based application development will also be discussed.",
 	color: "hsl(226, 67%, 67%)",
 	bgColor: "hsla(226, 67%, 67%, 0.3)",
-	imageLight: "Subject-Icons/Light/MBAP-L.svg", 
-	imageDark: "Subject-Icons/Dark/MBAP-D.svg",
+	imageLight: "Subject-Icons/Light/FWEB-L.svg", 
+	imageDark: "Subject-Icons/Light/FWEB-L.svg",
 	resources: [
 		{
 			title: "JavaScript in 100 seconds",
@@ -292,8 +292,8 @@ const DEVOPS: Subject = {
 		"This subject covers the development and deployment of applications using DevOps tools and Agile methodology. It introduces the concepts of Continuous Integration, Continuous Delivery and Continuous Deployment.",
 	color: "hsl(36, 100%, 50%)",
 	bgColor: "hsla(36, 100%, 50%, 0.3)",
-	imageLight: "Subject-Icons/Light/CADV-L.svg",
-	imageDark: "Subject-Icons/Dark/CADV-D.svg",
+	imageLight: "Subject-Icons/Light/DEVOPS-L.svg",
+	imageDark: "Subject-Icons/Dark/DEVOPS-D.svg",
 	resources: [
 		{
 			title: "Basic Git Commands",
@@ -342,8 +342,8 @@ const MLDP: Subject = {
 		"This subject introduces the fundamentals of machine learning principles and practices. It covers a range of machine learning models and algorithmic machine learning methods, such as supervised learning.",
 	color: "hsl(314, 87%, 45%)",
 	bgColor: "hsla(314, 87%, 45%, 0.3)",
-	imageLight: "Subject-Icons/Light/AMDT-L.svg",
-	imageDark: "Subject-Icons/Dark/AMDT-D.svg",
+	imageLight: "Subject-Icons/Light/MLDP-L.svg",
+	imageDark: "Subject-Icons/Dark/MLDP-D.svg",
 	resources: [
 		{
 			title: "Machine Learning Basics",
@@ -376,8 +376,8 @@ const ITAD: Subject = {
 		"This subject covers the concepts of Distributed System Architecture like Service-Oriented Architecture, Representational State Transfer (REST) and Web Services, identification of technology and design principles for connected devices as well as prototyping techniques for developing web services.",
 	color: "hsl(150, 78%, 43%)",
 	bgColor: "hsla(150, 78%, 43%, 0.3)",
-	imageLight: "Subject-Icons/Light/APPSEC-L.svg",
-	imageDark: "Subject-Icons/Dark/APPSEC-D.svg",
+	imageLight: "Subject-Icons/Light/ITAD-L.svg",
+	imageDark: "Subject-Icons/Light/ITAD-L.svg",
 	resources: [
 		{
 			title: "What is the Internet of Things?",
