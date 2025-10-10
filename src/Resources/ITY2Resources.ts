@@ -384,10 +384,16 @@ const MLDP: Subject = {
 	resources: [
 		{
 			title: "Machine Learning Basics",
-			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=3fsy2oheRdg",
-			type: ResourceType.VIDEO,
+			content: "AI and machine learning can help transform a massive pile of data into useful insights. Understanding which branch of machine learning to use, supervised or unsupervised, is important before coming into class.",
+			thumbnail: "/Images/IITY2/ai.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=3fsy2oheRdg",
+			resourceLinks : [
+				{
+					title: "You can watch the video here",
+					url: "https://www.youtube.com/watch?v=3fsy2oheRdg",
+				}
+			]
 		},
 	],
 	advanced: [""],
