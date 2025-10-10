@@ -424,17 +424,29 @@ const ITAD: Subject = {
 	resources: [
 		{
 			title: "What is the Internet of Things?",
-			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=6mBO2vqLv38&t=81s",
-			type: ResourceType.VIDEO,
+			content: "This video on What is IoT gives you a brief introduction to iot internet of things in just 6 minutes.",
+			thumbnail: "/Images/IITY2/iot.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=6mBO2vqLv38&t=81s",
+			resourceLinks : [
+				{
+					title: "You can watch the video here",
+					url: "https://www.youtube.com/watch?v=6mBO2vqLv38&t=81s",
+				}
+			]
 		},
 		{
 			title: "Service-Oriented Architecture (SOA) Explained in 3 Minutes",
-			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=5P1cWeSyR94",
-			type: ResourceType.VIDEO,
+			content: "SOA is a software design approach that builds applications around a collection of independent, reusable services, each performing a specific business function.",
+			thumbnail: "/Images/IITY2/soa.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=5P1cWeSyR94",
+			resourceLinks : [
+				{
+					title: "You can watch the video here",
+					url: "https://www.youtube.com/watch?v=5P1cWeSyR94",
+				}
+			]
 		},
 	],
 	advanced: [""],
