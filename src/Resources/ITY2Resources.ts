@@ -328,9 +328,16 @@ const DEVOPS: Subject = {
 		{
 			title: "Basic Git Commands",
 			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=tRZGeaHPoaw",
-			type: ResourceType.VIDEO,
+				"GitHub is a platform that you'll be using regularly as a developer for hosting and collaborating on Git Repositories. Learn how to use Git and GitHub for source control management (SCM) through this in-depth tutorial.",
+			thumbnail: "/Images/IITY2/github.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=tRZGeaHPoaw",
+			resourceLinks : [
+				{
+					title: "You can watch the video here",
+					url: "https://www.youtube.com/watch?v=tRZGeaHPoaw",
+				}
+			]
 		},
 	],
 	advanced: [""],
