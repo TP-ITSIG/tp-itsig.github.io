@@ -221,52 +221,82 @@ const APPSEC: Subject = {
 
 const FWEB: Subject = {
 	name: "Full Stack Web Development",
-	tagline: "Design full-stack web-based applications.",
+	tagline: "Design full-stack web-based applications",
 	abbreviation: "FWEB",
 	description:
 		"This subject introduces the concepts of full-stack web-based applications. Topics covered include designing web pages and implementing the front-end and back-end technologies of a web application. Technological and design issues of web-based application development will also be discussed.",
 	color: "hsl(226, 67%, 67%)",
 	bgColor: "hsla(226, 67%, 67%, 0.3)",
-	imageLight: "Subject-Icons/Light/MBAP-L.svg", 
-	imageDark: "Subject-Icons/Dark/MBAP-D.svg",
+	imageLight: "Subject-Icons/Light/FWEB-L.svg", 
+	imageDark: "Subject-Icons/Light/FWEB-L.svg",
 	resources: [
 		{
 			title: "JavaScript in 100 seconds",
 			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=DHjqpvDnNGE",
-			type: ResourceType.VIDEO,
+				"JavaScript is the the programming language that built the web. Learn how it evolved into a powerful tool for building websites, servers with Node.js, mobile apps, desktop software, and more.",
+			thumbnail: "/Images/IITY2/js-100.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=DHjqpvDnNGE",
 		},
 
 		{
 			title: "ES6+ Features in JavaScript",
 			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=eW6otoH290g",
-			type: ResourceType.VIDEO,
+				"Now that you've built your foundation for JavaScript, let's deep dive into ES6+ Features in JavaScript such as Arrow Functions, Template Literals, and more!",
+			thumbnail: "/Images/IITY2/es6+.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=eW6otoH290g"
 		},
 		{
 			title: "React in 100 Seconds",
-			content:
-				"",
-			thumbnail:
-				"https://www.youtube.com/watch?v=Tn6-PIqc4UM&pp=ygUTZXM3KyBpbiAxMDAgc2Vjb25kcw%3D%3D",
-			type: ResourceType.VIDEO,
+			content:"React is a little JavaScript library with a big influence over the webdev world. Learn the basics of React in 100 Seconds.",
+			thumbnail: "/Images/IITY2/react.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=Tn6-PIqc4UM&pp=ygUTZXM3KyBpbiAxMDAgc2Vjb25kcw%3D%3D",
+			resourceLinks: [
+				{
+					title: "You can learn React here",
+					url: "https://react.dev/learn",
+				},
+			]
 		},
 
 		{
 			title: "10 React Hooks Explained",
-			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=TNhaISOUy6Q",
-			type: ResourceType.VIDEO,
+			content: "React hooks provide a highly-efficient way to tap into framework features and organise reactive logic.",
+			thumbnail: "/Images/IITY2/react-hooks.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=TNhaISOUy6Q"
 		},
 		{
 			title: "MongoDB in 100 Seconds",
-			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=-bt_y4Loofg",
-			type: ResourceType.VIDEO,
+			content: "MongoDB is the world’s most popular document database with powerful capabilities like full-text search, geospatial queries, data aggregation, and more. Watch this 100 seconds to have a better idea of this application for your FWEB class!",
+			thumbnail: "/Images/IITY2/mongo.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=-bt_y4Loofg",
+			resourceLinks: [
+				{
+					title: "Getting Started with MongoDB & Mongoose",
+					url: "https://www.mongodb.com/developer/languages/javascript/getting-started-with-mongodb-and-mongoose/ ",
+				},
+			]
+		},
+		{
+			title: "MERN Stack",
+			content: "MERN is a pre-built technology stack to build websites and it's what you'll be using for this module. If you're more interested, some related topics you could explore that are not covered include TypeScript, Next.js, Redis, Redux, GraphQL, Docker + CI/CD pipelines. However, it is crucial you cultivate your basic understanding of HTML, CSS, JavaScript, Node.js, and Express.js.",
+			thumbnail: "/Images/IITY2/mern.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.mongodb.com/resources/languages/mern-stack",
+			resourceLinks: [
+				{
+					title: "MERN Stack Roadmap – How to Learn MERN and Become a Full-Stack Developer",
+					url: "https://www.freecodecamp.org/news/mern-stack-roadmap-what-you-need-to-know-to-build-full-stack-apps/",
+				},
+				{
+					title: "MERN Stack Tutorial for Beginners with Deployment – 2025 - freeCodeCamp",
+					url: "https://www.youtube.com/watch?v=F9gB5b4jgOI"
+				}
+			]
 		},
 	],
 	advanced: [""],
@@ -286,21 +316,28 @@ const FWEB: Subject = {
 
 const DEVOPS: Subject = {
 	name: "DevOps Essentials",
-	tagline: "Explore Application Deployment with Continuous Integration and Continuous Delivery.",
+	tagline: "Explore Application Deployment with CI/CD",
 	abbreviation: "DEVOPS",
 	description:
 		"This subject covers the development and deployment of applications using DevOps tools and Agile methodology. It introduces the concepts of Continuous Integration, Continuous Delivery and Continuous Deployment.",
 	color: "hsl(36, 100%, 50%)",
 	bgColor: "hsla(36, 100%, 50%, 0.3)",
-	imageLight: "Subject-Icons/Light/CADV-L.svg",
-	imageDark: "Subject-Icons/Dark/CADV-D.svg",
+	imageLight: "Subject-Icons/Light/DEVOPS-L.svg",
+	imageDark: "Subject-Icons/Dark/DEVOPS-D.svg",
 	resources: [
 		{
 			title: "Basic Git Commands",
 			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=tRZGeaHPoaw",
-			type: ResourceType.VIDEO,
+				"GitHub is a platform that you'll be using regularly as a developer for hosting and collaborating on Git Repositories. Learn how to use Git and GitHub for source control management (SCM) through this in-depth tutorial.",
+			thumbnail: "/Images/IITY2/github.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=tRZGeaHPoaw",
+			resourceLinks : [
+				{
+					title: "You can watch the video here",
+					url: "https://www.youtube.com/watch?v=tRZGeaHPoaw",
+				}
+			]
 		},
 	],
 	advanced: [""],
@@ -336,21 +373,27 @@ const DEVOPS: Subject = {
 const MLDP: Subject = {
 	name: "Machine Learning for Developers",
 	tagline:
-		"Fundamentals of Algorithmic Machine Learning Methods.",
+		"Fundamentals of Algorithmic Machine Learning Methods",
 	abbreviation: "MLDP",
 	description:
 		"This subject introduces the fundamentals of machine learning principles and practices. It covers a range of machine learning models and algorithmic machine learning methods, such as supervised learning.",
 	color: "hsl(314, 87%, 45%)",
 	bgColor: "hsla(314, 87%, 45%, 0.3)",
-	imageLight: "Subject-Icons/Light/AMDT-L.svg",
-	imageDark: "Subject-Icons/Dark/AMDT-D.svg",
+	imageLight: "Subject-Icons/Light/MLDP-L.svg",
+	imageDark: "Subject-Icons/Dark/MLDP-D.svg",
 	resources: [
 		{
 			title: "Machine Learning Basics",
-			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=3fsy2oheRdg",
-			type: ResourceType.VIDEO,
+			content: "AI and machine learning can help transform a massive pile of data into useful insights. Understanding which branch of machine learning to use, supervised or unsupervised, is important before coming into class.",
+			thumbnail: "/Images/IITY2/ai.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=3fsy2oheRdg",
+			resourceLinks : [
+				{
+					title: "You can watch the video here",
+					url: "https://www.youtube.com/watch?v=3fsy2oheRdg",
+				}
+			]
 		},
 	],
 	advanced: [""],
@@ -370,28 +413,40 @@ const MLDP: Subject = {
 
 const ITAD: Subject = {
 	name: "IoT Application Development",
-	tagline: "Learn about Design Principles for Connected Devices and Prototyping Techniques.",
+	tagline: "Design Principles for Connected Devices and Prototyping Techniques",
 	abbreviation: "ITAD",
 	description:
 		"This subject covers the concepts of Distributed System Architecture like Service-Oriented Architecture, Representational State Transfer (REST) and Web Services, identification of technology and design principles for connected devices as well as prototyping techniques for developing web services.",
 	color: "hsl(150, 78%, 43%)",
 	bgColor: "hsla(150, 78%, 43%, 0.3)",
-	imageLight: "Subject-Icons/Light/APPSEC-L.svg",
-	imageDark: "Subject-Icons/Dark/APPSEC-D.svg",
+	imageLight: "Subject-Icons/Light/ITAD-L.svg",
+	imageDark: "Subject-Icons/Light/ITAD-L.svg",
 	resources: [
 		{
 			title: "What is the Internet of Things?",
-			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=6mBO2vqLv38&t=81s",
-			type: ResourceType.VIDEO,
+			content: "This video on What is IoT gives you a brief introduction to iot internet of things in just 6 minutes.",
+			thumbnail: "/Images/IITY2/iot.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=6mBO2vqLv38&t=81s",
+			resourceLinks : [
+				{
+					title: "You can watch the video here",
+					url: "https://www.youtube.com/watch?v=6mBO2vqLv38&t=81s",
+				}
+			]
 		},
 		{
 			title: "Service-Oriented Architecture (SOA) Explained in 3 Minutes",
-			content:
-				"",
-			thumbnail: "https://www.youtube.com/watch?v=5P1cWeSyR94",
-			type: ResourceType.VIDEO,
+			content: "SOA is a software design approach that builds applications around a collection of independent, reusable services, each performing a specific business function.",
+			thumbnail: "/Images/IITY2/soa.png",
+			type: ResourceType.IMAGE,
+			imageUrl: "https://www.youtube.com/watch?v=5P1cWeSyR94",
+			resourceLinks : [
+				{
+					title: "You can watch the video here",
+					url: "https://www.youtube.com/watch?v=5P1cWeSyR94",
+				}
+			]
 		},
 	],
 	advanced: [""],
