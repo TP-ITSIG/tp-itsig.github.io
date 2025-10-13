@@ -263,28 +263,67 @@ const IMUX: Subject = {
 }
 
 const MPPR: Subject = {
-    name: "",
+    name: "Math and Physics Programming",
     tagline: "",
-    abbreviation: "",
-    description: "",
-    color: "",
-    bgColor: "",
+    abbreviation: "MPPR",
+    description: "This subject will introduce the mathematics and physics concepts, principles and formulas that are crucial to developing interactive environments that look realistic, and how to apply these concepts into immersive media. The subject includes geometry, trigonometry, vectors and matrices, and physics concepts for games and immersive media.",
+    color: "hsl(150, 78%, 43%)",
+	bgColor: "hsla(150, 78%, 43%, 0.3)",
     imageLight: "",
     imageDark: "",
     resources: [
         {
-            title: "",
-            content: "",
+            title: "Dot and Cross Products",
+            content: "This video gives you a visual representation of Dot and Cross Products.",
             thumbnail: "",
             type: ResourceType.IMAGE,
-            imageUrl: "",
+            imageUrl: "https://youtu.be/h0NJK4mEIJUsi=41WIrBIH0T3Z48A8 ",
             resourceLinks: [
                 {
-                    title: "",
-                    url: ""
+                    title: "Let’s visualise Dot and Cross Products here",
+                    url: "https://youtu.be/h0NJK4mEIJUsi=41WIrBIH0T3Z48A8 "
                 }
             ]
-        }
+        },
+        {
+            title: "Bezier Curves",
+            content: "This video introduces you to bezier curves.",
+            thumbnail: "",
+            type: ResourceType.IMAGE,
+            imageUrl: "https://youtu.be/RF04Fi9OCPc?si=Xa19ZpozU3OYd1gM ",
+            resourceLinks: [
+                {
+                    title: "Let’s look at bezier curves together!",
+                    url: "https://youtu.be/RF04Fi9OCPc?si=Xa19ZpozU3OYd1gM "
+                }
+            ]
+        },
+        {
+            title: "Student Game",
+            content: "This game was made by previous students in MPPR.",
+            thumbnail: "",
+            type: ResourceType.IMAGE,
+            imageUrl: "https://egbert-jefferson.itch.io/peace-lightning",
+            resourceLinks: [
+                {
+                    title: "Try out the game!",
+                    url: "https://egbert-jefferson.itch.io/peace-lightning"
+                }
+            ]
+        },
+        {
+            title: "Game Physics Channel",
+            content: "This channel talks about game physics and math in a simple way.",
+            thumbnail: "",
+            type: ResourceType.IMAGE,
+            imageUrl: "https://www.youtube.com/@sora_sakurai_en",
+            resourceLinks: [
+                {
+                    title: "Check out this channel",
+                    url: "https://www.youtube.com/@sora_sakurai_en"
+                }
+            ]
+        },
     ],
     advanced: [""],
     software: [],
