@@ -194,25 +194,38 @@ const PGGE: Subject = {
 }
 
 const ARAD: Subject = {
-    name: "",
+    name: "Augmented Reality Application Development",
     tagline: "",
-    abbreviation: "",
-    description: "",
-    color: "",
-    bgColor: "",
+    abbreviation: "ARAD",
+    description: "This subject introduces the principles and components underlying augmented reality applications. It covers core building blocks, user experience (UI/UX) design principles, and software tools for developing an augmented reality application.",
+    color: "hsl(36, 100%, 50%)",
+	bgColor: "hsla(36, 100%, 50%, 0.3)",
     imageLight: "",
     imageDark: "",
     resources: [
         {
-            title: "",
-            content: "",
+            title: "How Augmented Reality works",
+            content: "This video teaches you about how AR works in Unity",
             thumbnail: "",
             type: ResourceType.IMAGE,
-            imageUrl: "",
+            imageUrl: "https://youtu.be/FWyTf3USDCQ?si=AepfAbNVOUVourTg",
             resourceLinks: [
                 {
-                    title: "",
-                    url: ""
+                    title: "Watch this video to learn about Unity’s AR environment",
+                    url: "https://youtu.be/FWyTf3USDCQ?si=AepfAbNVOUVourTg"
+                }
+            ]
+        }
+        {
+            title: "Let’s Create AR!",
+            content: "This video teaches you how to make AR Apps in Unity",
+            thumbnail: "",
+            type: ResourceType.IMAGE,
+            imageUrl: "https://youtu.be/VMis54yektk?si=UQ_FQZTL3LF1EdCa",
+            resourceLinks: [
+                {
+                    title: "Watch this video to learn to make AR Apps",
+                    url: "https://youtu.be/VMis54yektk?si=UQ_FQZTL3LF1EdCa"
                 }
             ]
         }
