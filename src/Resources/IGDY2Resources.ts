@@ -166,25 +166,25 @@ const CPGP: Subject = {
 }
 
 const PGGE: Subject = {
-    name: "",
+    name: "Programming with Game Engines",
     tagline: "",
-    abbreviation: "",
-    description: "",
-    color: "",
-    bgColor: "",
+    abbreviation: "PGGE",
+    description: "This subject introduces programming of games using Game Engine. The subject will cover different game programming techniques and design pattern. Students will be able to employ the techniques and used in conjuction with game engines.",
+    color: "hsl(226, 67%, 67%)",
+	bgColor: "hsla(226, 67%, 67%, 0.3)",
     imageLight: "",
     imageDark: "",
     resources: [
         {
-            title: "",
-            content: "",
+            title: "Create a multiplayer game!",
+            content: "This video shows you how to make a multiplayer game in Unity using Photon.",
             thumbnail: "",
             type: ResourceType.IMAGE,
-            imageUrl: "",
+            imageUrl: "https://youtu.be/93SkbMpWCGo?si=RVsu3ppNQhn1xl6p",
             resourceLinks: [
                 {
-                    title: "",
-                    url: ""
+                    title: "With this video, let’s see if we can make a multiplayer game",
+                    url: "https://youtu.be/93SkbMpWCGo?si=RVsu3ppNQhn1xl6p"
                 }
             ]
         }
