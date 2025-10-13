@@ -56,25 +56,38 @@ const GADV: Subject = {
 }
 
 const GADS: Subject = {
-    name: "",
+    name: "Game Design",
     tagline: "",
-    abbreviation: "",
-    description: "",
-    color: "",
-    bgColor: "",
+    abbreviation: "GADS",
+    description: "The subject emphasises the use of game design to improve ideas before and during implementation. It covers various aspects of game design, from initial target audience, player behaviour and attitude to aspects affecting implementation within the actual video game. By examining various successful video games within different genres, you will learn to include a variety of attributes in your video games such as motivation for the player and being able to generate re-playability.",
+    color: "hsl(36, 100%, 50%)",
+	bgColor: "hsla(36, 100%, 50%, 0.3)",
     imageLight: "",
     imageDark: "",
     resources: [
         {
-            title: "",
-            content: "",
+            title: "Basic Principles of Game Design",
+            content: "Learn the fundamentals of how to make good games.",
             thumbnail: "",
             type: ResourceType.IMAGE,
-            imageUrl: "",
+            imageUrl: "https://youtu.be/G8AT01tuyrk?si=qHjGJ0rKPDmCFATN",
             resourceLinks: [
                 {
-                    title: "",
-                    url: ""
+                    title: "You can watch the video here",
+                    url: "https://youtu.be/G8AT01tuyrk?si=qHjGJ0rKPDmCFATN"
+                }
+            ]
+        },
+        {
+            title: "Learn about mechanics, dynamics, and systems in games!",
+            content: "This lesson teaches you how to break down your game into three key parts: mechanics, dynamics and the overall system! *Do note you will need a Linkedin account to watch this video.",
+            thumbnail: "",
+            type: ResourceType.IMAGE,
+            imageUrl: "https://www.linkedin.com/learning-login/share?account=76881922&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fgame-design-foundations-1-ideas-core-loops-and-goals%2Fgoals%3Ftrk%3Dshare_video_url%26shareId%3Dr8d4keTsQUW834c8tO8HpA%253D%253D",
+            resourceLinks: [
+                {
+                    title: "You can watch the video here",
+                    url: "https://www.linkedin.com/learning-login/share?account=76881922&forceAccount=false&redirect=https%3A%2F%2Fwww.linkedin.com%2Flearning%2Fgame-design-foundations-1-ideas-core-loops-and-goals%2Fgoals%3Ftrk%3Dshare_video_url%26shareId%3Dr8d4keTsQUW834c8tO8HpA%253D%253D"
                 }
             ]
         }
