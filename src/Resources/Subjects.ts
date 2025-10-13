@@ -24,6 +24,16 @@ import {
 	MLDP, 
 	ITAD 
 } from "./ITY2Resources"
+import { 
+	GADV, 
+	GADS, 
+	TMOD, 
+	CPGP, 
+	PGGE, 
+	ARAD, 
+	IMUX, 
+	MPPR 
+} from "./IGDY2Resources"
 
 export const Subjects: Subject[] = [
 	COMT,
@@ -43,5 +53,13 @@ export const Subjects: Subject[] = [
 	FWEB, 
 	DEVOPS, 
 	MLDP, 
-	ITAD
+	ITAD,
+	GADV, 
+	GADS, 
+	TMOD, 
+	CPGP, 
+	PGGE, 
+	ARAD, 
+	IMUX, 
+	MPPR 
 ]

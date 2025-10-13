@@ -224,3 +224,5 @@ const MPPR: Subject = {
     advanced: [""],
     software: [],
 }
+
+export { GADV, GADS, TMOD, CPGP, PGGE, ARAD, IMUX, MPPR }
