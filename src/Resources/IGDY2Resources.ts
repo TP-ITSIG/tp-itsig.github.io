@@ -215,7 +215,7 @@ const ARAD: Subject = {
                     url: "https://youtu.be/FWyTf3USDCQ?si=AepfAbNVOUVourTg"
                 }
             ]
-        }
+        },
         {
             title: "Let’s Create AR!",
             content: "This video teaches you how to make AR Apps in Unity",
@@ -235,25 +235,25 @@ const ARAD: Subject = {
 }
 
 const IMUX: Subject = {
-    name: "",
+    name: "Immersive UIUX",
     tagline: "",
-    abbreviation: "",
-    description: "",
-    color: "",
-    bgColor: "",
+    abbreviation: "IMUX",
+    description: "This subject focuses on user interfaces and the user experiences of interaction within immersive media environments. It will also cover the basics of how to create effective interfaces using the appropriate tools and techniques as well as being able to understand the user perspectives and experiences of users interacting within games and immersive environments.",
+    color: "hsl(314, 87%, 45%)",
+	bgColor: "hsla(314, 87%, 45%, 0.3)",
     imageLight: "",
     imageDark: "",
     resources: [
         {
-            title: "",
-            content: "",
+            title: "UI Evaluation",
+            content: "This video teaches you about heuristic evaluations of User Interfaces.",
             thumbnail: "",
             type: ResourceType.IMAGE,
-            imageUrl: "",
+            imageUrl: "https://youtu.be/6Bw0n6Jvwxk?si=ODQ28JhWACa5mNnE",
             resourceLinks: [
                 {
-                    title: "",
-                    url: ""
+                    title: "Let’s learn how to evaluate User Interfaces here",
+                    url: "https://youtu.be/6Bw0n6Jvwxk?si=ODQ28JhWACa5mNnE"
                 }
             ]
         }
