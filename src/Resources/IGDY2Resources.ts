@@ -97,25 +97,38 @@ const GADS: Subject = {
 }
 
 const TMOD: Subject = {
-    name: "",
+    name: "3d Modelling",
     tagline: "",
-    abbreviation: "",
-    description: "",
-    color: "",
-    bgColor: "",
+    abbreviation: "TMOD",
+    description: "This subject will introduce the 3D model creation workflow for games and immersive media. It also introduces Digital Content Creation (DCC) tools that can be applied to 3D modelling techniques such as low-poly meshing and digital texturing practices such as using coordinate mapping function and photographic texture creation for crafting 3D art assets.",
+    color: "hsl(314, 87%, 45%)",
+	bgColor: "hsla(314, 87%, 45%, 0.3)",
     imageLight: "",
     imageDark: "",
     resources: [
         {
-            title: "",
-            content: "",
+            title: "Maya 101",
+            content: "Learn the basic Maya interface and functions so that you can get started on your own projects!",
             thumbnail: "",
             type: ResourceType.IMAGE,
-            imageUrl: "",
+            imageUrl: "https://youtu.be/LJLo6MafPVM?si=KjlVzjbiKO4dSCcC",
             resourceLinks: [
                 {
                     title: "",
-                    url: ""
+                    url: "https://youtu.be/LJLo6MafPVM?si=KjlVzjbiKO4dSCcC"
+                }
+            ]
+        },
+        {
+            title: "Try Modelling a Coffee Cup!",
+            content: "This tutorial teaches you step-by-step how to model a coffee cup in Maya 2024",
+            thumbnail: "",
+            type: ResourceType.IMAGE,
+            imageUrl: "https://youtu.be/V59XKklgfDE?si=hQWL0Kf9vYYqPWLK",
+            resourceLinks: [
+                {
+                    title: "",
+                    url: "https://youtu.be/V59XKklgfDE?si=hQWL0Kf9vYYqPWLK"
                 }
             ]
         }
