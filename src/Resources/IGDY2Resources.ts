@@ -104,23 +104,23 @@ const GADS: Subject = {
 
 const TMOD: Subject = {
     name: "3d Modelling",
-    tagline: "",
+    tagline: "3D Model Creation Workflow for Immersive Media",
     abbreviation: "TMOD",
     description: "This subject will introduce the 3D model creation workflow for games and immersive media. It also introduces Digital Content Creation (DCC) tools that can be applied to 3D modelling techniques such as low-poly meshing and digital texturing practices such as using coordinate mapping function and photographic texture creation for crafting 3D art assets.",
     color: "hsl(314, 87%, 45%)",
 	bgColor: "hsla(314, 87%, 45%, 0.3)",
-    imageLight: "",
-    imageDark: "",
+    imageLight: "Subject-Icons/Light/AMDT-L.svg",
+	imageDark: "Subject-Icons/Dark/AMDT-D.svg",
     resources: [
         {
             title: "Maya 101",
             content: "Learn the basic Maya interface and functions so that you can get started on your own projects!",
-            thumbnail: "",
+            thumbnail: "/Images/IITY2/maya.png",
             type: ResourceType.IMAGE,
             imageUrl: "https://youtu.be/LJLo6MafPVM?si=KjlVzjbiKO4dSCcC",
             resourceLinks: [
                 {
-                    title: "",
+                    title: "You can watch the video here",
                     url: "https://youtu.be/LJLo6MafPVM?si=KjlVzjbiKO4dSCcC"
                 }
             ]
@@ -128,19 +128,25 @@ const TMOD: Subject = {
         {
             title: "Try Modelling a Coffee Cup!",
             content: "This tutorial teaches you step-by-step how to model a coffee cup in Maya 2024",
-            thumbnail: "",
+            thumbnail: "/Images/IITY2/maya-coffee.png",
             type: ResourceType.IMAGE,
             imageUrl: "https://youtu.be/V59XKklgfDE?si=hQWL0Kf9vYYqPWLK",
             resourceLinks: [
                 {
-                    title: "",
+                    title: "You can watch the video here",
                     url: "https://youtu.be/V59XKklgfDE?si=hQWL0Kf9vYYqPWLK"
                 }
             ]
         }
     ],
     advanced: [""],
-    software: [],
+    software: [
+        {
+            name: "Autodesk Maya",
+            icon: "/Software-Icons/Maya.svg",
+            url: "https://www.autodesk.com/education/edu-software/overview"
+        }
+    ],
 }
 
 const CPGP: Subject = {
