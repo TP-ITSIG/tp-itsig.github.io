@@ -151,18 +151,18 @@ const TMOD: Subject = {
 
 const CPGP: Subject = {
     name: "Computer Graphics and Programming",
-    tagline: "",
+    tagline: "Geometry and Math in Computer Graphics",
     abbreviation: "CPGP",
     description: "The subject covers the essentials of geometry and its mathematical representations used in computer graphics. It examines concepts and algorithms for geometric modelling and then studies rendering algorithms, such as rasterization and raytracing. Additional topics include digital imaging concepts, shaders, and scene graphs, and camera representations.",
     color: "hsl(150, 78%, 43%)",
 	bgColor: "hsla(150, 78%, 43%, 0.3)",
-    imageLight: "",
-    imageDark: "",
+    imageLight: "Subject-Icons/Light/APPSEC-L.svg",
+	imageDark: "Subject-Icons/Dark/APPSEC-D.svg",
     resources: [
         {
             title: "How video game graphics work",
             content: "Understand the rendering pipeline behind game graphics.",
-            thumbnail: "",
+            thumbnail: "/Images/IITY2/video-game-graphics.png",
             type: ResourceType.IMAGE,
             imageUrl: "https://youtu.be/C8YtdC8mxTU?si=FPyxxHVxOImzEh3Y",
             resourceLinks: [
@@ -174,7 +174,13 @@ const CPGP: Subject = {
         }
     ],
     advanced: [""],
-    software: [],
+    software: [
+        {
+			name: "Visual Studio Code",
+			icon: "/Software-Icons/VSCode.svg",
+			url: "https://code.visualstudio.com/download",
+		},
+    ],
 }
 
 const PGGE: Subject = {
