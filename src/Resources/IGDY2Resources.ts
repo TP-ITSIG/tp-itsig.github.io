@@ -3,18 +3,18 @@ import { Subject } from "../Interfaces/Subject"
 
 const GADV: Subject = {
     name: "Game Development",
-    tagline: "",
+    tagline: "Develop Graphical Interactive Games in Unity",
     abbreviation: "GADV",
     description: "This subject provides you with the knowledge and skills to develop graphical interactive games through the use of existing game libraries and to create the component parts of a game, both assets and programming code, and then bring them together to produce a complete game. The subject covers game development techniques such as sprite creation, rendering and animation; collision detection; the main game loop; event handling and control of the frame rate. The in-game usage of sound effects will also be taught, as well as key programming concepts required in game development such as memory management, programming standards and debugging.",
     color: "hsl(226, 67%, 67%)",
 	bgColor: "hsla(226, 67%, 67%, 0.3)",
-    imageLight: "",
-    imageDark: "",
+    imageLight: "Subject-Icons/Light/COMT-L.svg",
+	imageDark: "Subject-Icons/Dark/COMT-D.svg",
     resources: [
         {
             title: "C# in 100 seconds",
             content: "Understand the language behind Unity, and how C# works!",
-            thumbnail: "",
+            thumbnail: "/Images/IITY2/cs.jpg",
             type: ResourceType.IMAGE,
             imageUrl: "https://youtu.be/ravLFzIguCM?si=HJOW2HyHRw3kGhil",
             resourceLinks: [
@@ -27,7 +27,7 @@ const GADV: Subject = {
         {
             title: "Unity in 100 seconds",
             content: "Understand how the Unity game engine works and learn how to get started on your game development project!",
-            thumbnail: "",
+            thumbnail: "/Images/IITY2/unity.png",
             type: ResourceType.IMAGE,
             imageUrl: "https://youtu.be/iqlH4okiQqg?si=FgjXvLmayzN0WM22",
             resourceLinks: [
@@ -40,7 +40,7 @@ const GADV: Subject = {
         {
             title: "Make a simple game!",
             content: "If you are interested to learn how to use C# to develop a game, you can follow these videos and try it out!",
-            thumbnail: "",
+            thumbnail: "/Images/IITY2/game.png",
             type: ResourceType.IMAGE,
             imageUrl: "https://youtube.com/playlist?list=PLcRSafycjWFeHojgzbkNUXt9S6-Q7BGQE&si=D12asg7dHCWYNE_I",
             resourceLinks: [
@@ -52,7 +52,13 @@ const GADV: Subject = {
         }
     ],
     advanced: [""],
-    software: [],
+    software: [
+        {
+            name: "",
+            icon: "/Software-Icons/Unity.svg",
+            url: "https://unity.com/download"
+        }
+    ],
 }
 
 const GADS: Subject = {
