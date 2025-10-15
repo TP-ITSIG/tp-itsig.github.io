@@ -23,6 +23,16 @@ import {
 	MLDP, 
 	ITAD 
 } from "./ITY2Resources"
+import { 
+	GADV, 
+	GADS, 
+	TMOD, 
+	CPGP, 
+	PGGE, 
+	ARAD, 
+	IMUX, 
+	MPPR 
+} from "./IGDY2Resources"
 
 const Resources: Year[] = [
 	{
@@ -63,6 +73,27 @@ const Resources: Year[] = [
 			{
 				name: "Semester 2 (FWEB, DEVOPS, MLDP & ITAD)",
 				subjects: [FWEB, DEVOPS, MLDP, ITAD],
+			},
+		],
+	},
+	{
+		name: "Dip IGD/GDD Year 2",
+		course: "IGD",
+		description:
+			"Immersive Media & Game Development students takes these subjects in Year 2!",
+		image: "/Year-Icons/DipIT_Year2.svg", // Change icon
+		updated: "October 2025",
+		creator: "ITSIG", // Change name
+		creatorLink: "https://www.instagram.com/tp.itsig", // Change instagram
+		creatorHelp: undefined,
+		semesters: [
+			{
+				name: "Semester 1 (GADV, GADS, TMOD & CPGP)",
+				subjects: [GADV, GADS, TMOD, CPGP],
+			},
+			{
+				name: "Semester 2 (PGGE, ARAD, IMUX & MPPR)",
+				subjects: [PGGE, ARAD, IMUX, MPPR],
 			},
 		],
 	},
