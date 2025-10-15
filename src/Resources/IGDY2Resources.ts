@@ -266,18 +266,18 @@ const ARAD: Subject = {
 
 const IMUX: Subject = {
     name: "Immersive UIUX",
-    tagline: "",
+    tagline: "Effective Interfacing within Immersive Media Environments",
     abbreviation: "IMUX",
     description: "This subject focuses on user interfaces and the user experiences of interaction within immersive media environments. It will also cover the basics of how to create effective interfaces using the appropriate tools and techniques as well as being able to understand the user perspectives and experiences of users interacting within games and immersive environments.",
     color: "hsl(314, 87%, 45%)",
 	bgColor: "hsla(314, 87%, 45%, 0.3)",
-    imageLight: "",
-    imageDark: "",
+    imageLight: "Subject-Icons/Light/MLDP-L.svg",
+	imageDark: "Subject-Icons/Dark/MLDP-D.svg",
     resources: [
         {
             title: "UI Evaluation",
             content: "This video teaches you about heuristic evaluations of User Interfaces.",
-            thumbnail: "",
+            thumbnail: "/Images/IITY2/heuristic-evaluations.png",
             type: ResourceType.IMAGE,
             imageUrl: "https://youtu.be/6Bw0n6Jvwxk?si=ODQ28JhWACa5mNnE",
             resourceLinks: [
@@ -294,44 +294,44 @@ const IMUX: Subject = {
 
 const MPPR: Subject = {
     name: "Math and Physics Programming",
-    tagline: "",
+    tagline: "Develop Realistic and Interactive Environments",
     abbreviation: "MPPR",
     description: "This subject will introduce the mathematics and physics concepts, principles and formulas that are crucial to developing interactive environments that look realistic, and how to apply these concepts into immersive media. The subject includes geometry, trigonometry, vectors and matrices, and physics concepts for games and immersive media.",
     color: "hsl(150, 78%, 43%)",
 	bgColor: "hsla(150, 78%, 43%, 0.3)",
-    imageLight: "",
-    imageDark: "",
+    imageLight: "Subject-Icons/Light/ITAD-L.svg",
+	imageDark: "Subject-Icons/Light/ITAD-L.svg",
     resources: [
         {
             title: "Dot and Cross Products",
             content: "This video gives you a visual representation of Dot and Cross Products.",
-            thumbnail: "",
+            thumbnail: "/Images/IITY2/dot-and-cross.png",
             type: ResourceType.IMAGE,
-            imageUrl: "https://youtu.be/h0NJK4mEIJUsi=41WIrBIH0T3Z48A8 ",
+            imageUrl: "https://youtu.be/h0NJK4mEIJUsi=41WIrBIH0T3Z48A8",
             resourceLinks: [
                 {
                     title: "Let’s visualise Dot and Cross Products here",
-                    url: "https://youtu.be/h0NJK4mEIJUsi=41WIrBIH0T3Z48A8 "
+                    url: "https://youtu.be/h0NJK4mEIJUsi=41WIrBIH0T3Z48A8"
                 }
             ]
         },
         {
             title: "Bezier Curves",
             content: "This video introduces you to bezier curves.",
-            thumbnail: "",
+            thumbnail: "/Images/IITY2/bezier-curves.png",
             type: ResourceType.IMAGE,
-            imageUrl: "https://youtu.be/RF04Fi9OCPc?si=Xa19ZpozU3OYd1gM ",
+            imageUrl: "https://youtu.be/RF04Fi9OCPc?si=Xa19ZpozU3OYd1gM",
             resourceLinks: [
                 {
                     title: "Let’s look at bezier curves together!",
-                    url: "https://youtu.be/RF04Fi9OCPc?si=Xa19ZpozU3OYd1gM "
+                    url: "https://youtu.be/RF04Fi9OCPc?si=Xa19ZpozU3OYd1gM"
                 }
             ]
         },
         {
             title: "Student Game",
             content: "This game was made by previous students in MPPR.",
-            thumbnail: "",
+            thumbnail: "/Images/IITY2/student-game.png",
             type: ResourceType.IMAGE,
             imageUrl: "https://egbert-jefferson.itch.io/peace-lightning",
             resourceLinks: [
@@ -344,7 +344,7 @@ const MPPR: Subject = {
         {
             title: "Game Physics Channel",
             content: "This channel talks about game physics and math in a simple way.",
-            thumbnail: "",
+            thumbnail: "/Images/IITY2/game-physics-channel.png",
             type: ResourceType.IMAGE,
             imageUrl: "https://www.youtube.com/@sora_sakurai_en",
             resourceLinks: [
@@ -356,7 +356,13 @@ const MPPR: Subject = {
         },
     ],
     advanced: [""],
-    software: [],
+    software: [
+        {
+            name: "Unity",
+            icon: "/Software-Icons/Unity.svg",
+            url: "https://unity.com/download"
+        }
+    ],
 }
 
 export { GADV, GADS, TMOD, CPGP, PGGE, ARAD, IMUX, MPPR }
