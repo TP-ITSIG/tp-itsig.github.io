@@ -196,7 +196,7 @@ const PGGE: Subject = {
         {
             title: "Create a multiplayer game!",
             content: "This video shows you how to make a multiplayer game in Unity using Photon.",
-            thumbnail: "",
+            thumbnail: "/Images/IITY2/multiplayer-game.png",
             type: ResourceType.IMAGE,
             imageUrl: "https://youtu.be/93SkbMpWCGo?si=RVsu3ppNQhn1xl6p",
             resourceLinks: [
@@ -219,18 +219,18 @@ const PGGE: Subject = {
 
 const ARAD: Subject = {
     name: "Augmented Reality Application Development",
-    tagline: "",
+    tagline: "Develop an AR Application!",
     abbreviation: "ARAD",
     description: "This subject introduces the principles and components underlying augmented reality applications. It covers core building blocks, user experience (UI/UX) design principles, and software tools for developing an augmented reality application.",
     color: "hsl(36, 100%, 50%)",
 	bgColor: "hsla(36, 100%, 50%, 0.3)",
-    imageLight: "",
-    imageDark: "",
+    imageLight: "Subject-Icons/Light/DEVOPS-L.svg",
+	imageDark: "Subject-Icons/Dark/DEVOPS-D.svg",
     resources: [
         {
             title: "How Augmented Reality works",
             content: "This video teaches you about how AR works in Unity",
-            thumbnail: "",
+            thumbnail: "/Images/IITY2/ar-intro.png",
             type: ResourceType.IMAGE,
             imageUrl: "https://youtu.be/FWyTf3USDCQ?si=AepfAbNVOUVourTg",
             resourceLinks: [
@@ -243,7 +243,7 @@ const ARAD: Subject = {
         {
             title: "Let’s Create AR!",
             content: "This video teaches you how to make AR Apps in Unity",
-            thumbnail: "",
+            thumbnail: "/Images/IITY2/ar-make.png",
             type: ResourceType.IMAGE,
             imageUrl: "https://youtu.be/VMis54yektk?si=UQ_FQZTL3LF1EdCa",
             resourceLinks: [
@@ -255,7 +255,13 @@ const ARAD: Subject = {
         }
     ],
     advanced: [""],
-    software: [],
+    software: [
+        {
+            name: "Unity",
+            icon: "/Software-Icons/Unity.svg",
+            url: "https://unity.com/download"
+        }
+    ],
 }
 
 const IMUX: Subject = {
