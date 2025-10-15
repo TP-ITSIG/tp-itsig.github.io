@@ -54,7 +54,7 @@ const GADV: Subject = {
     advanced: [""],
     software: [
         {
-            name: "",
+            name: "Unity",
             icon: "/Software-Icons/Unity.svg",
             url: "https://unity.com/download"
         }
@@ -185,13 +185,13 @@ const CPGP: Subject = {
 
 const PGGE: Subject = {
     name: "Programming with Game Engines",
-    tagline: "",
+    tagline: "Discvoer Game Programming Techniques and Design Pattern",
     abbreviation: "PGGE",
     description: "This subject introduces programming of games using Game Engine. The subject will cover different game programming techniques and design pattern. Students will be able to employ the techniques and used in conjuction with game engines.",
     color: "hsl(226, 67%, 67%)",
 	bgColor: "hsla(226, 67%, 67%, 0.3)",
-    imageLight: "",
-    imageDark: "",
+    imageLight: "Subject-Icons/Light/FWEB-L.svg", 
+	imageDark: "Subject-Icons/Light/FWEB-L.svg",
     resources: [
         {
             title: "Create a multiplayer game!",
@@ -208,7 +208,13 @@ const PGGE: Subject = {
         }
     ],
     advanced: [""],
-    software: [],
+    software: [
+        {
+            name: "Unity",
+            icon: "/Software-Icons/Unity.svg",
+            url: "https://unity.com/download"
+        }
+    ],
 }
 
 const ARAD: Subject = {
