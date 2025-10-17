@@ -34,6 +34,12 @@ import {
 	IMUX, 
 	MPPR 
 } from "./IGDY2Resources"
+import { 
+	DMBA, 
+	DAST, 
+	MLDM, 
+	TSAL 
+} from "./BDAY2Resources"
 
 export const Subjects: Subject[] = [
 	COMT,
@@ -61,5 +67,9 @@ export const Subjects: Subject[] = [
 	PGGE, 
 	ARAD, 
 	IMUX, 
-	MPPR 
+	MPPR,
+	DMBA, 
+	DAST, 
+	MLDM, 
+	TSAL 
 ]
