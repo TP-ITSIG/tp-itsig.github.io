@@ -7,6 +7,7 @@ import About from "./Pages/About"
 import Home from "./Pages/Home"
 import Resource from "./Pages/Resource"
 import ReactGA from "react-ga4"
+import FAQ from "./Pages/FAQ"
 
 const App = () => {
 	const location = useLocation()
@@ -39,6 +40,7 @@ Just DM "supercalifragilisticexpialidocious" to our Instagram if you're interest
 					<Route path="/" element={<Home />} />
 					<Route path="/resource/:subject" element={<Resource />} />
 					<Route path="/about" element={<About />} />
+					<Route path="/faq" element={<FAQ />} />
 				</Routes>
 			</Box>
 			<Footer />
