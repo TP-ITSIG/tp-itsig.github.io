@@ -33,6 +33,17 @@ import {
 	IMUX, 
 	MPPR 
 } from "./IGDY2Resources"
+import { 
+	DMBA, 
+	DAST, 
+	MLDM, 
+	TSAL 
+} from "./BDAY2Resources"
+import { 
+	DLOR,
+	NLPR,
+	AIET
+} from "./AAIY2Resources"
 
 const Resources: Year[] = [
 	{
@@ -60,7 +71,7 @@ const Resources: Year[] = [
 		course: "IT",
 		description:
 			"Information Technology students takes these subjects in Year 2!",
-		image: "/Year-Icons/DipIT_Year2.svg",
+		image: "/Year-Icons/itsig_logo.svg",
 		updated: "October 2025",
 		creator: "ITSIG",
 		creatorLink: "https://www.instagram.com/tp.itsig",
@@ -81,10 +92,10 @@ const Resources: Year[] = [
 		course: "IGD",
 		description:
 			"Immersive Media & Game Development students takes these subjects in Year 2!",
-		image: "/Year-Icons/DipIT_Year2.svg", // Change icon
+		image: "/Year-Icons/igd_logo.jpg", 
 		updated: "October 2025",
-		creator: "ITSIG", // Change name
-		creatorLink: "https://www.instagram.com/tp.itsig", // Change instagram
+		creator: "IGDSIG", 
+		creatorLink: "https://www.instagram.com/igd_sig/", 
 		creatorHelp: undefined,
 		semesters: [
 			{
@@ -94,6 +105,40 @@ const Resources: Year[] = [
 			{
 				name: "Semester 2 (PGGE, ARAD, IMUX & MPPR)",
 				subjects: [PGGE, ARAD, IMUX, MPPR],
+			},
+		],
+	},
+	{
+		name: "Dip BDA Year 2",
+		course: "BDA",
+		description:
+			"Business & Data Analytics students takes these subjects in Year 2!",
+		image: "/Year-Icons/bda_logo.jpg", 
+		updated: "October 2025",
+		creator: "BDASIG", 
+		creatorLink: "https://www.instagram.com/tp_bda/", 
+		creatorHelp: undefined,
+		semesters: [
+			{
+				name: "Semester 2 (DMBA, DAST, MLDM & TSAL)",
+				subjects: [DMBA, DAST, MLDM, TSAL],
+			},
+		],
+	},
+	{
+		name: "Dip AAI Year 2",
+		course: "AAI",
+		description:
+			"Applied Artificial Intelligence students takes these subjects in Year 2!",
+		image: "/Year-Icons/aai_logo.jpg",
+		updated: "October 2025",
+		creator: "AAISIG", 
+		creatorLink: "https://www.instagram.com/tp.aaisig/?hl=en", 
+		creatorHelp: undefined,
+		semesters: [
+			{
+				name: "Semester 2 (DLOR, NLPR, AIET & MLDP)",
+				subjects: [DLOR, NLPR, AIET, MLDP],
 			},
 		],
 	},
