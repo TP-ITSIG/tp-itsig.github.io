@@ -33,6 +33,17 @@ import {
 	IMUX, 
 	MPPR 
 } from "./IGDY2Resources"
+import { 
+	DMBA, 
+	DAST, 
+	MLDM, 
+	TSAL 
+} from "./BDAY2Resources"
+import { 
+	DLOR,
+	NLPR,
+	AIET
+} from "./AAIY2Resources"
 
 const Resources: Year[] = [
 	{
@@ -94,6 +105,40 @@ const Resources: Year[] = [
 			{
 				name: "Semester 2 (PGGE, ARAD, IMUX & MPPR)",
 				subjects: [PGGE, ARAD, IMUX, MPPR],
+			},
+		],
+	},
+	{
+		name: "Dip BDA Year 2",
+		course: "BDA",
+		description:
+			"Business & Data Analytics students takes these subjects in Year 2!",
+		image: "/Year-Icons/DipIT_Year2.svg", // Change icon
+		updated: "October 2025",
+		creator: "ITSIG", // Change name
+		creatorLink: "https://www.instagram.com/tp.itsig", // Change instagram
+		creatorHelp: undefined,
+		semesters: [
+			{
+				name: "Semester 2 (DMBA, DAST, MLDM & TSAL)",
+				subjects: [DMBA, DAST, MLDM, TSAL],
+			},
+		],
+	},
+	{
+		name: "Dip AAI Year 2",
+		course: "AAI",
+		description:
+			"Applied Artificial Intelligence students takes these subjects in Year 2!",
+		image: "/Year-Icons/DipIT_Year2.svg", // Change icon
+		updated: "October 2025",
+		creator: "ITSIG", // Change name
+		creatorLink: "https://www.instagram.com/tp.itsig", // Change instagram
+		creatorHelp: undefined,
+		semesters: [
+			{
+				name: "Semester 2 (DLOR, NLPR, AIET & MLDP)",
+				subjects: [DLOR, NLPR, AIET, MLDP],
 			},
 		],
 	},
