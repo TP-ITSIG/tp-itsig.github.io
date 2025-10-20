@@ -40,6 +40,10 @@ const pages: NavbarItems[] = [
 		pageTitle: "About",
 		pageUrl: "about",
 	},
+	{
+		pageTitle: "FAQ",
+		pageUrl: "faq",
+	}
 ]
 
 const Navbar = () => {
