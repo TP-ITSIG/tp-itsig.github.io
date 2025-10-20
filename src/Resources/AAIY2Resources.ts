@@ -11,7 +11,7 @@ const DLOR: Subject = {
 	color: "hsl(45, 85%, 60%)",
 	bgColor: "hsla(45, 85%, 60%, 0.3)",
 	imageLight: "Subject-Icons/Light/DLOR-L.svg",
-	imageDark: "Subject-Icons/Dark/DLOR-D.svg",
+	imageDark: "Subject-Icons/Light/DLOR-L.svg",
 	resources: [
 		{
 			title: "Deep Learning and Object Recognition Playlist",
@@ -60,7 +60,7 @@ const NLPR: Subject = {
 	color: "hsl(300, 70%, 65%)",
 	bgColor: "hsla(300, 70%, 65%, 0.3)",
 	imageLight: "Subject-Icons/Light/NLPR-L.svg",
-	imageDark: "Subject-Icons/Dark/NLPR-D.svg",
+	imageDark: "Subject-Icons/Light/NLPR-L.svg",
 	resources: [
 		{
 			title: "Natural Language Processing In 5 Minutes",
@@ -97,7 +97,7 @@ const AIET: Subject = {
 	color: "hsl(15, 80%, 55%)",
 	bgColor: "hsla(15, 80%, 55%, 0.3)",
 	imageLight: "Subject-Icons/Light/AIET-L.svg",
-	imageDark: "Subject-Icons/Dark/AIET-D.svg",
+	imageDark: "Subject-Icons/Light/AIET-L.svg",
 	resources: [
 		{
 			title: "Machine Learning & Bias",
