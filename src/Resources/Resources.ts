@@ -71,7 +71,7 @@ const Resources: Year[] = [
 		course: "IT",
 		description:
 			"Information Technology students takes these subjects in Year 2!",
-		image: "/Year-Icons/DipIT_Year2.svg",
+		image: "/Year-Icons/itsig_logo.svg",
 		updated: "October 2025",
 		creator: "ITSIG",
 		creatorLink: "https://www.instagram.com/tp.itsig",
@@ -92,10 +92,10 @@ const Resources: Year[] = [
 		course: "IGD",
 		description:
 			"Immersive Media & Game Development students takes these subjects in Year 2!",
-		image: "/Year-Icons/DipIT_Year2.svg", // Change icon
+		image: "/Year-Icons/igd_logo.jpg", 
 		updated: "October 2025",
-		creator: "ITSIG", // Change name
-		creatorLink: "https://www.instagram.com/tp.itsig", // Change instagram
+		creator: "IGDSIG", 
+		creatorLink: "https://www.instagram.com/igd_sig/", 
 		creatorHelp: undefined,
 		semesters: [
 			{
@@ -113,10 +113,10 @@ const Resources: Year[] = [
 		course: "BDA",
 		description:
 			"Business & Data Analytics students takes these subjects in Year 2!",
-		image: "/Year-Icons/DipIT_Year2.svg", // Change icon
+		image: "/Year-Icons/bda_logo.jpg", 
 		updated: "October 2025",
-		creator: "ITSIG", // Change name
-		creatorLink: "https://www.instagram.com/tp.itsig", // Change instagram
+		creator: "BDASIG", 
+		creatorLink: "https://www.instagram.com/tp_bda/", 
 		creatorHelp: undefined,
 		semesters: [
 			{
@@ -130,10 +130,10 @@ const Resources: Year[] = [
 		course: "AAI",
 		description:
 			"Applied Artificial Intelligence students takes these subjects in Year 2!",
-		image: "/Year-Icons/DipIT_Year2.svg", // Change icon
+		image: "/Year-Icons/aai_logo.jpg",
 		updated: "October 2025",
-		creator: "ITSIG", // Change name
-		creatorLink: "https://www.instagram.com/tp.itsig", // Change instagram
+		creator: "AAISIG", 
+		creatorLink: "https://www.instagram.com/tp.aaisig/?hl=en", 
 		creatorHelp: undefined,
 		semesters: [
 			{
