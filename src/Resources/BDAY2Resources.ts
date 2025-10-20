@@ -9,8 +9,8 @@ const DMBA: Subject = {
 		"This subject introduces the fundamental concepts of machine learning. Topics covered include supervised and unsupervised learning and classification.",
 	color: "hsl(200, 80%, 60%)",
 	bgColor: "hsla(200, 80%, 60%, 0.3)",
-	imageLight: "Subject-Icons/Light/DMBA-L.svg",
-	imageDark: "Subject-Icons/Dark/DMBA-D.svg",
+	imageLight: "Subject-Icons/Light/NLPR-L.svg",
+	imageDark: "Subject-Icons/Light/NLPR-L.svg",
 	resources: [
 		{
 			title: "All Machine Learning algorithms explained in 17 minutes",
@@ -45,8 +45,8 @@ const DAST: Subject = {
 		"This subject covers graphing fundamentals, graphing properties and building dashboards for reporting purposes using relevant statistical modelling and analysis techniques. The subject also introduces the knowledge and skills to apply the data storytelling framework and principles of data visualisation to enable business users to communicate and narrate findings relevant to business contexts.",
 	color: "hsl(280, 70%, 65%)",
 	bgColor: "hsla(280, 70%, 65%, 0.3)",
-	imageLight: "Subject-Icons/Light/DAST-L.svg",
-	imageDark: "Subject-Icons/Dark/DAST-D.svg",
+	imageLight: "Subject-Icons/Light/DAVA-L.svg",
+	imageDark: "Subject-Icons/Dark/DAVA-D.svg",
 	resources: [
 		{
 			title: "Presenting Technical Information with Stories",
@@ -123,8 +123,8 @@ const MLDM: Subject = {
 		"This subject covers the techniques for data driven decision making through a hands-on approach. It includes topics such as the framing of the business problem into a machine learning problem, feature engineering, machine learning model building, model results explanation and application.",
 	color: "hsl(120, 70%, 50%)",
 	bgColor: "hsla(120, 70%, 50%, 0.3)",
-	imageLight: "Subject-Icons/Light/MLDM-L.svg",
-	imageDark: "Subject-Icons/Dark/MLDM-D.svg",
+	imageLight: "Subject-Icons/Light/DLOR-L.svg",
+	imageDark: "Subject-Icons/Light/DLOR-L.svg",
 	resources: [
 		{
 			title: "Machine Learning with Python: Foundations",
@@ -192,8 +192,8 @@ const TSAL: Subject = {
 		"This subject equips you with the knowledge and skills to process textual data and social media for analytical insight. It covers topics such as social media analytics concepts and techniques, text analytics process and techniques such as information extraction, text categorisation, cluster analysis and sentiment analysis.",
 	color: "hsl(30, 80%, 55%)",
 	bgColor: "hsla(30, 80%, 55%, 0.3)",
-	imageLight: "Subject-Icons/Light/TSAL-L.svg",
-	imageDark: "Subject-Icons/Dark/TSAL-D.svg",
+	imageLight: "Subject-Icons/Light/Others-L.svg",
+	imageDark: "Subject-Icons/Dark/Others-D.svg",
 	resources: [
 		{
 			title: "Text Mining Toolkit Review",
