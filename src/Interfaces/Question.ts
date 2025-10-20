@@ -1,4 +1,4 @@
 export interface Question {
-	question: String 
-	answer: String
+  question: string
+  answer: string | JSX.Element
 }

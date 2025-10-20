@@ -1,4 +1,4 @@
-import { Box, Heading, HStack, Stack, Text, useColorMode, VStack } from "@chakra-ui/react"
+import { Box, Heading, HStack, Link, Stack, Text, useColorMode, VStack } from "@chakra-ui/react"
 import { useLayoutEffect } from "react"
 import { Question } from "../Interfaces/Question"
 
@@ -13,7 +13,19 @@ const questions: Question[] = [
 	},
 	{
 		question: "How do I join ITSIG events?",
-		answer: "Check us out on our Instagram (link to Instagram: https://www.instagram.com/tp.itsig/?hl=en) for upcoming events, and sometimes we'll send the announcements in your cohort MSTeams chat :)"
+		answer: (
+			<>
+				Check us out on our{" "}
+				<Link 
+					href="https://www.instagram.com/tp.itsig/?hl=en" 
+					color="blue.400" 
+					isExternal
+				>
+					Instagram
+				</Link>{" "}
+				for upcoming events, and sometimes we'll send the announcements in your cohort MSTeams chat :)
+			</>
+		)
 	}
 ]
 
