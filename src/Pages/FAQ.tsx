@@ -26,6 +26,22 @@ const questions: Question[] = [
 				for upcoming events, and sometimes we'll send the announcements in your cohort MSTeams chat :)
 			</>
 		)
+	},
+	{
+		question: "Where can we find the modules we'll be taking this/next semester?",
+		answer: (
+			<>
+				You can find your respective diploma modules{" "}
+				<Link 
+					href="https://tp-itsig.github.io/#/" 
+					color="blue.400" 
+					isExternal
+				>
+					here
+				</Link>
+				.
+			</>
+		)
 	}
 ]
 
