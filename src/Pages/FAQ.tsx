@@ -36,47 +36,60 @@ const FAQ = () => {
 		window.scrollTo(0, 0)
 	}, [])
 
+	const panelBg =
+		colorMode === "light"
+			? "hsl(0, 0%, 0%, 0.05)"
+			: "hsl(0, 0%, 80%, 0.05)"
+
 	return (
-		<>
-			<Box maxW="1400px" margin="auto" p={5}>
-				<HStack>
-					<Box flex={1}>
-						<Heading 
-							size="md"
-							mb={4}>Submit Your Question</Heading>
-						<Box 
+		<Box maxW="1400px" margin="auto" p={5}>
+			<HStack align="stretch" spacing={6} flexWrap={{ base: "wrap", md: "nowrap" }}>
+				<Box
+					flex={1}
+					p={5}
+					borderRadius={{ base: "16px", lg: "20px" }}
+					bgColor={panelBg}
+					display="flex"
+					flexDirection="column"
+					justifyContent="flex-start"
+					minH="500px"
+				>
+					<Heading size="md" mb={4}>
+						Submit Your Question
+					</Heading>
+					<Box
+						flex="1"
+						overflow="hidden"
+						borderRadius={{ base: "16px", lg: "20px" }}
+					>
+						<Box
 							as="iframe"
 							src="https://forms.office.com/r/cbHMt89M5d"
 							width="100%"
-							height="100%"
-							minH="500px"
-							border="1px solid"
-							borderColor={colorMode === 'light' ? 'gray.200' : 'gray.600'}
-							borderRadius="md"
+							height="500px"
+							style={{ border: "none", borderRadius: "inherit" }}
 						/>
 					</Box>
-					<Box 
-						flex={1}
-						bgColor={
-							colorMode === "light"
-								? "hsl(0, 0%, 0%, 0.05)"
-								: "hsl(0, 0%, 80%, 0.05)"
-						}
-					>
-						<VStack spacing={6} p={5} align="stretch">
-							<Heading size="md" mb={4}>Frequently Asked Questions</Heading>
-							{questions.map((q, index) => (
-								<Stack key={index} spacing={2}>
-									<Heading size="sm">{q.question}</Heading>
-									<Text>{q.answer}</Text>
-								</Stack>
-							))}
-						</VStack>
-					</Box>
-				</HStack>
-			</Box>
-			
-		</>
+				</Box>
+				<Box
+					flex={1}
+					p={5}
+					borderRadius={{ base: "16px", lg: "20px" }}
+					bgColor={panelBg}
+					minH="500px"
+				>
+					<VStack spacing={6} align="stretch">
+						<Heading size="md">Frequently Asked Questions</Heading>
+						{questions.map((q, index) => (
+							<Stack key={index} spacing={2}>
+								<Heading size="sm">{q.question}</Heading>
+								<Text>{q.answer}</Text>
+							</Stack>
+						))}
+					</VStack>
+				</Box>
+			</HStack>
+		</Box>
 	)
 }
 
