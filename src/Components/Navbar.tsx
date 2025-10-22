@@ -43,7 +43,7 @@ const pages: NavbarItems[] = [
 	{
 		pageTitle: "FAQ",
 		pageUrl: "faq",
-	}
+	},
 ]
 
 const Navbar = () => {
@@ -105,7 +105,9 @@ const Navbar = () => {
 							as={IconButton}
 							icon={<IoMenu />}
 							filter={
-								currentPath === "" || currentPath === "about"
+								currentPath === "" ||
+								currentPath === "about" ||
+								currentPath === "faq"
 									? colorMode === "light"
 										? "none"
 										: "invert(100%)"
@@ -158,7 +160,8 @@ const Navbar = () => {
 								fontSize="xl"
 								color={
 									currentPath === "" ||
-									currentPath === "about"
+									currentPath === "about" ||
+									currentPath === "faq"
 										? colorMode === "light"
 											? "black"
 											: "white"
