@@ -73,7 +73,7 @@ const MBAP: Subject = {
 		},
 		{
 			name: "GitHub",
-			icon: "/Software-Icons/GitHub.svg",
+			icon: "/Software-Icons/Github.svg",
 			url: "https://github.com/",
 		},
 	],
