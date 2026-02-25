@@ -125,7 +125,7 @@ const UXID: Subject = {
 }
 
 const DAVA: Subject = {
-	name: "Data Analytics and Visualisation",
+	name: "Data Visualisation and Analytics",
 	tagline: "Explore, Analyse and Visualise Big Data",
 	abbreviation: "DAVA",
 	description:
@@ -138,9 +138,11 @@ const DAVA: Subject = {
 		{
 			title: "What is Data Analytics? a quick explainer video",
 			content:
-				"An quick introduction to Data Analytics and its process, tools and understand how it's transforming our world, giving us a better idea on threats in Cybersecurity, User's retention on applications, or perhaps the little new AI you may have heard called ChatGPT!",
-			thumbnail: "https://www.youtube.com/embed/shoT0k8ZzeM?",
-			type: ResourceType.VIDEO,
+				"A quick introduction to Data Analytics and its process, tools and understand how it's transforming our world, giving us a better idea on threats in Cybersecurity, User's retention on applications, or perhaps the little new AI you may have heard called ChatGPT!",
+			thumbnail: "/Images/IITY1/dataanalytics.png",
+			type: ResourceType.IMAGE,
+			imageUrl:
+				"https://www.youtube.com/watch?v=yZvFH7B6gKI",
 			resourceLinks: [
 				{
 					title: "You can read a more detailed blog post here",
